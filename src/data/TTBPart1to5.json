@@ -1,0 +1,593 @@
+[
+  {
+    "id": 1,
+    "question": "Which AI service should you use to create a bot from a frequently asked questions document?",
+    "options": [
+      "QnA Maker",
+      "Language Understanding (LUIS)",
+      "Text Analytics",
+      "Speech to Text"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "You build a machine learning model by using the automated machine learning user interface. You need to ensure that the model meets Microsoft's transparency principle for responsible AI (Artificial Intelligence). What should you do?",
+    "options": [
+      "Set validation type to auto",
+      "Enable explain best model",
+      "Set primary metric to accuracy",
+      "Set max concurrent iterations to zero"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "Which scenario is an example of a web chat bot?",
+    "options": [
+      "A device that converts speech to text for a user",
+      "A device that automatically translates speech to another language",
+      "An application that predicts future sales trends",
+      "From a website interface, answer common questions about scheduled events and ticket purchases for a music festival."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 4,
+    "question": "For a machine learning process, how should you split data for training and evaluation?",
+    "options": [
+      "Use features for training and labels for evaluation",
+      "Randomly split the data into rows for training and rows for evaluation",
+      "Use the labels for training and features for evaluation",
+      "Randomly split the data into columns for training and columns for evaluation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is calculated probability of a correct image classification?",
+    "options": [
+      "Accuracy",
+      "Confidence",
+      "Root Mean Square Error",
+      "Sentiment"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "Ensuring an AI system does not provide a prediction when important fields contain unusual or missing value is a ______ principle for responsible AI.",
+    "options": [
+      "Inclusiveness",
+      "Privacy and security",
+      "Reliability and safety",
+      "Transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "Ensuring that the numeric variables in training data are on a similar scale is an example of ______.",
+    "options": [
+      "Data injection",
+      "Feature engineering",
+      "Feature selection",
+      "Model training"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "You want to create a model to predict sales of ice cream based on historic data that includes daily ice cream sales total and weather measurement. Which Azure service should you use?",
+    "options": [
+      "Azure Machine Learning",
+      "Azure Bot Service",
+      "Language Service"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "The interactive answering of questions entered by a user as a part of an application is an example of what?",
+    "options": [
+      "Anomaly detection",
+      "Computer vision",
+      "Conversational AI",
+      "Forecasting"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "You are designing an AI application that uses images to detect cracks in window panes of buildings and warns when a window pane should be repaired or replaced. What AI workload is described?",
+    "options": [
+      "Computer vision",
+      "Natural language processing",
+      "Anomaly detection"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "You need to evaluate the following statements.\nStatement 1: You can use QnA Maker to query an Azure SQL database.\nStatement 2: You should use QnA Maker when you want a knowledge base to provide the same answer to different users who submit similar questions.\nStatement 3: The QnA Maker service can determine the intent of a user utterance.",
+    "options": [
+      "Statement 1: Yes, Statement 2: No, Statement 3: Yes",
+      "Statement 1: Yes, Statement 2: No, Statement 3: No",
+      "Statement 1: No, Statement 2: Yes, Statement 3: Yes",
+      "Statement 1: No, Statement 2: Yes, Statement 3: No"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "question": "A company employs a team of customer service agents to provide telephone and email support to customers. The company develops a web chat bot to provide automated answers to common customer queries. Which business benefit should the company expect as a result of creating a web chat bot solution?",
+    "options": [
+      "Increased sales",
+      "A reduced workload for the customer service agent",
+      "Improved product reliability"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "Match the learning types with their definitions:\nLearning Types: Regression, Clustering, Classification\nDefinitions: Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.; Segment customers into different groups to support a marketing department.; Predict whether a student will complete a university course.",
+    "correctAnswer": [
+      {
+        "definition": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.",
+        "type": "Regression"
+      },
+      {
+        "definition": "Segment customers into different groups to support a marketing department.",
+        "type": "Clustering"
+      },
+      {
+        "definition": "Predict whether a student will complete a university course.",
+        "type": "Classification"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "A predictive app provides audio output for visually impaired users. Which principle of responsible AI is reflected here?",
+    "options": ["Transparency", "Inclusiveness", "Fairness"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "question": "You are developing a model to predict events by using classification. You have a confusion matrix for the model's score on test data as shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.\nStatements: There are correctly predictive positives, There are false negatives.",
+    "correctAnswer": {
+      "correctly predictive positives": 11,
+      "false negatives": 1033
+    }
+  },
+  {
+    "id": 16,
+    "question": "You need to determine the location of cars in an image so that you can estimate the distance between the cars. Which type of computer vision should you use?",
+    "options": [
+      "Optical Character Recognition (OCR)",
+      "Object detection",
+      "Image classification",
+      "Face detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "Complete the sentence by choosing appropriate option in the answer area: Azure Machine Learning designer lets you create machine learning models by ______.",
+    "options": [
+      "Adding and connecting modules on a visual canvas",
+      "Automatically performing common data preparation tasks",
+      "Automatically selecting an algorithm to build the most accurate model",
+      "Using a code-first notebook experience"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "Your company is exploring the use of voice recognition technologies in its smart home devices. The company wants to identify any barriers that might unintentionally leave out specific user groups. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "Accountability",
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and security"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "question": "A housing dealership wants to use historic apartment sales data to train a machine learning model. The model should predict the price of a pre-owned apartment based on its location, size, and apartment age. What kind of machine learning model should the dealership use automated machine learning to create?",
+    "options": ["Classification", "Regression", "Time series forecasting"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "What are the three Microsoft guiding principles for responsible AI? (Each correct answer presents a complete solution. Each correct selection is worth one point).",
+    "options": [
+      "Knowledgeability",
+      "Decisiveness",
+      "Inclusiveness",
+      "Fairness",
+      "Reliability and safety"
+    ],
+    "correctAnswer": [2, 3, 4]
+  },
+  {
+    "id": 21,
+    "question": "A bank wants to use historic credit card repayment records to categorize credit card applications as low risk or high risk based on characteristics like credit amount, the income of the borrower, and the credit period. What kind of machine learning model should the bank use automated machine learning to create?",
+    "options": ["Classification", "Regression", "Time series forecast"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "Returning a bounding box that indicates the location of a vehicle in an image is an example of ______.",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Optical character recognizer (OCR)",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "Predicting how many hours of overtime a delivery person will work based on the number of orders received is an example of what?",
+    "options": ["Classification", "Clustering", "Regression"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "question": "Which of the following service should you use to train an object detection model by using own images?",
+    "options": [
+      "Computer Vision",
+      "Custom Vision",
+      "Form Recognizer",
+      "Video Indexer"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "question": "You are creating a training pipeline for a regression model. You use a data set that has multiple numeric columns in which the values are on different scales. You want to transform the numeric columns so that the values are all on a similar scale. You also want the transformation to scale relative to minimum and maximum values in each column. Which module should you add to the pipeline?",
+    "options": [
+      "Select columns in dataset",
+      "Normalize Data",
+      "Clean missing data"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "question": "What are two tasks that can be performed by using Computer Vision service? (Each correct answer presents a complete solution. Each correct selection is worth one point).",
+    "options": [
+      "Train a custom image classification model",
+      "Detect face in an image",
+      "Recognize handwritten text",
+      "Translate the text in an image between languages"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 27,
+    "question": "_______ is used to generate additional features.",
+    "options": [
+      "Feature engineering",
+      "Feature selection",
+      "Model evaluation",
+      "Model training"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "You use Azure Machine Learning designer to create a training pipeline for a classification model. What must you do before deploying the model as a service?",
+    "options": [
+      "Create an interface pipeline from the training pipeline",
+      "Add an evaluate model module to the training pipeline",
+      "Clone the training pipeline with a different team"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "You want to use automated machine learning to train a regression model with the best possible R2 score. How should you configure the automated machine learning experiment?",
+    "options": [
+      "Set the primary metric to R2 score",
+      "Block all algorithms other than gradient boosting",
+      "Enable featurization"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "You send an image to Computer Vision API and received back an annotated image shown in the following exhibit. Which type of computer vision was used?",
+    "options": [
+      "Object detection",
+      "Semantic segmentation",
+      "Optical Character Recognition",
+      "Image classification"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "You are working in a tool and tourism company. Your company wants to use computer vision service to analyze images of location and identify well-known monuments. What should you do?",
+    "options": [
+      "Retrieve the objects in the image",
+      "Retrieve the categories of the image specifying the celebrity's domain",
+      "Retrieve the categories of image specifying the landmark domain"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 32,
+    "question": "Why do you split data into training and validation sets?",
+    "options": [
+      "Data is split into two sets in order to create two models: one model with a training set and a different model with a validation set.",
+      "Splitting data into two sets enables you to compare the labels that the model predicts with the actual known labels in the original dataset.",
+      "Only split data when you use the Azure Machine Learning designer and not the other machine learning scenarios."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "question": "What are two metrics that you can use to evaluate a regression model? (Each correct answer presents a complete solution. Each correct selection is worth one point).",
+    "options": [
+      "Coefficient of determination (R2)",
+      "F1 Score",
+      "Root Mean Squared Error",
+      "Area under curve (AUC)",
+      "Balance accuracy"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 34,
+    "question": "You are processing photos of runners in a race. Now you need to read the numbers on runners' shirts to identify the runners in the photos. What type of computer vision should you use?",
+    "options": [
+      "Facial recognition",
+      "Optical Character Recognition (OCR)",
+      "Semantic segmentation",
+      "Object detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 36,
+    "question": "You need to evaluate the following statements regarding the Microsoft Custom Vision service.\nStatement 1: The Custom Vision service can be used to detect objects in an image.\nStatement 2: The Custom Vision service requires you to provide your own data to train the model.\nStatement 3: The Custom Vision service can be used to analyze video files.",
+    "options": [
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: No",
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: Yes",
+      "Statement 1: No, Statement 2: No, Statement 3: No"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "question": "You use Azure Machine Learning designer to publish an inference pipeline. Which two parameters should you use to consume the pipeline? (Each correct answer presents part of the solution and is worth one point).",
+    "options": [
+      "The model name",
+      "The training endpoint",
+      "The authentication key",
+      "The REST endpoint"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 38,
+    "question": "From Azure Machine Learning designer, to deploy a real-time inference pipeline as a service for the other service to consume, you must deploy the model to which of the following?",
+    "options": [
+      "A local web service",
+      "Azure Container Instances or Azure Kubernetes Service",
+      "Azure Machine Learning Compute"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "question": "Which service should you use to extract text, key-value pairs, and table data automatically from scanned documents?",
+    "options": [
+      "Form Recognizer",
+      "Text Analytics",
+      "Language Understanding",
+      "Custom Vision"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 40,
+    "question": "You want to use the Computer Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?",
+    "options": ["Objects", "Tags", "Categories"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "Predicting how many vehicles will travel across a bridge on a given day is an example of ______.",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 42,
+    "question": "You want to use Computer Vision service to analyze images and to use Language service to analyze text. It's a must requirement that developers only use one key and endpoint to access all your services. What kind of resource should you create in your Azure subscription?",
+    "options": ["Computer Vision", "Cognitive Services", "Custom Vision"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 43,
+    "question": "You need to evaluate the following statements on Microsoft Face detection service.\nStatement 1: The Face service can be used to perform facial recognition for employees.\nStatement 2: The Face service will be more accurate if you provide more sample photos of each employee from different angles.\nStatement 3: If an employee is wearing sunglasses, the Face service will always fail to recognize the employee.",
+    "options": [
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: No",
+      "Statement 1: Yes, Statement 2: No, Statement 3: Yes",
+      "Statement 1: No, Statement 2: Yes, Statement 3: No"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 44,
+    "question": "You need to develop a mobile app for employees to scan and store their expenses while traveling. Which type of computer vision should you use?",
+    "options": [
+      "Semantic segmentation",
+      "Image classification",
+      "Object detection",
+      "Optical Character Recognition"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 45,
+    "question": "You need to use Azure Machine Learning designer to build a model that will predict automobile prices. Which type of modules should you use to complete the model?\nModules to fill (in order of appearance in the pipeline):\nAfter \"Automobile price data\" and \"Data Output\": Select Columns in Dataset\nAfter the next \"Data Output\": Split Data\nAfter \"Train Model (Data)\" and \"Train Model (Model)\": Linear Regression",
+    "correctAnswer": {
+      "step1": "Select Columns in Dataset",
+      "step2": "Split Data",
+      "step3": "Linear Regression"
+    }
+  },
+  {
+    "id": 46,
+    "question": "You use an Azure Machine Learning designer pipeline to train and test a binary classification model. You review the model's performance metrics in an Evaluate Model module and note that it has an AUC score of 0.3. What can you conclude about the model?",
+    "options": [
+      "The model can explain 30% of the variance between true and predicted labels",
+      "The model predicts accurately for 70% of test cases",
+      "The model performs worse than a random guessing."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 47,
+    "question": "You use Azure Machine Learning designer to create a training pipeline for a classification model. What must you do before deploying the model as a service?",
+    "options": [
+      "Create an inference pipeline from the training pipeline",
+      "Add an evaluate model module to the training pipeline",
+      "Clone the training pipeline with a different name"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "You are using Azure Machine Learning designer to create a training pipeline for a binary classification model. You have added a dataset containing features and labels, a two-class decision forest module, and a trained model module. You plan to use Score Model and Evaluate Model to test the trained model with a subset of the dataset that wasn't used for training. What is the another module should you add?",
+    "options": ["Join Data", "Split Data", "Select Column in Dataset"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 49,
+    "question": "The ability to extract subtotals and totals from a receipt is a capability of the ______.",
+    "options": [
+      "Custom Vision",
+      "Form Recognizer",
+      "Ink Recognizer",
+      "Text Analytics"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 50,
+    "question": "You need to evaluate the following statements.\nStatement 1: Azure Machine Learning designer provides a drag and drop visual canvas to build, test, and deploy machine learning models.\nStatement 2: Azure Machine Learning designer enables you to save your progress as a pipeline draft.\nStatement 3: Azure Machine Learning designer enables you to include custom JavaScript functions.",
+    "options": [
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: No",
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: Yes",
+      "Statement 1: No, Statement 2: No, Statement 3: No"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 51,
+    "question": "You have the following data set (Household Income, Postal Code, House Price Category). You plan to use the data set to train a model that will predict the house price categories for the houses. What are household income and household price category? (Select the appropriate option in the answer area. Each correct selection is worth one point).",
+    "options": [
+      "Household income: Feature, House price category: Label",
+      "Household income: Label, House price category: Feature"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 52,
+    "question": "You are building a tool that will process images from retail stores and identify the products of competitors. The solution will use a custom model. Which Azure cognitive service should you use?",
+    "options": ["Custom Vision", "Form Recognizer", "Face", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 53,
+    "question": "You plan to use the Custom Vision service to train an image classification model. You want to create a resource that can only be used for model training and not for prediction. Which kind of resource should you create in your Azure subscription?",
+    "options": ["Custom Vision", "Cognitive Services", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 54,
+    "question": "When you design an AI system to assess whether loans should be approved, the factors used to make decisions should be explainable. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Fairness",
+      "Privacy and security"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 55,
+    "question": "What information must you provide to developers who want to use image classification model?",
+    "options": [
+      "Only provide project ID",
+      "Along with the project ID, you also provide the model name and the key and the endpoint for the prediction resource",
+      "With project ID, you also provide the iteration number and the key and the endpoint for the training resource."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 56,
+    "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Fairness",
+      "Privacy and security"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 57,
+    "question": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter. You need to ensure that you only retweet photos that meet the following requirements: 1. Include one or more faces. 2. Contain at least one person wearing sunglasses. What should you do to analyze the image?",
+    "options": [
+      "Use the verify operation in Face service",
+      "Use the detect operation in Face service",
+      "Use the describe image operation in the Computer Vision service",
+      "Use the analyze image operation in the Computer Vision service"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 58,
+    "question": "The handling of unusual or missing values provided to an AI system is a consideration for which of the following Microsoft principle for responsible AI?",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": 59,
+    "question": "You train an image classification model that achieves less than satisfactory evaluation metrics. How might you improve it?",
+    "options": [
+      "Reduce the size of the images used to train the model",
+      "Add a new label for unknown classes",
+      "Add more images to training set"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 60,
+    "question": "You need to evaluate the following statements.\nStatement 1: Forecasting housing prices based on historical data is an example of anomaly detection.\nStatement 2: Identifying suspicious sign-ins by looking the deviation from usual patterns is an example of anomaly detection.\nStatement 3: Predicting whether a patient will develop diabetes based on the patient's medical history is an example of anomaly detection.",
+    "options": [
+      "Statement 1: No, Statement 2: Yes, Statement 3: No",
+      "Statement 1: Yes, Statement 2: No, Statement 3: No",
+      "Statement 1: No, Statement 2: Yes, Statement 3: Yes"
+    ],
+    "correctAnswer": 0
+  }
+]

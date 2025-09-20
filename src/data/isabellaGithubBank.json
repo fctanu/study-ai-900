@@ -1,0 +1,393 @@
+[
+  {
+    "id": 1,
+    "question": "You want to create a model to predict sales of ice cream based on historic data that includes daily ice cream sales totals and weather measurements. Which Azure service should you use?",
+    "options": [
+      "Azure Machine Learning",
+      "Azure AI Bot Service",
+      "Azure AI Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "You work for a wildlife sanctuary and are considering using AI to identify bird species from images. Which AI service should you use to prototype your idea?",
+    "options": ["Azure AI Vision", "Azure AI Search", "Azure OpenAI"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "A predictive app provides audio output for visually impaired users. Which principle of Responsible AI is reflected here?",
+    "options": ["Transparency", "Inclusiveness", "Fairness"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "You want to create a model to predict the cost of heating an office building based on its size in square feet and the number of employees working there. What kind of machine learning problem is this?",
+    "options": ["Regression", "Classification", "Clustering"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "You need to evaluate a classification model. Which metric can you use?",
+    "options": ["Mean squared error (MSE)", "Precision", "Silhouette"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "In deep learning, what is the purpose of a loss function?",
+    "options": [
+      "To remove data for which no known label values are provided",
+      "To evaluate the aggregate difference between predicted and actual label values",
+      "To calculate the cost of training a neural network rather than a statistical model."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "What does automated machine learning in Azure Machine Learning enable you to do?",
+    "options": [
+      "Automatically deploy new versions of a model as they're trained",
+      "Automatically provision Azure Machine Learning workspaces for new data scientists in an organisation",
+      "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "question": "An application requires three separate AI services. To see the cost for each separately, what type of resource(s) should be created?",
+    "options": [
+      "A multi-service resource that includes all the AI services",
+      "A single-service resource for each AI service",
+      "It's not possible to see costs for individual AI services"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "After logging into one of the Azure studios, what is one task to complete to begin using the studio?",
+    "options": [
+      "Input a key and endpoint into the studio",
+      "Customize the API request.",
+      "Associate a resource with the studio"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "What is an Azure AI services resource?",
+    "options": [
+      "A bundle of several AI services in one resource",
+      "An AI service to recognize faces",
+      "A single-service resource for Azure AI Search"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "Computer vision is based on the manipulation and analysis of what kinds of values in an image?",
+    "options": [
+      "Timestamps in photograph metadata",
+      "Pixels",
+      "Image file names"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "question": "You want to use the Azure AI Vision service to analyze images. You also want to use the Azure AI Language service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?",
+    "options": ["Azure AI Vision", "Azure AI services", "Azure OpenAI service"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "You want to use the Azure AI Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?",
+    "options": ["Objects", "Visual Tags", "Dense Captions"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "How does the Face service indicate the location of faces in images?",
+    "options": [
+      "A pair of coordinates for each face, indicating the center of the face",
+      "Two pairs of coordinates for each face, indicating the location of the eyes",
+      "A set of coordinates for each face, defining a rectangular bounding box around the face"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "What is one aspect that might impair facial detection?",
+    "options": ["Glasses", "Extreme angles", "Fast shutter speed"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "question": "What two actions are required to try out the capabilities of the Face service?",
+    "options": [
+      "Create an Azure Cognitive Search resource, and open Vision Studio",
+      "Create a Face resource, and open Vision Studio",
+      "Create a Face resource, and open Azure OpenAI Studio"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "You want to extract text from images and then use Azure AI Language to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?",
+    "options": ["Azure AI Vision", "Azure AI services", "Azure AI Language"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "You plan to use Azure AI Vision's Read API. What results can the Read API provide?",
+    "options": [
+      "Results arranged in pages, lines, and words",
+      "Only the bounding box coordinates",
+      "Results arranged by pages that have photographs first, then pages that exclusively have text"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "You want to use Azure AI Language to determine the key talking points in a text document. Which feature of the service should you use?",
+    "options": [
+      "Sentiment analysis",
+      "Key phrase extraction",
+      "Entity detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?",
+    "options": [
+      "The document is positive.",
+      "The document is neutral.",
+      "The document is negative."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 21,
+    "question": "When might you see NaN returned for a score in language detection?",
+    "options": [
+      "When the score calculated by the service is outside the range of 0 to 1",
+      "When the predominant language in the text is mixed with other languages",
+      "When the language is ambiguous"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 22,
+    "question": "Your organization has an existing frequently asked questions (FAQ) document. You need to create a knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?",
+    "options": [
+      "Create an empty knowledge base, and then manually copy and paste the FAQ entries into it.",
+      "Import the existing FAQ document into a new knowledge base.",
+      "Import a pre-defined chit-chat data source."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "You want to create a knowledge base for your organization’s bot service. Which Azure AI service is best suited to creating a knowledge base?",
+    "options": [
+      "Conversational Language Understanding",
+      "Question Answering",
+      "Optical Character Recognition"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "question": "You need to provision an Azure resource that will be used to author a new conversational language understanding application. What kind of resource should you create?",
+    "options": ["Azure AI Speech", "Azure AI Language", "Azure AI services"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "question": "You are authoring a conversational language understanding application to support an international clock. You want users to be able to ask for the current time in a specified city, for example \"What is the time in London?\". What should you do?",
+    "options": [
+      "Define a \"city\" entity and a \"GetTime\" intent with utterances that indicate the city entity.",
+      "Create an intent for each city, each with an utterance that asks for the time in that city.",
+      "Add the utterance \"What time is it in city\" to the \"None\" intent."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "You have published your conversational language understanding application. What information does a client application developer need to get predictions from it?",
+    "options": [
+      "The endpoint and key for the application's prediction resource",
+      "The endpoint and key for the application's authoring resource",
+      "The Azure credentials of the user who published the language understanding application"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submit the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services with a single Azure resource. Which type of Azure resource should you create?",
+    "options": ["Speech", "Language", "Azure AI services"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 28,
+    "question": "You want to use Azure AI Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?",
+    "options": ["Speech to text", "Text to speech", "Translator"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 29,
+    "question": "You plan to use Azure AI Document Intelligence's prebuilt receipt model. Which kind of Azure resource should you create?",
+    "options": [
+      "Azure AI Vision resource",
+      "Azure AI Document Intelligence or Azure AI services resource.",
+      "Azure AI Language resource."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 30,
+    "question": "You are using the Azure AI Document Intelligence service to analyze receipts. Which field types does the service recognise?",
+    "options": [
+      "Merchant retail type.",
+      "Merchant name and address.",
+      "Merchant name and date of incorporation."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 31,
+    "question": "What is required to use the receipt analyzer service in Azure AI Document Intelligence?",
+    "options": [
+      "Train the model on sample receipts from your organisation.",
+      "Create an Azure AI Document Intelligence resource.",
+      "Nothing - receipt analyzer is available once you create an Azure subscription."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "question": "Which data format is accepted by Azure AI Search when you're pushing data to the index?",
+    "options": ["CSV", "SQL", "JSON"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 33,
+    "question": "Which explanation best describes an indexer and an index?",
+    "options": [
+      "An indexer converts documents into JSON and forwards them to a search engine for indexing.",
+      "An indexer can be used instead of an index if the files are already in the proper format.",
+      "An indexer is only used for AI enrichment and skillset execution."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "If you set up a search index without including a skillset, which would you still be able to query?",
+    "options": ["Sentiment", "Text content", "Image captions"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "question": "What are Large Language Models?",
+    "options": [
+      "Models that only work with one language.",
+      "Models that only work with small amounts of data.",
+      "Models that use deep learning to process and understand natural language on a massive scale."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 36,
+    "question": "What is an example of a potential task a generative AI application can help solve?",
+    "options": [
+      "Monitoring the temperature in a manufacturing facility.",
+      "Creating a draft for an email.",
+      "Collecting real time data and storing it in a database."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of vector-based embeddings?",
+    "options": [
+      "To represent semantic meaning of text tokens.",
+      "To create tokens that include multiple representations of a word in different languages.",
+      "To correct misspellings in the training data."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "question": "What is the potential impact of copilots?",
+    "options": [
+      "Copilots only impact applications used in professional settings.",
+      "Copilots can help with first drafts, information synthesis, strategic planning, and much more.",
+      "Copilots can only be used for certain natural language tasks like summarizing text."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "question": "Which assumption of the multiple linear regression model should be satisfied to avoid misleading predictions?",
+    "options": [
+      "Features are dependent on each other.",
+      "Features are independent of each other.",
+      "Labels are dependent on each other.",
+      "Labels are independent of each other."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "question": "How are ChatGPT, OpenAI, and Azure OpenAI related?",
+    "options": [
+      "Azure OpenAI is Microsoft's version of ChatGPT, a chatbot that uses generative AI models.",
+      "ChatGPT and OpenAI are chatbots that generate natural language, code, and images. Azure OpenAI provides access to these two chatbots.",
+      "OpenAI is a research company that developed ChatGPT, a chatbot that uses generative AI models. Azure OpenAI provides access to many of OpenAI's AI models"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 41,
+    "question": "You would like to summarise a paragraph of text. Which generative AI model family would you use to solve for this workload?",
+    "options": ["GPT", "Codex", "Dall-E."],
+    "correctAnswer": 0
+  },
+  {
+    "id": 42,
+    "question": "What is one action Microsoft takes to support ethical AI practices in Azure OpenAI?",
+    "options": [
+      "Provides Transparency Notes that share how technology is built and asks users to consider its implications.",
+      "Logs users out of Azure OpenAI Studio after a period of inactivity to ensure it's only used by one user.",
+      "Allows users to build any application, regardless of harmful effects, to ensure fairness."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "Why should you consider creating an AI Impact Assessment when designing a generative AI solution?",
+    "options": [
+      "To make a legal case that indemnifies you from responsibility for harms caused by the solution",
+      "To document the purpose, expected use, and potential harms for the solution",
+      "To evaluate the cost of cloud services required to implement your solution"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "question": "What capability of Azure OpenAI Service helps mitigate harmful content generation at the Safety System level?",
+    "options": ["DALL-E model support", "Fine-tuning", "Content filters"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 45,
+    "question": "Why should you consider a phased delivery plan for your generative AI solution?",
+    "options": [
+      "To enable you to gather feedback and identify issues before releasing the solution more broadly",
+      "To eliminate the need to identify, measure, and mitigate potential harms",
+      "To enable you to charge more for the solution"
+    ],
+    "correctAnswer": 0
+  }
+]

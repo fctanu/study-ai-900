@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "question": "A company employs a team of customer service agents to provide telephone and email support to customers. The company develops a webchat bot to provide automated answers to common customer queries. Which business benefit should the company expects as a result of creating the webchat bot solution?",
+    "options": [
+      "increased sales",
+      "a reduced workload for the customer service agents",
+      "improved product reliability"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "You build a machine learning model by using the automated machine learning user interface (UI). You need to ensure that the model meets the Microsoft transparency principle for responsible Al. What should you do?",
+    "options": [
+      "Set Validation type to Auto.",
+      "Enable Explain best model.",
+      "Set Primary metric to accuracy."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter. You need to ensure that you only retweet photos that meet the following requirements:\nInclude one or more faces.\nContain at least one person wearing sunglasses.\nWhat should you use to analyze the images?",
+    "options": [
+      "the Verify operation in the Face service",
+      "the Detect operation in the Face service",
+      "the Analyze Image operation in the Computer Vision service"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "You are building an Al-based app. You need to ensure that the app uses the principles for responsible Al. Which two principles should you follow? Each correct answer presents part of the solution.",
+    "options": [
+      "Implement an Agile software development methodology",
+      "Implement a process of Al model validation as part of the software review process",
+      "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer",
+      "Prevent the disclosure of the use of Al-based algorithms for automated decision making"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 5,
+    "question": "You have the Predicted vs. True chart shown in the following exhibit. Which type of model is the chart used to evaluate?",
+    "options": ["Classification", "regression", "Clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "You have a dataset that contains information about taxi journeys that occurred during a given period. You need to train a model to predict the fare of a taxi journey. What should you use as a feature?",
+    "options": [
+      "the number of taxi journeys in the dataset",
+      "the trip distance of individual taxi journeys",
+      "the fare of individual taxi journeys"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+    "options": ["Form Recognizer", "Text Analytics", "Language Understanding"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "You use Azure Machine Learning designer to publish an inference pipeline. Which two parameters should you use to access the web service? Each correct answer presents part of the solution.",
+    "options": [
+      "the model name",
+      "the training endpoint",
+      "the authentication key",
+      "the REST endpoint"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 9,
+    "question": "You have the following dataset:\nHousehold Income, Postal Code, House Price Category\n20,000, 55555, Low\n23,000, 20541, Middle\n80,000, 87960, High\nYou plan to use the dataset to train a model that will predict the house price categories of houses. What are Household Income and House Price Category? To answer, select the appropriate option in the answer area.",
+    "options": [
+      "Both are labels",
+      "A feature and a Code",
+      "A feature and a label"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "You need to predict the income range of a given customer by using the following dataset:\nFirst Name, Last Name, Age, Education Level, Income Range\nOrlando, Gee, 45, University, 25,000-50,000\nKeith, Harris, 36, High school, 25,000-50,000\nDonna, Carreras, 52, University, 50,000-75,000\nJanet, Gates, 21, University, 75,000-100,000\nLucy, Harrington, 68, High school, 50,000-75,000\nWhich two fields should you use as features? Each correct answer presents a complete solution.",
+    "options": ["Education Level", "Last Name", "Age", "Income Range"],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 11,
+    "question": "What are two metrics that you can use to evaluate a regression model? Each correct answer presents a complete solution.",
+    "options": [
+      "coefficient of determination (R2)",
+      "F1 score",
+      "root mean squared error (RMSE)",
+      "area under curve (AUC)"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 12,
+    "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "question": "You need to predict the animal population of an area. Which Azure Machine Learning type should you use?",
+    "options": ["Regression", "Clustering", "classification"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "Your company wants to build a recycling machine for bottles. The recycling machine must automatically identify bottles of the correct shape and reject all other items. Which type of Al workload should the company use?",
+    "options": ["anomaly detection", "conversational Al", "computer vision"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution.",
+    "options": [
+      "Extract the invoice number from an invoice",
+      "Translate a form from French to English",
+      "Find image of product in a catalog",
+      "Identify the retailer from a receipt"
+    ],
+    "correctAnswer": [0, 3]
+  },
+  {
+    "id": 16,
+    "question": "Which type of machine learning algorithm finds the optimal way to split a dataset into groups without relying on training and validating label predictions?",
+    "options": ["Classification", "Clustering", "Regression"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "Predicting rainfall for a specific geographical location is an example of which type of machine learning?",
+    "options": ["Classification", "Clustering", "Regression"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "A company deploys an online marketing campaign to social media platforms for a new product launch. The company wants to use machine learning to measure the sentiment of users on the Twitter platform who made posts in response to the campaign. Which type of machine learning is this?",
+    "options": ["Classification", "Clustering", "Data transformation"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "A healthcare organization has a dataset consisting of bone fracture scans that are categorized by using predefined fracture types. The organization wants to use machine learning to detect the different types of bone fractures for new scans before the scans are sent to a medical practitioner. Which type of machine learning is this?",
+    "options": ["Classification", "Featurization", "Regression"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "A retailer wants to group together online shoppers that have similar attributes to enable its marketing team to create targeted marketing campaigns for new product launches. Which type of machine learning is this?",
+    "options": ["Classification", "Clustering", "Multiclass classification"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 21,
+    "question": "In a regression machine learning algorithm, how are features and labels handled in a validation dataset?",
+    "options": [
+      "Features are compared to the feature values in a training dataset.",
+      "Features are used to generate predictions for the label, which is compared to the actual label values.",
+      "The label is used to generate predictions for features, which are compared to the actual feature values."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "question": "Which assumption of the multiple linear regression model should be satisfied to avoid misleading predictions?",
+    "options": [
+      "Features are dependent on each other.",
+      "Features are independent of each other.",
+      "Labels are independent of each other."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "A company wants to predict household water use based on the number of people in a house, the weather temperature, and the time of year. In terms of data labels and features, what is the label in this use case?",
+    "options": ["Number of people in the house", "Time of year", "Water use"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "question": "You need to identify numerical values that represent the probability of humans developing diabetes based on age and body fat percentage. Which type of machine learning model should you use?",
+    "options": [
+      "Linear Regression",
+      "Logistic Regression",
+      "Multiple Linear Regression"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 25,
+    "question": "Which three values are returned by the language detection feature of the Language service in Azure?",
+    "options": [
+      "Bounding box coordinates",
+      "ISO 6391 code",
+      "Language name",
+      "Score"
+    ],
+    "correctAnswer": [1, 2, 3]
+  },
+  {
+    "id": 26,
+    "question": "Which two features of Azure Cognitive Services allow you to identify issues from support question data, as well as identify any people and products that are mentioned? Each correct answer presents part of the solution.",
+    "options": [
+      "Azure Bot Service",
+      "Conversational Languange Understanding",
+      "Key Phrase Extraction",
+      "Named Entity Recognition"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 27,
+    "question": "You need to use the Azure Machine Learning designer to train a machine learning model. What should you do first in the Machine Learning designer?",
+    "options": ["Add a dataset", "Add a training modules", "Create a pipeline"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 28,
+    "question": "What should you do after preparing a dataset and before training the machine learning model?",
+    "options": [
+      "Clean missing data",
+      "Normalize the data",
+      "Split data into training and validation datasets"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 29,
+    "question": "You need to use the Azure Machine Learning designer to deploy a predictive service from a newly trained model. What should you do first in the Machine Learning designer?",
+    "options": [
+      "Add a dataset",
+      "Add training modules",
+      "Create an inference pipeline"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "What is an unsupervised machine learning algorithm module for training models in the Azure Machine Learning designer?",
+    "options": ["Classification", "K-means clustering", "Linear regression"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 31,
+    "question": "Which artificial intelligence (AI) technique should be used to extract the name of a store from a photograph displaying the store front?",
+    "options": [
+      "Image classification",
+      "Natural Language Processing (NLP)",
+      "Optical Character Recognition (OCR)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 32,
+    "question": "Which computer vision solution provides the ability to identify a person's age based on a photograph?",
+    "options": ["Facial detection", "Image classification", "Object detection"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 33,
+    "question": "Which Azure Cognitive Service for Language feature allows you to analyze written articles to extract information and concepts, such as people and locations, for classification purposes?",
+    "options": [
+      "Content Moderation",
+      "Key Phrase Extraction",
+      "Named Identity Recognition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 34,
+    "question": "What are two required services to build a conversational artificial intelligence (Al) solution in Azure? Each correct answer presents part of the solution",
+    "options": [
+      "Bot service",
+      "Content moderator",
+      "Language",
+      "Text Translation"
+    ],
+    "correctAnswer": null
+  },
+  {
+    "id": 35,
+    "question": "Which three features are elements of the Speech service? Each correct answer presents a complete solution.",
+    "options": [
+      "Document translation",
+      "Language identification",
+      "Speaker recognition",
+      "Voice assistants"
+    ],
+    "correctAnswer": [1, 2, 3]
+  },
+  {
+    "id": 36,
+    "question": "Which feature of computer vision involves associating an image with metadata that summarizes the attributes of the image?",
+    "options": ["Content organization", "Detecting image types", "Tagging"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 37,
+    "question": "Which three parts of the machine learning process does the computer vision service eliminate the need for? Each correct answer presents part of the solution.",
+    "options": [
+      "Choosing a model",
+      "Evaluating a model",
+      "Inferencing",
+      "Training a model"
+    ],
+    "correctAnswer": [0, 1, 3]
+  },
+  {
+    "id": 38,
+    "question": "Which two specialized domain models are supported by using the computer vision service? Each correct answer presents a complete solution.",
+    "options": ["Cars", "Celebrities", "Landmarks", "Plants"],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 39,
+    "question": "Which tool provides the easiest way to create a knowledge base for Azure Bot Service?",
+    "options": [
+      "The azure machine learning studio",
+      "The azure portal",
+      "The language studio"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 40,
+    "question": "Which type of artificial intelligence (AI) workload provides the ability to classify individual pixels in an image depending on the object that they represent?",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 41,
+    "question": "Which artificial intelligence (AI) workload scenario is an example of natural language processing (NLP)?",
+    "options": [
+      "extracting key phrases from a business insights report",
+      "identifying objects in landscape images",
+      "predicting whether customers are likely to buy a product based on previous purchases"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 42,
+    "question": "Which two artificial intelligence (Al) workload features are part of the computer vision service? Each correct answer presents a complete solution.",
+    "options": [
+      "Optical Character Recognition (OCR)",
+      "Sentiment Analysis",
+      "Spatial Analysis",
+      "Key phrase extraction"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 43,
+    "question": "Which principle of responsible artificial intelligence (AI) has the objective of ensuring that Al solutions benefit all parts of society regardless of gender or ethnicity?",
+    "options": ["Accountability", "Inclusiveness", "Privacy and Security"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "question": "Which two principles of responsible artificial intelligence (AI) are most important when designing an Al system to manage healthcare data? Each correct answer presents part of the solution.",
+    "options": [
+      "Accountability",
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and Security"
+    ],
+    "correctAnswer": [0, 3]
+  },
+  {
+    "id": 45,
+    "question": "Which part of speech synthesis in natural language processing (NLP) involves breaking text into individual words such that each word can be assigned phonetic sounds?",
+    "options": ["Key Phrase Extraction", "Tokenization", "Transcribing"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 46,
+    "question": "Which type of machine learning algorithm assigns items to a set of predefined categories?",
+    "options": ["Classification", "Clustering", "Regression", "Supervised"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "question": "You need to use Azure Machine Learning to train a regression model. What should you create in Machine Learning studio?",
+    "options": [
+      "A job",
+      "A workplace",
+      "An Azure container instance",
+      "An Azure Kubernetes Service (AKS) cluster"
+    ],
+    "correctAnswer": null
+  },
+  {
+    "id": 48,
+    "question": "Which artificial intelligence (AI) technique serves as the foundation for modern image classification solutions?",
+    "options": [
+      "Anomaly detection",
+      "Deep learning",
+      "Linear regression",
+      "Multiple linear regression"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 49,
+    "question": "You are exploring solutions to improve the document search and indexing service for employees. You need an artificial intelligence (AI) search solution that will include searching text in various types of documents, such as images. Which type of Al workload is this?",
+    "options": [
+      "Anomaly detection",
+      "Computer vision",
+      "Conversational Al",
+      "Data mining"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 50,
+    "question": "A bank is developing a new artificial intelligence (Al) system to support the process of accepting or rejecting mortgage applications. Which two issues should be considered as part of the responsible Al principle of fairness to avoid biased decision making? Each correct answer presents part of the solution.",
+    "options": [
+      "Credit utilization",
+      "Current salary",
+      "Ethnicity",
+      "Gender",
+      "Payment history"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 51,
+    "question": "Which Azure Cognitive Service for Language feature can be used to analyze online user reviews to identify whether users view a product positively or negatively?",
+    "options": [
+      "Key Phrase Extraction",
+      "Languange Detection",
+      "Named Entity Recognition",
+      "Sentiment Analysis"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 52,
+    "question": "Which feature of the Language service includes functionality that returns links to external websites to disambiguate terms identified in a text?",
+    "options": [
+      "Entity recognition",
+      "Key phrase extraction",
+      "Languang detection",
+      "Sentiment Analysis"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 53,
+    "question": "Which Azure resource provides direct access to both Translator and Speech services through a single endpoint and authentication key?",
+    "options": [
+      "Azure bot services",
+      "Azure Cognitive services",
+      "Azure Machine Learning",
+      "Language Service"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 54,
+    "question": "Which two types of files can be imported to generate a knowledge base for use with Azure Bot Service? Each correct answer presents a complete solution.",
+    "options": ["CSV", "DOC", "MP4", "PDF", "ZIP"],
+    "correctAnswer": [1, 3]
+  }
+]
