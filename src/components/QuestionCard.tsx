@@ -181,19 +181,19 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     };
 
     return (
-      <div className="space-y-4 mb-8">
+      <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
         {question.options?.map((option, index) => (
           <button
             key={index}
             onClick={() => !showAnswers && onOptionSelect(index)}
             disabled={showAnswers}
-            className={`w-full p-4 text-left rounded-lg border transition-all duration-200 text-white ${getOptionStyle(
+            className={`w-full p-3 sm:p-4 text-left rounded-lg border transition-all duration-200 text-white ${getOptionStyle(
               index
             )} ${showAnswers ? "cursor-default" : ""}`}
           >
             <div className="flex items-center">
               {getOptionIcon(index)}
-              <span className="text-lg">{option}</span>
+              <span className="text-sm sm:text-base lg:text-lg">{option}</span>
             </div>
           </button>
         ))}
@@ -207,27 +207,27 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     const definitions = correctMatches.map((match) => match.definition);
 
     return (
-      <div className="space-y-6 mb-8">
-        <div className="bg-gray-800/30 rounded-lg p-4 border border-gray-600">
-          <h4 className="text-white text-lg font-medium mb-4">
+      <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
+        <div className="bg-gray-800/30 rounded-lg p-3 sm:p-4 border border-gray-600">
+          <h4 className="text-white text-base sm:text-lg font-medium mb-3 sm:mb-4">
             Match each Learning Type with its Definition:
           </h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4">
             <div>
-              <h5 className="text-blue-300 font-medium mb-2">
+              <h5 className="text-blue-300 font-medium mb-2 text-sm sm:text-base">
                 Learning Types:
               </h5>
               {learningTypes.map((type, index) => (
                 <div
                   key={index}
-                  className="bg-blue-900/20 border border-blue-600/50 rounded p-2 mb-2 text-blue-200"
+                  className="bg-blue-900/20 border border-blue-600/50 rounded p-2 mb-2 text-blue-200 text-sm sm:text-base"
                 >
                   {type}
                 </div>
               ))}
             </div>
             <div>
-              <h5 className="text-green-300 font-medium mb-2">Definitions:</h5>
+              <h5 className="text-green-300 font-medium mb-2 text-sm sm:text-base">Definitions:</h5>
               {definitions.map((definition, index) => (
                 <div
                   key={index}
@@ -260,17 +260,17 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     const blanks = Object.keys(correctAnswers);
 
     return (
-      <div className="space-y-4 mb-8">
-        <div className="bg-gray-800/30 rounded-lg p-4 border border-gray-600">
-          <p className="text-gray-300 mb-4">
+      <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+        <div className="bg-gray-800/30 rounded-lg p-3 sm:p-4 border border-gray-600">
+          <p className="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
             Fill in the blanks with the correct values:
           </p>
           {blanks.map((blank, index) => (
-            <div key={index} className="mb-4">
-              <label className="block text-white font-medium mb-2 capitalize">
+            <div key={index} className="mb-3 sm:mb-4">
+              <label className="block text-white font-medium mb-2 capitalize text-sm sm:text-base">
                 {formatLabel(blank)}:
               </label>
-              <div className="bg-gray-700 border border-gray-500 rounded px-3 py-2 text-white">
+              <div className="bg-gray-700 border border-gray-500 rounded px-3 py-2 text-white text-sm sm:text-base">
                 {showAnswers ? (
                   <span className="text-green-300">
                     {correctAnswers[blank]}
@@ -304,16 +304,16 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
   return (
     <div
-      className="max-w-4xl mx-auto p-8"
+      className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8"
       style={{ backgroundColor: "#0A202E", minHeight: "100vh" }}
     >
-      <div className="mb-8">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-white text-xl font-medium">
+      <div className="mb-6 sm:mb-8">
+        <div className="flex justify-between items-center mb-4 sm:mb-6">
+          <h2 className="text-white text-lg sm:text-xl font-medium">
             Question {questionNumber} of {totalQuestions}
           </h2>
         </div>
-        <div className="w-full bg-gray-700 rounded-full h-1 mb-8">
+        <div className="w-full bg-gray-700 rounded-full h-1 mb-6 sm:mb-8">
           <div
             className="bg-blue-500 h-1 rounded-full transition-all duration-300"
             style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
@@ -321,12 +321,12 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
         </div>
       </div>
 
-      <div className="mb-12">
-        <h1 className="text-white text-2xl font-normal leading-relaxed">
+      <div className="mb-8 sm:mb-12">
+        <h1 className="text-white text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed">
           {question.question}
         </h1>
         {questionType === QuestionType.MULTI_SELECT && (
-          <p className="text-blue-300 text-sm mt-4 italic">
+          <p className="text-blue-300 text-xs sm:text-sm mt-3 sm:mt-4 italic">
             * Select all correct answers for this question
           </p>
         )}
@@ -354,7 +354,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
           <button
             onClick={handleCheckAnswer}
             disabled={!isAnswered()}
-            className={`px-8 py-3 rounded-lg font-medium transition-all duration-200 ${
+            className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium transition-all duration-200 text-sm sm:text-base ${
               isAnswered()
                 ? "bg-orange-600 text-white hover:bg-orange-700"
                 : "bg-gray-600 text-gray-400 cursor-not-allowed"
@@ -365,7 +365,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
         ) : (
           <button
             onClick={handleNext}
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200"
+            className="bg-blue-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 text-sm sm:text-base"
           >
             {isLastQuestion ? "Finish Quiz" : "Next Question"}
           </button>

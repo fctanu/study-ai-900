@@ -106,17 +106,17 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
       className="min-h-screen flex items-center justify-center px-4"
       style={{ backgroundColor: "#0A202E" }}
     >
-      <div className="max-w-4xl mx-auto p-6 bg-gray-800/30 rounded-lg border border-gray-700">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">
+      <div className="max-w-4xl mx-auto p-4 sm:p-6 bg-gray-800/30 rounded-lg border border-gray-700">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
             Quiz Completed!
           </h1>
-          <p className="text-gray-300 text-lg">Here are your results:</p>
+          <p className="text-gray-300 text-base sm:text-lg">Here are your results:</p>
         </div>
 
-        <div className="mb-8">
-          <div className="bg-gray-700/30 border border-gray-600 rounded-lg p-8 text-center">
-            <div className="mb-6">
+        <div className="mb-6 sm:mb-8">
+          <div className="bg-gray-700/30 border border-gray-600 rounded-lg p-4 sm:p-6 lg:p-8 text-center">
+            <div className="mb-4 sm:mb-6">
               <div
                 className={`text-6xl font-bold mb-2 ${getScoreColor(
                   result.score
