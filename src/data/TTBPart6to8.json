@@ -1,19 +1,29 @@
 [
   {
     "id": 61,
-    "question": "Match the learning types to their definitions:\nLearning Types: Conversational AI, Computer Vision, Natural Language Processing\nDefinitions: An automated chat to answer questions about refunds and exchange.; Determining whether a photo contains a person.; Determining whether a review is positive or negative.",
-    "correctAnswer": [
+    "question": "Match the learning types to their definitions:",
+    "types": [
+      "Conversational AI",
+      "Computer Vision",
+      "Natural Language Processing"
+    ],
+    "scenarios": [
+      "An automated chat to answer questions about refunds and exchange.",
+      "Determining whether a photo contains a person.",
+      "Determining whether a review is positive or negative."
+    ],
+    "correctAnswers": [
       {
-        "definition": "An automated chat to answer questions about refunds and exchange.",
-        "type": "Conversational AI"
+        "type": "Conversational AI",
+        "scenario": "An automated chat to answer questions about refunds and exchange."
       },
       {
-        "definition": "Determining whether a photo contains a person.",
-        "type": "Computer Vision"
+        "type": "Computer Vision",
+        "scenario": "Determining whether a photo contains a person."
       },
       {
-        "definition": "Determining whether a review is positive or negative.",
-        "type": "Natural Language Processing"
+        "type": "Natural Language Processing",
+        "scenario": "Determining whether a review is positive or negative."
       }
     ]
   },
@@ -167,19 +177,25 @@
   },
   {
     "id": 80,
-    "question": "Match the principles of responsible AI to the appropriate requirement:\nPrinciples: Privacy and security, Fairness, Transparency\nRequirements: Personal data must be visible only to approved users.; The system must not discriminate based on gender and race.; Automatic decision-making process must be recorded so that approved users can identify why a decision was made.",
-    "correctAnswer": [
+    "question": "Match the principles of responsible AI to the appropriate requirement:",
+    "principles": ["Privacy and security", "Fairness", "Transparency"],
+    "requirements": [
+      "Personal data must be visible only to approved users.",
+      "The system must not discriminate based on gender and race.",
+      "Automatic decision-making process must be recorded so that approved users can identify why a decision was made."
+    ],
+    "correctAnswers": [
       {
-        "requirement": "Personal data must be visible only to approved users.",
-        "principle": "Privacy and security"
+        "principle": "Privacy and security",
+        "requirement": "Personal data must be visible only to approved users."
       },
       {
-        "requirement": "The system must not discriminate based on gender and race.",
-        "principle": "Fairness"
+        "principle": "Fairness",
+        "requirement": "The system must not discriminate based on gender and race."
       },
       {
-        "requirement": "Automatic decision-making process must be recorded so that approved users can identify why a decision was made.",
-        "principle": "Transparency"
+        "principle": "Transparency",
+        "requirement": "Automatic decision-making process must be recorded so that approved users can identify why a decision was made."
       }
     ]
   },
@@ -366,7 +382,7 @@
   {
     "id": 102,
     "question": "You plan to deploy an Azure Machine Learning model as a service that will be used by a client application. Which three processes should you perform in sequence before you deploy the model? (Move the appropriate processes from the list of processes to the answer area and arrange them in the correct order).",
-    "processes": [
+    "options": [
       "Data preparation",
       "Data encryption",
       "Model retraining",

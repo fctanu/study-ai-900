@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "question": "For a machine learning progress, how should you split data for training and evaluation? [00:38]",
+    "options": [
+      "Use labels for training and features for evaluation.",
+      "Use features for training and labels for evaluation.",
+      "Randomly split the data into rows for training and rows for evaluation.",
+      "Randomly split the data into columns for training and columns for evaluation."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "question": "You build a machine learning model by using the Automated machine learning user interface (UI). You need to ensure that the model meets the Microsoft transparency principle for responsible AI. What should you do? [01:37]",
+    "options": [
+      "You should enable explain best model.",
+      "You should set validation type to Auto.",
+      "You should set primary metric to accuracy.",
+      "You should set max concurrent iterations to zero."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "Complete the sentence here with the right answer.\nThe handling of unusual or missing values provided to an AI system is a consideration for the Microsoft ______ principle for responsible AI. [02:59]",
+    "options": [
+      "Privacy and security principle.",
+      "Inclusiveness.",
+      "Reliability and safety.",
+      "Transparency principle."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "Your company wants to build a recycling machine for bottles. The recycling machine must automatically identify bottles of the correct shape and reject all other items. Which type of AI workload should the company use? [04:39]",
+    "options": [
+      "Natural language processing.",
+      "Anomaly detection.",
+      "Computer vision.",
+      "Conversational AI."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month? [05:29]",
+    "options": ["Classification.", "Regression.", "Clustering."],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "A banking system that predicts whether a loan will be repaid is an example of what type of machine learning? [06:17]",
+    "options": ["Classification.", "Clustering.", "Regression."],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "Which type of artificial intelligence workload relies on sensors to proactively detect an impending failure of electronic equipment? [07:10]",
+    "options": [
+      "Computer vision.",
+      "Knowledge mining.",
+      "Conversational AI.",
+      "Anomaly detection."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 8,
+    "question": "A validation set includes the set of input examples that will be used to train a model. [07:54]",
+    "options": ["Yes", "No"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "Which two actions are performed during the data ingestion and data preparation stage of an Azure machine learning process? (Each correct answer presents part of the solution). [09:10]",
+    "options": [
+      "Combine multiple datasets.",
+      "Score test data by using the model.",
+      "Remove records that have missing values.",
+      "Use the model for real-time predictions.",
+      "Calculate the accuracy of the model."
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 10,
+    "question": "In Azure Machine Learning Studio, what can you use to author regression machine learning pipelines using a drag-and-drop interface? [10:39]",
+    "options": ["Designer.", "Automated machine learning.", "Notebooks."],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "You are processing photos of runners in a race. You need to read the numbers on the runners' shirts to identify the runners in the photos. Which type of computer vision should you use? [11:52]",
+    "options": [
+      "Image classification.",
+      "Object detection.",
+      "Facial recognition.",
+      "Optical character recognition."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "question": "Your website has a chat bot to assist customers. You need to detect when a customer is upset based on what the customer types in the chatbot. Which type of AI workload should you use? [12:44]",
+    "options": [
+      "Anomaly detection.",
+      "Regression.",
+      "Natural language processing.",
+      "Computer vision."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "question": "You are developing a solution that uses the Text Analytics service. You need to identify the main talking points in a collection of documents. Which type of natural language processing should you use? [13:49]",
+    "options": [
+      "Key phrase extraction.",
+      "Entity recognition.",
+      "Language detection.",
+      "Sentiment analysis."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "What is used to test a language understanding app model? [14:30]",
+    "options": ["An entity.", "An intent.", "An utterance.", "Entity linking."],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "You have insurance claim reports that are stored as text. You need to extract key terms from the reports to generate summaries. Which type of AI workload should you use? [15:16]",
+    "options": [
+      "Natural language processing.",
+      "Anomaly detection.",
+      "Computer vision.",
+      "Conversational AI."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "You need to develop a chatbot for a website. The chatbot must answer users' questions based on the information in the following documents: a product troubleshooting guide in a Microsoft Word document and a frequently asked questions list on a web page. Which service should you use to process the documents? [15:59]",
+    "options": [
+      "Q&A maker.",
+      "Azure Bot Service.",
+      "Text analytics.",
+      "Language understanding."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "Monitoring public news sites for negative mentions of a product is an example of natural language processing. [17:00]",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "Which value identifies how much the model finds all there is to find? [17:39]",
+    "options": ["F1 score.", "Precision.", "Accuracy.", "Recall."],
+    "correctAnswer": 3
+  },
+  {
+    "id": 19,
+    "question": "Which two Azure Cognitive Services features can be used to enable both text-to-text and speech-to-text between multiple languages? (Each correct answer presents part of the solution). [18:21]",
+    "options": [
+      "The Speech service.",
+      "Language detection.",
+      "Conversational language understanding.",
+      "Key phrase extraction.",
+      "The Translator service."
+    ],
+    "correctAnswer": [0, 4]
+  },
+  {
+    "id": 20,
+    "question": "What are the building blocks available in Azure ML Studio's drag-and-drop interface for authoring professional machine learning pipelines? [01:00:50]",
+    "options": ["Notebooks.", "Designer.", "Automated ML."],
+    "correctAnswer": 1
+  }
+]

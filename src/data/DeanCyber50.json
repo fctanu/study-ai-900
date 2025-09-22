@@ -1,0 +1,487 @@
+[
+  {
+    "id": 1,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nAutomated machine learning is the process of automating the time-consuming, iterative tasks of machine learning model development. [00:43]\nAutomated machine learning can automatically infer the training data from the use case provided. [01:12]\nAutomated machine learning works by running multiple training iterations that are scored and ranked by the metrics you specify. [01:32]\nAutomated machine learning enables you to specify a dataset and will automatically understand which label to predict. [01:51]",
+    "correctAnswers": ["Yes", "No", "Yes", "No"]
+  },
+  {
+    "id": 2,
+    "question": "For a machine learning progress, how should you split data for training and evaluation? [02:57]",
+    "options": [
+      "Randomly split the data into rows for training and rows for evaluation.",
+      "Use labels for training and features for evaluation.",
+      "Use features for training and labels for evaluation.",
+      "Randomly split the data into columns for training and columns for evaluation."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nForecasting housing prices based on historical data is an example of anomaly detection. [03:43]\nIdentifying suspicious sign-ins by looking for deviations from usual patterns is an example of anomaly detection. [03:58]\nPredicting whether a patient will develop diabetes based on the patient's medical history is an example of anomaly detection. [04:10]",
+    "correctAnswers": ["No", "Yes", "No"]
+  },
+  {
+    "id": 4,
+    "question": "Complete the sentence by selecting the appropriate option from the drop-down list.\nThe handling of unusual or missing values provided to an AI system is a consideration for the Microsoft ______ principle of responsible AI. [04:39]",
+    "options": [
+      "Inclusiveness",
+      "Privacy and security",
+      "Reliability and safety",
+      "Transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments. This is an example of which Microsoft guiding principle for responsible AI? [05:59]",
+    "options": [
+      "Accountability",
+      "Reliability and safety",
+      "Inclusiveness",
+      "Fairness"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "question": "You are building an AI system. Which task should you include to ensure that the service meets the Microsoft transparency principle for responsible AI? [07:16]",
+    "options": [
+      "Enable autoscaling to ensure that the service scales based on demand.",
+      "Ensure that all visuals have an associated text that can be read by a screen reader.",
+      "Ensure that the training dataset is representative of the population.",
+      "Provide documentation to help developers debug the code."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 7,
+    "question": "Match the types of AI workloads to the appropriate scenarios. [08:32]\nWorkloads:\nAnomaly detection\nMachine learning regression\nNatural language processing\nComputer vision\nScenarios:\nIdentify a fraudulent credit card payment.\nPredict next month's toy sales.\nPredict the sentiment of a social media post.\nIdentify handwritten letters.",
+    "correctAnswers": [
+      {
+        "workload": "Anomaly detection",
+        "scenario": "Identify a fraudulent credit card payment."
+      },
+      {
+        "workload": "Machine learning regression",
+        "scenario": "Predict next month's toy sales."
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Predict the sentiment of a social media post."
+      },
+      {
+        "workload": "Computer vision",
+        "scenario": "Identify handwritten letters."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Select the answer that correctly completes the sentence.\n______ is used to extract dates, quantities, and locations from text. [10:35]",
+    "options": [
+      "Key phrase extraction",
+      "Sentiment analysis",
+      "Named entity recognition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "question": "What are three Microsoft guiding principles for responsible AI? (Each correct answer presents a complete solution.) [11:05]",
+    "options": [
+      "Knowledgeability",
+      "Decisiveness",
+      "Inclusiveness",
+      "Fairness",
+      "Reliability and safety"
+    ],
+    "correctAnswer": [2, 3, 4]
+  },
+  {
+    "id": 10,
+    "question": "Returning a bounding box that indicates the location of a vehicle in an image is an example of... [11:38]",
+    "options": [
+      "Optical character recognizer (OCR)",
+      "Semantic segmentation",
+      "Object detection",
+      "Image classification"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is used to generate additional features? [12:41]",
+    "options": [
+      "Model training",
+      "Model evaluation",
+      "Feature selection",
+      "Feature engineering"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "question": "You own a charity event that involves posting photos of people wearing sunglasses on Twitter. You need to ensure that you only retweet photos that meet the following requirements: 1. Include one or more faces. 2. Contain at least one person wearing sunglasses. What should you use to analyze the images? [13:35]",
+    "options": [
+      "The verify operation in the Face service.",
+      "The describe image operation in the Computer Vision service.",
+      "The detect operation in the Face service.",
+      "The analyze image operation in the Computer Vision service."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nProviding an explanation of the outcome of a credit loan application is an example of the Microsoft transparency principle for responsible AI. [14:46]\nA triage bot that prioritizes insurance claims based on injuries is an example of the Microsoft reliability and safety principle for responsible AI. [15:08]\nAn AI solution that is offered at different prices for different sales territories is an example of the Microsoft inclusiveness principle for responsible AI. [15:19]",
+    "correctAnswers": ["Yes", "No", "No"]
+  },
+  {
+    "id": 14,
+    "question": "Match the principles of responsible AI to the appropriate requirements. [16:49]\nPrinciples:\nFairness\nPrivacy and security\nTransparency\nRequirements:\nThe system must not discriminate based on gender or race.\nPersonal data must be visible only to approved users.\nAutomatic decision-making processes must be recorded so that approved users can identify why a decision was made.",
+    "correctAnswers": [
+      {
+        "principle": "Fairness",
+        "requirement": "The system must not discriminate based on gender or race."
+      },
+      {
+        "principle": "Privacy and security",
+        "requirement": "Personal data must be visible only to approved users."
+      },
+      {
+        "principle": "Transparency",
+        "requirement": "Automatic decision-making processes must be recorded so that approved users can identify why a decision was made."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "You plan to deploy an Azure Machine Learning model as a service that will be used by client applications. Which three processes should you perform in sequence before you deploy the model? [18:14]",
+    "options": [
+      "Data encryption",
+      "Model evaluation", 
+      "Data preparation",
+      "Model training",
+      "Model retraining"
+    ],
+    "correctAnswer": [2, 3, 1]
+  },
+  {
+    "id": 16,
+    "question": "You are building an AI-based app. You need to ensure that the app uses the principles for responsible AI. Which two principles should you follow? [19:27]",
+    "options": [
+      "Implement a process of AI model validation as part of the software review process.",
+      "Prevent the disclosure of the use of AI-based algorithms for automated decision making.",
+      "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer.",
+      "Implement an agile software development methodology."
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 17,
+    "question": "According to Microsoft principles of responsible AI, which principle ensures that AI systems should not reflect biases from the datasets that are used to train the systems? [20:28]",
+    "options": ["Transparency", "Accountability", "Fairness", "Inclusiveness"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "Match the types of AI workloads to the appropriate scenarios. [21:13]\nWorkloads:\nNatural language processing\nKnowledge mining\nComputer vision\nScenarios:\nAn automated chat bot to answer questions about refunds and exchanges.\nDetermining whether a photo contains a person.\nDetermining whether a review is positive or negative.",
+    "correctAnswers": [
+      {
+        "workload": "Natural language processing",
+        "scenario": "An automated chat bot to answer questions about refunds and exchanges."
+      },
+      {
+        "workload": "Computer vision",
+        "scenario": "Determining whether a photo contains a person."
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Determining whether a review is positive or negative."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Data values that influence the prediction of a model are called... [22:49]",
+    "options": ["Dependent variables", "Label", "Identifiers", "Features"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 20,
+    "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month? [23:53]",
+    "options": ["Regression", "Classification", "Clustering"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "You have a dataset that contains information about taxi journeys that occurred during a given period. You need to train a model to predict the fare of a taxi journey. What should you use as a feature? [24:59]",
+    "options": [
+      "The fare of individual taxi journeys.",
+      "The number of taxi journeys in the dataset.",
+      "The trip ID of individual taxi journeys.",
+      "The trip distance of individual taxi journeys."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 22,
+    "question": "You built a machine learning model by using the Automated machine learning user interface. You need to ensure that the model meets the Microsoft transparency principle for responsible AI. What should you do? [25:53]",
+    "options": [
+      "Enable explain best model.",
+      "Set validation type to Auto.",
+      "Set primary metric to accuracy.",
+      "Set max concurrent iterations to zero."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "A banking system that predicts whether a loan will be repaid is an example of which type of machine learning? [27:04]",
+    "options": ["Clustering", "Regression", "Classification"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "question": "Which service should you use to extract text, key-value pairs, and table data automatically from scanned documents? [27:44]",
+    "options": [
+      "Language understanding",
+      "Custom vision",
+      "Text analytics",
+      "Form recognizer"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 25,
+    "question": "You use Azure Machine Learning Designer to publish an inference pipeline. Which two parameters should you use to access the web service? [28:35]",
+    "options": [
+      "The training endpoint",
+      "The authentication key",
+      "The REST endpoint",
+      "The model name"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 26,
+    "question": "From Azure Machine Learning Designer, to deploy a real-time inference pipeline as a service for others to consume, you must deploy the model to which of the following? [30:17]",
+    "options": [
+      "A local web service",
+      "Azure Container Instances",
+      "Azure Kubernetes Service",
+      "Azure Machine Learning Compute"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 27,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nAzure Machine Learning Designer provides a drag-and-drop visual canvas to build, test, and deploy machine learning models. [31:24]\nAzure Machine Learning Designer enables you to save your progress as a pipeline draft. [31:40]\nAzure Machine Learning Designer enables you to include custom JavaScript functions. [31:51]",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 28,
+    "question": "Azure Machine Learning Designer lets you create machine learning models by... [32:27]",
+    "options": [
+      "Adding and connecting modules on a visual canvas.",
+      "Automatically selecting an algorithm to build the most accurate model.",
+      "Using a code-first notebook experience.",
+      "Automatically performing common data preparation tasks."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nAutomated machine learning provides you with the ability to include custom Python scripts in a training pipeline. [33:20]\nAutomated machine learning implements machine learning solutions without the need for programming experience. [33:35]\nAutomated machine learning provides you with the ability to visually connect datasets and modules on an interactive canvas. [33:41]",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 30,
+    "question": "When training a model, why should you randomly split the rows into separate subsets? [34:48]",
+    "options": [
+      "To train the model twice to obtain better accuracy.",
+      "To test the model by using data that was not used to train the model.",
+      "To train multiple models simultaneously to attain better performance."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 31,
+    "question": "You are evaluating whether to use a Basic workspace or an Enterprise workspace in Azure Machine Learning. What are two tasks that require an Enterprise workspace? [35:48]",
+    "options": [
+      "Use a graphical user interface to run Automated machine learning experiments.",
+      "Create a compute instance to use as a workstation.",
+      "Use a graphical user interface to define and run machine learning experiments from Azure Machine Learning Designer.",
+      "Create a dataset from a comma-separated value (CSV) file."
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 32,
+    "question": "You need to predict the income range of a given customer using the following dataset (Name, Age, Educational Level, Income Range). Which two fields should you use as features to predict the income range? [37:25]",
+    "options": [
+      "Last name",
+      "Age",
+      "Income range",
+      "First name",
+      "Educational level"
+    ],
+    "correctAnswer": [1, 4]
+  },
+  {
+    "id": 33,
+    "question": "You are building a tool that will process images from retail stores and identify the products of competitors. The solution will use a custom model. Which Azure cognitive service should you use? [38:45]",
+    "options": ["Custom Vision", "Face", "Form Recognizer", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nOrganizing documents into groups based on similarities of the text contained in documents is an example of clustering. [39:52]\nGrouping similar patients based on symptoms and diagnostic test results is an example of clustering. [40:17]",
+    "correctAnswers": ["Yes", "Yes"]
+  },
+  {
+    "id": 35,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nPredicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering. [40:57]\nA validation set includes the set of input examples that will be used to train a model. [41:14]",
+    "correctAnswers": ["No", "No"]
+  },
+  {
+    "id": 36,
+    "question": "For each of the following statements, select \"Yes\" if the statement is true and \"No\" if the statement is false.\nA validation set can be used to determine how well a model predicts labels. [42:22]\nA validation set can be used to verify that all the training data was used to train the model. [42:31]",
+    "correctAnswers": ["Yes", "No"]
+  },
+  {
+    "id": 37,
+    "question": "What are two metrics that you can use to evaluate a regression model? [43:10]",
+    "options": [
+      "Coefficient of determination (R2)",
+      "F1 score",
+      "Root mean squared error (RMSE)",
+      "Area under curve (AUC)",
+      "Balanced accuracy"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 38,
+    "question": "Complete the sentence.\nPredicting the total number of customers who will visit a shopping mall on a specific day is an example of... [44:36]",
+    "options": ["Classification", "Clustering", "Regression"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 39,
+    "question": "You need to use Azure Machine Learning Designer to build a model that will predict automobile prices. Which type of modules should you use to complete the model? [49:40]",
+    "options": [
+      "Select Columns in Dataset",
+      "Split Data", 
+      "Linear Regression",
+      "Clean Missing Data",
+      "Train Model"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 40,
+    "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits? [52:43]",
+    "options": ["Regression", "Classification", "Clustering"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 41,
+    "question": "Which model can be used to predict the sale price of auctioned items? [53:42]",
+    "options": ["Clustering", "Regression", "Reinforcement learning"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 42,
+    "question": "Which metric can you use to evaluate a classification model? [54:18]",
+    "options": [
+      "Root mean squared error",
+      "True positive rate",
+      "Mean absolute error",
+      "Coefficient of determination"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 43,
+    "question": "Which two components can you drag onto a canvas in Azure Machine Learning Designer? [55:00]",
+    "options": ["Dataset", "Module", "Compute", "Pipeline"],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 44,
+    "question": "You need to create a training dataset and validation dataset from an existing dataset. Which module in the Azure Machine Learning Designer should you use? [55:30]",
+    "options": [
+      "Split Data",
+      "Select Columns in Dataset",
+      "Join Data",
+      "Add Rows"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "Match the types of machine learning to the appropriate scenarios. [56:12]\nTypes:\nRegression\nClustering\nClassification\nScenarios:\nPredict how many minutes late a flight will arrive based on the amount of snowfall at an airport.\nSegment customers into different groups to support a marketing department.\nPredict whether a student will complete a university course.",
+    "correctAnswers": [
+      {
+        "type": "Regression",
+        "scenario": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport."
+      },
+      {
+        "type": "Clustering",
+        "scenario": "Segment customers into different groups to support a marketing department."
+      },
+      {
+        "type": "Classification",
+        "scenario": "Predict whether a student will complete a university course."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Which of the following refers to the calculated probability of a correct image classification? [57:48]",
+    "options": [
+      "Sentiment",
+      "Confidence",
+      "Accuracy",
+      "Root mean squared error"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 47,
+    "question": "Which API will be used to read information from an electricity bill? [58:20]",
+    "options": [
+      "Image recognition",
+      "Receipt recognition",
+      "Text recognition",
+      "Form recognition"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 48,
+    "question": "You are training and testing a K-Means clustering model with Azure ML. Your model should cluster items into three groups. Which K-Means clustering property should you set? [59:00]",
+    "options": [
+      "Set iterations to three.",
+      "Set the random number seed to three.",
+      "Set the number of centroids to three."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 49,
+    "question": "A translation feature and automatic language detection for multilingual search are features sought after by a commercial online store. Which Azure AI service should it rely on? [59:46]",
+    "options": [
+      "Azure Cognitive Search",
+      "Azure Machine Learning",
+      "Natural Language Processing"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "What are the building blocks available in Azure ML Studio's drag-and-drop interface for authoring professional machine learning pipelines? [01:00:46]",
+    "options": ["Notebooks", "Designer", "Automated ML"],
+    "correctAnswer": 1
+  }
+]

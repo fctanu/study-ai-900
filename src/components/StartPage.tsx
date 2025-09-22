@@ -3,12 +3,14 @@ import { QuestionBank } from "../types/quiz";
 
 interface StartPageProps {
   onStart: (selectedBank: string) => void;
+  onViewHistory: () => void;
   totalQuestions: number;
   questionBanks: QuestionBank[];
 }
 
 const StartPage: React.FC<StartPageProps> = ({
   onStart,
+  onViewHistory,
   totalQuestions,
   questionBanks,
 }) => {
@@ -73,32 +75,28 @@ const StartPage: React.FC<StartPageProps> = ({
               ))}
             </div>
           </div>
-
-          <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg font-semibold text-blue-300 mb-3">
-              Quiz Instructions:
-            </h3>
-            <ul className="text-left text-blue-200 space-y-2 text-sm sm:text-base">
-              <li>• Read each question carefully</li>
-              <li>• Select one or more answers as required</li>
-              <li>• Click "Check My Answer" to see results</li>
-              <li>• Click "Next Question" to proceed</li>
-              <li>• Your score will be shown at the end</li>
-            </ul>
-          </div>
         </div>
 
-        <button
-          onClick={handleStart}
-          disabled={!selectedBank}
-          className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg ${
-            selectedBank
-              ? "bg-blue-600 text-white hover:bg-blue-700"
-              : "bg-gray-600 text-gray-400 cursor-not-allowed"
-          }`}
-        >
-          Start Quiz
-        </button>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+          <button
+            onClick={handleStart}
+            disabled={!selectedBank}
+            className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg ${
+              selectedBank
+                ? "bg-blue-600 text-white hover:bg-blue-700"
+                : "bg-gray-600 text-gray-400 cursor-not-allowed"
+            }`}
+          >
+            Start Quiz
+          </button>
+
+          <button
+            onClick={onViewHistory}
+            className="px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold bg-purple-600 text-white hover:bg-purple-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+          >
+            View History
+          </button>
+        </div>
       </div>
     </div>
   );

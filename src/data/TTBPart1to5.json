@@ -130,19 +130,29 @@
   },
   {
     "id": 13,
-    "question": "Match the learning types with their definitions:\nLearning Types: Regression, Clustering, Classification\nDefinitions: Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.; Segment customers into different groups to support a marketing department.; Predict whether a student will complete a university course.",
-    "correctAnswer": [
+    "question": "Match the learning types with their definitions:",
+    "types": [
+      "Regression",
+      "Clustering", 
+      "Classification"
+    ],
+    "scenarios": [
+      "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.",
+      "Segment customers into different groups to support a marketing department.",
+      "Predict whether a student will complete a university course."
+    ],
+    "correctAnswers": [
       {
-        "definition": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.",
-        "type": "Regression"
+        "type": "Regression",
+        "scenario": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport."
       },
       {
-        "definition": "Segment customers into different groups to support a marketing department.",
-        "type": "Clustering"
+        "type": "Clustering",
+        "scenario": "Segment customers into different groups to support a marketing department."
       },
       {
-        "definition": "Predict whether a student will complete a university course.",
-        "type": "Classification"
+        "type": "Classification",
+        "scenario": "Predict whether a student will complete a university course."
       }
     ]
   },

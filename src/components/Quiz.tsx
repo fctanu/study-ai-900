@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   QuizQuestion,
   QuizResult,
   UserAnswer,
-  QuizState,
   QuestionBank,
   MatchingAnswer,
   FillInAnswer,
   SelectedOptionFormat,
   CorrectAnswerFormat,
   AnswerTextFormat,
+  AppState,
 } from "../types/quiz";
+import { saveQuizAttempt, getQuestionNotes } from "../utils/historyUtils";
 import StartPage from "./StartPage";
 import QuestionCard from "./QuestionCard";
 import ResultsPage from "./ResultsPage";
@@ -19,25 +20,68 @@ interface QuizProps {
   questions: QuizQuestion[];
   questionBanks: QuestionBank[];
   onBankSelect: (bankName: string) => void;
+  onQuizComplete: () => void;
+  onBackToStart: () => void;
+  onViewHistory: () => void;
   selectedBank: string | null;
+  appState: AppState;
 }
+
+/**
+ * Utility function to get the correct answer from a question regardless of format
+ */
+const getCorrectAnswer = (question: QuizQuestion): CorrectAnswerFormat => {
+  return question.correctAnswer ?? question.correctAnswers ?? 0;
+};
 
 /**
  * Utility function to determine the type of a quiz question
  */
 const getQuestionType = (question: QuizQuestion): string => {
-  if (Array.isArray(question.correctAnswer)) {
+  const correctAnswer = getCorrectAnswer(question);
+  
+  // Check for drag-drop questions with types/scenarios arrays
+  if (question.types && question.scenarios && question.correctAnswers) {
+    return "drag-drop";
+  }
+  
+  // Check for drag-drop questions with principles/requirements arrays
+  if (question.principles && question.requirements && question.correctAnswers) {
+    return "drag-drop";
+  }
+  
+  // Check for drag-drop questions (workload/scenario, principle/requirement, or type/scenario matching)
+  if (question.correctAnswers && Array.isArray(question.correctAnswers) && 
+      question.correctAnswers.length > 0 && 
+      typeof question.correctAnswers[0] === "object") {
+    const firstAnswer = question.correctAnswers[0];
+    if (("workload" in firstAnswer && "scenario" in firstAnswer) ||
+        ("principle" in firstAnswer && "requirement" in firstAnswer) ||
+        ("type" in firstAnswer && "scenario" in firstAnswer)) {
+      return "drag-drop";
+    }
+  }
+  
+  // Check for Yes/No questions (multiple sub-questions)
+  if (Array.isArray(correctAnswer) && 
+      correctAnswer.length > 0 && 
+      typeof correctAnswer[0] === "string" &&
+      (correctAnswer[0] === "Yes" || correctAnswer[0] === "No")) {
+    return "yes-no";
+  }
+  
+  if (Array.isArray(correctAnswer)) {
     if (
-      question.correctAnswer.length > 0 &&
-      typeof question.correctAnswer[0] === "object" &&
-      "definition" in question.correctAnswer[0]
+      correctAnswer.length > 0 &&
+      typeof correctAnswer[0] === "object" &&
+      "definition" in correctAnswer[0]
     ) {
       return "matching";
     }
     return "multi-select";
   } else if (
-    typeof question.correctAnswer === "object" &&
-    question.correctAnswer !== null
+    typeof correctAnswer === "object" &&
+    correctAnswer !== null
   ) {
     return "fill-in-blank";
   }
@@ -95,9 +139,12 @@ const Quiz: React.FC<QuizProps> = ({
   questions,
   questionBanks,
   onBankSelect,
+  onQuizComplete,
+  onBackToStart,
+  onViewHistory,
   selectedBank,
+  appState,
 }) => {
-  const [quizState, setQuizState] = useState<QuizState>("start");
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<
     number | number[] | null
@@ -106,19 +153,45 @@ const Quiz: React.FC<QuizProps> = ({
   const [quizResult, setQuizResult] = useState<QuizResult | null>(null);
   const [retryMode, setRetryMode] = useState(false);
   const [retryQuestions, setRetryQuestions] = useState<QuizQuestion[]>([]);
+  const [currentNotes, setCurrentNotes] = useState<string>("");
+  const [questionNotes, setQuestionNotes] = useState<{ [key: number]: string }>({});
 
   const handleStart = (bankName: string) => {
     onBankSelect(bankName);
-    setQuizState("playing");
+    
+    // Load existing notes for this question bank
+    const existingNotes = getQuestionNotes(bankName);
+    setQuestionNotes(existingNotes);
+    
+    // Set initial notes for the first question if any exist
+    const firstQuestion = questions[0];
+    const firstQuestionNotes = existingNotes[firstQuestion?.id] || "";
+    
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
     setUserAnswers([]);
     setQuizResult(null);
+    setCurrentNotes(firstQuestionNotes);
   };
+
+  const handleNotesChange = (notes: string) => {
+    setCurrentNotes(notes);
+  };
+
+  // Load notes when starting quiz or when questions are available
+  useEffect(() => {
+    if (appState === "playing" && questions.length > 0 && selectedBank) {
+      const currentQuestion = (retryMode ? retryQuestions : questions)[currentQuestionIndex];
+      if (currentQuestion && questionNotes[currentQuestion.id]) {
+        setCurrentNotes(questionNotes[currentQuestion.id] || "");
+      }
+    }
+  }, [appState, questions, selectedBank, currentQuestionIndex, questionNotes, retryMode, retryQuestions]);
 
   const handleOptionSelect = (optionIndex: number) => {
     const currentQuestion = questions[currentQuestionIndex];
-    const isMultiChoice = Array.isArray(currentQuestion.correctAnswer);
+    const correctAnswer = getCorrectAnswer(currentQuestion);
+    const isMultiChoice = Array.isArray(correctAnswer);
 
     if (isMultiChoice) {
       // Handle multi-choice selection
@@ -151,10 +224,11 @@ const Quiz: React.FC<QuizProps> = ({
     const currentQuestions = retryMode ? retryQuestions : questions;
     const currentQuestion = currentQuestions[currentQuestionIndex];
     const questionType = getQuestionType(currentQuestion);
+    const correctAnswer = getCorrectAnswer(currentQuestion);
 
     // For multiple choice and multi-select, require selection
     if (
-      (questionType === "multiple-choice" || questionType === "multi-select") &&
+      (questionType === "multiple-choice" || questionType === "multi-select" || questionType === "yes-no") &&
       selectedOption === null
     ) {
       return;
@@ -163,7 +237,7 @@ const Quiz: React.FC<QuizProps> = ({
     const isCorrect = checkAnswer(
       questionType,
       selectedOption,
-      currentQuestion.correctAnswer
+      correctAnswer
     );
 
     const newAnswer: UserAnswer = {
@@ -172,21 +246,30 @@ const Quiz: React.FC<QuizProps> = ({
       isCorrect,
       question: currentQuestion.question,
       options: currentQuestion.options,
-      correctAnswer: currentQuestion.correctAnswer,
+      correctAnswer: correctAnswer,
       selectedAnswerText: getAnswerText(
         selectedOption,
         currentQuestion.options
       ),
       correctAnswerText: getAnswerText(
-        Array.isArray(currentQuestion.correctAnswer) &&
-          typeof currentQuestion.correctAnswer[0] === "number"
-          ? currentQuestion.correctAnswer
-          : typeof currentQuestion.correctAnswer === "number"
-          ? currentQuestion.correctAnswer
-          : currentQuestion.correctAnswer,
+        Array.isArray(correctAnswer) &&
+          typeof correctAnswer[0] === "number"
+          ? correctAnswer
+          : typeof correctAnswer === "number"
+          ? correctAnswer
+          : correctAnswer,
         currentQuestion.options
       ),
+      notes: currentNotes.trim() || undefined,
     };
+
+    // Save notes for this question
+    if (currentNotes.trim()) {
+      setQuestionNotes(prev => ({
+        ...prev,
+        [currentQuestion.id]: currentNotes.trim()
+      }));
+    }
 
     const updatedAnswers = [...userAnswers, newAnswer];
     setUserAnswers(updatedAnswers);
@@ -206,22 +289,46 @@ const Quiz: React.FC<QuizProps> = ({
       };
 
       setQuizResult(result);
-      setQuizState("completed");
+
+      // Save quiz attempt to history
+      if (selectedBank) {
+        const bankDisplayName =
+          questionBanks.find((bank) => bank.name === selectedBank)
+            ?.displayName || selectedBank;
+        saveQuizAttempt(
+          selectedBank,
+          bankDisplayName,
+          currentQuestions.length,
+          correctAnswers,
+          score,
+          updatedAnswers
+        );
+      }
+
+      onQuizComplete();
     } else {
       // Next question
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      const nextQuestionIndex = currentQuestionIndex + 1;
+      const nextQuestion = currentQuestions[nextQuestionIndex];
+      
+      setCurrentQuestionIndex(nextQuestionIndex);
       setSelectedOption(null);
+      
+      // Load existing notes for the next question if any
+      setCurrentNotes(questionNotes[nextQuestion?.id] || "");
     }
   };
 
   const handleRestart = () => {
-    setQuizState("start");
+    onBackToStart();
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
     setUserAnswers([]);
     setQuizResult(null);
     setRetryMode(false);
     setRetryQuestions([]);
+    setCurrentNotes("");
+    setQuestionNotes({});
   };
 
   const handleRetryWrongAnswers = () => {
@@ -239,25 +346,30 @@ const Quiz: React.FC<QuizProps> = ({
 
     setRetryQuestions(questionsToRetry);
     setRetryMode(true);
-    setQuizState("playing");
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
     setUserAnswers([]);
     setQuizResult(null);
+    
+    // Load notes for the first retry question if any exist
+    const firstRetryQuestion = questionsToRetry[0];
+    const firstRetryQuestionNotes = questionNotes[firstRetryQuestion?.id] || "";
+    setCurrentNotes(firstRetryQuestionNotes);
   };
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#0A202E" }}>
       <div className="w-full">
-        {quizState === "start" && (
+        {appState === "start" && (
           <StartPage
             onStart={handleStart}
+            onViewHistory={onViewHistory}
             totalQuestions={selectedBank ? questions.length : 0}
             questionBanks={questionBanks}
           />
         )}
 
-        {quizState === "playing" && (
+        {appState === "playing" && (
           <>
             {(retryMode ? retryQuestions : questions).length === 0 ? (
               <div
@@ -293,12 +405,14 @@ const Quiz: React.FC<QuizProps> = ({
                 }
                 questionNumber={currentQuestionIndex + 1}
                 totalQuestions={(retryMode ? retryQuestions : questions).length}
+                notes={currentNotes}
+                onNotesChange={handleNotesChange}
               />
             )}
           </>
         )}
 
-        {quizState === "completed" && quizResult && (
+        {appState === "completed" && quizResult && (
           <ResultsPage
             result={quizResult}
             onRestart={handleRestart}

@@ -14,12 +14,26 @@ export interface FillInAnswer {
 }
 
 /**
+ * Represents a drag-and-drop matching pair
+ */
+export interface DragDropAnswer {
+  workload?: string;
+  scenario?: string;
+  principle?: string;
+  requirement?: string;
+  type?: string;
+  [key: string]: string | undefined; // Allow other key-value pairs
+}
+
+/**
  * Union type for all possible correct answer formats
  */
 export type CorrectAnswerFormat =
   | number
   | number[]
+  | string[]  // For Yes/No questions
   | MatchingAnswer[]
+  | DragDropAnswer[]
   | FillInAnswer;
 
 /**
@@ -28,7 +42,9 @@ export type CorrectAnswerFormat =
 export type SelectedOptionFormat =
   | number
   | number[]
+  | string[]  // For Yes/No questions
   | MatchingAnswer[]
+  | DragDropAnswer[]
   | FillInAnswer
   | null;
 
@@ -48,7 +64,12 @@ export interface QuizQuestion {
   id: number;
   question: string;
   options?: string[]; // Optional for matching and fill-in-the-blank questions
-  correctAnswer: CorrectAnswerFormat;
+  types?: string[]; // For drag-drop questions with types and scenarios
+  scenarios?: string[]; // For drag-drop questions with types and scenarios
+  principles?: string[]; // For drag-drop questions with principles and requirements
+  requirements?: string[]; // For drag-drop questions with principles and requirements
+  correctAnswer?: CorrectAnswerFormat;
+  correctAnswers?: CorrectAnswerFormat; // Alternative format for some question banks
 }
 
 /**
@@ -73,6 +94,7 @@ export interface UserAnswer {
   correctAnswer: CorrectAnswerFormat;
   selectedAnswerText: AnswerTextFormat;
   correctAnswerText: AnswerTextFormat;
+  notes?: string; // Personal notes for the question
 }
 
 /**
@@ -88,6 +110,8 @@ export enum QuestionType {
   MULTI_SELECT = "multi_select",
   MATCHING = "matching",
   FILL_IN_BLANK = "fill_in_blank",
+  YES_NO = "yes_no",
+  DRAG_DROP = "drag_drop",
 }
 
 /**
@@ -98,3 +122,39 @@ export interface QuestionBank {
   displayName: string;
   fileName: string;
 }
+
+/**
+ * Represents a single quiz attempt in history
+ */
+export interface QuizAttempt {
+  id: string;
+  bankName: string;
+  bankDisplayName: string;
+  dateTaken: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  score: number;
+  timeSpent?: number; // in minutes
+  answerHistory: UserAnswer[];
+}
+
+/**
+ * Represents the user's quiz history
+ */
+export interface QuizHistory {
+  attempts: QuizAttempt[];
+  totalAttempts: number;
+  averageScore: number;
+  bestScore: number;
+  favoriteBank?: string;
+}
+
+/**
+ * Extended quiz state to include history
+ */
+export type AppState =
+  | "start"
+  | "playing"
+  | "completed"
+  | "history"
+  | "historyDetail";
