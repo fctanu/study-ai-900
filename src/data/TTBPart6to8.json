@@ -1,0 +1,475 @@
+[
+  {
+    "id": 61,
+    "question": "Match the learning types to their definitions:\nLearning Types: Conversational AI, Computer Vision, Natural Language Processing\nDefinitions: An automated chat to answer questions about refunds and exchange.; Determining whether a photo contains a person.; Determining whether a review is positive or negative.",
+    "correctAnswer": [
+      {
+        "definition": "An automated chat to answer questions about refunds and exchange.",
+        "type": "Conversational AI"
+      },
+      {
+        "definition": "Determining whether a photo contains a person.",
+        "type": "Computer Vision"
+      },
+      {
+        "definition": "Determining whether a review is positive or negative.",
+        "type": "Natural Language Processing"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "question": "The handling of unusual or missing values provided to an AI system is a consideration for the Microsoft _______ principle of responsible AI.",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "id": 63,
+    "question": "When you design an AI system to assess whether credit card applications should be approved, the factors used to make the decision should be explainable. This is an example of which Microsoft guiding principle of responsible AI?",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 64,
+    "question": "You need to predict the income range of a given customer by using the following data sheet (Customer Name, Address/Country, Age, Weight, Educational Level, Income Range). Which two fields should you use as features? (Each correct answer presents a complete solution.)",
+    "options": [
+      "Name",
+      "Address",
+      "Age",
+      "Weight",
+      "Educational Level",
+      "Income Level"
+    ],
+    "correctAnswer": [2, 4]
+  },
+  {
+    "id": 65,
+    "question": "You plan to use a set of images to train a model to detect mobile phones and then publish the model as a predictive service. You want to use a single Azure resource with the same key and endpoint for training and prediction. What kind of Azure resource should you create?",
+    "options": ["Custom Vision", "Cognitive Services", "Computer Vision"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 66,
+    "question": "Organizing documents into groups based on similarities of text contained in the document is an example of clustering.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 67,
+    "question": "Grouping similar patients based on symptoms and diagnostic test results is an example of clustering.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 68,
+    "question": "Predicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 69,
+    "question": "Which of the following results does an object model typically return for an image?",
+    "options": [
+      "A class label and probability score for the image",
+      "Bounding box coordinates that indicate the region of the image where all of the objects it contains are located",
+      "A class label, probability, and the bounding box for each object in the image"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 70,
+    "question": "Your company Digital Lab is in the business of digitalization of a library and needs to read text in a large PDF document. For this, you plan to use Computer Vision service. Which API best suits this business need?",
+    "options": ["The Read API", "The OCR API", "The Recognized Text API"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 71,
+    "question": "Your company Digital Lab is in the business of digitalization of a library and for that they need to extract text from scanned books. Further, the need is to use the Text Analytics service to analyze the extracted text. The company wants developers to use only one key and endpoint to access all of the services. What kind of resource should you create in your Azure subscription?",
+    "options": ["Computer Vision", "Cognitive Services", "Text Analytics"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 72,
+    "question": "You want to use Face service to detect human faces in an image. How does the service indicate the location of faces it detects?",
+    "options": [
+      "A pair of coordinates for each face indicating the center of the face",
+      "Two pairs of coordinates for each face indicating the location of eyes",
+      "A set of coordinates for each face defining a rectangular bounding box around the face"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 73,
+    "question": "You are building a tool that will process images from retail stores and identify the products of competitors. The solution will use a custom model. Which Azure cognitive service should you use?",
+    "options": ["Custom Vision", "Cognitive Service", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 74,
+    "question": "What is one aspect that may impair facial detection?",
+    "options": ["Smile expression", "Extreme angles", "Fast shutter speed"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 75,
+    "question": "You want to use Face service to identify named individuals. What must you do?",
+    "options": [
+      "Use Computer Vision service",
+      "Use Face service to retrieve the age and emotional state of each person",
+      "Use Face to create a group containing multiple images of each named individual and train a model based on the group."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 76,
+    "question": "Your company is exploring the use of voice recognition for a smart mobile device. The company is committed to identify any barriers that might unintentionally leave out specific user groups. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "Accountability",
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and security"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 77,
+    "question": "Medical research project uses a large anonymized dataset of brain scan images that are categorized into predefined cancer types. You need to use machine learning to support early detection of different cancer types in images before the images are reviewed by a person. This is an example of which type of machine learning?",
+    "options": ["Clustering", "Regression", "Classification"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 78,
+    "question": "You plan to use Form Recognizer pre-built receipt model. What kind of Azure resource should you create?",
+    "options": [
+      "Computer Vision resource",
+      "Form Recognizer or Cognitive Service resource",
+      "Only Form Recognizer"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 79,
+    "question": "You are using Form Recognizer service to analyze receipts that you have scanned into JPG format images. What maximum file size of JPG file you can submit to the pre-built received model?",
+    "options": ["2 MB", "50 MB", "200 MB"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 80,
+    "question": "Match the principles of responsible AI to the appropriate requirement:\nPrinciples: Privacy and security, Fairness, Transparency\nRequirements: Personal data must be visible only to approved users.; The system must not discriminate based on gender and race.; Automatic decision-making process must be recorded so that approved users can identify why a decision was made.",
+    "correctAnswer": [
+      {
+        "requirement": "Personal data must be visible only to approved users.",
+        "principle": "Privacy and security"
+      },
+      {
+        "requirement": "The system must not discriminate based on gender and race.",
+        "principle": "Fairness"
+      },
+      {
+        "requirement": "Automatic decision-making process must be recorded so that approved users can identify why a decision was made.",
+        "principle": "Transparency"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "question": "You need to evaluate the following statements on Text Analytics.\nStatement 1: The Text Analytics service can identify in which language the text is written.\nStatement 2: The Text Analytics service can detect handwritten signatures in a document.\nStatement 3: The Text Analytics service can identify companies and organizations mentioned in a document.",
+    "options": [
+      "Statement 1: Yes, Statement 2: No, Statement 3: Yes",
+      "Statement 1: Yes, Statement 2: Yes, Statement 3: Yes",
+      "Statement 1: No, Statement 2: No, Statement 3: No"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 82,
+    "question": "When training a model, why should you randomly split the rows into separate subsets?",
+    "options": [
+      "To train the model twice to attain better accuracy",
+      "To train multiple models simultaneously to attain better performance",
+      "To test the model by using data that was not used to train the model"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 83,
+    "question": "You need to predict the mm (millimeter) amount of rainfall for the next 10 years. Which type of machine learning should you use?",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 84,
+    "question": "You need to predict the temperature rise in degrees due to climate change in the next 50 years. Which type of machine learning should you use?",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 85,
+    "question": "You want to use the Language service to determine the key talking points in a text document. Which feature of the service should you use?",
+    "options": [
+      "Sentiment analysis",
+      "Key phrase extraction",
+      "Entity detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 86,
+    "question": "Which of the following are NOT Microsoft guiding principles for responsible AI?",
+    "options": [
+      "Knowledgeability",
+      "Decisiveness",
+      "Inclusiveness",
+      "Fairness",
+      "Validity",
+      "Reliability and safety"
+    ],
+    "correctAnswer": [0, 1, 4]
+  },
+  {
+    "id": 87,
+    "question": "Returning a bounding box that indicates the location of a vehicle in an image is an example of ______.",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Optical character recognizer",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 88,
+    "question": "Automated machine learning provides you with the ability to include custom Python script in a training pipeline.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 89,
+    "question": "Automated machine learning implements machine learning solutions without the need for programming experience.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 90,
+    "question": "Automated machine learning provides you with the ability to visually connect datasets and modules on an interactive canvas.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 91,
+    "question": "A score of 0.99 of a sentiment analysis on a document using Language service. What does this score indicate about the document's sentiment?",
+    "options": ["Positive", "Neutral", "Negative"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 92,
+    "question": "Which service should you use to create a knowledge base for bots?",
+    "options": [
+      "Conversational language understanding",
+      "Question answering",
+      "Azure Bots"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 93,
+    "question": "You need to develop a chat bot for a website. The chatbot must answer users' questions based on the information in the following documents: a product troubleshooting guide in a Microsoft Word document, and a frequently asked questions list on a web page. Which service should you use to process the documents?",
+    "options": [
+      "Language understanding",
+      "Key analytics",
+      "Azure Bot Service",
+      "QnA Maker"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 94,
+    "question": "A banking system that predicts whether a loan will be repaid is an example of regression type of a machine learning.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 95,
+    "question": "A banking system that predicts whether a loan will be repaid is an example of classification type of a machine learning.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 96,
+    "question": "When might you see NaN return for a score in a language detection?",
+    "options": [
+      "When the score calculated by the service is outside the range of 0 to 1",
+      "When a predominant language in the text is mixed with other languages",
+      "When the language is ambiguous"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 97,
+    "question": "Your company is in the business of providing customer support over the phone. During many years, the company has created a frequently asked questions document. The company now wants to create a knowledge base that includes questions and answers from the FAQ document with the least possible effort. What should you do?",
+    "options": [
+      "Create a knowledge base from scratch and manually copy and paste the FAQ entries to it",
+      "Import the existing FAQ document into a new knowledge base",
+      "Import a predefined chatting data source"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 98,
+    "question": "Which of the following is used to generate additional features?",
+    "options": [
+      "Feature selection",
+      "Feature engineering",
+      "Model evaluation",
+      "Model training"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 99,
+    "question": "You need to make press releases of your company available in a range of languages. Which service should you use?",
+    "options": [
+      "Translated text",
+      "Text analytics",
+      "Speech",
+      "Language understanding"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 100,
+    "question": "You need to evaluate the following statements.\nStatement 1: Automated machine learning is the process of automating the time-consuming, iterative task of machine learning model development.\nStatement 2: Automated machine learning can automatically infer the training data from the use case provided.\nStatement 3: Automated machine learning works by running multiple training iterations that are scored and ranked by the metrics you specify.\nStatement 4: Automated machine learning enables you to specify a dataset and will automatically understand which label to predict.",
+    "options": [
+      "Statement 1: Yes, Statement 2: No, Statement 3: Yes, Statement 4: Yes",
+      "Statement 1: Yes, Statement 2: No, Statement 3: Yes, Statement 4: No"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 101,
+    "question": "Data values that influence the prediction of a model are called _______.",
+    "options": ["Dependent variables", "Features", "Identifiers", "Labels"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 102,
+    "question": "You plan to deploy an Azure Machine Learning model as a service that will be used by a client application. Which three processes should you perform in sequence before you deploy the model? (Move the appropriate processes from the list of processes to the answer area and arrange them in the correct order).",
+    "processes": [
+      "Data preparation",
+      "Data encryption",
+      "Model retraining",
+      "Model training",
+      "Model evaluation"
+    ],
+    "correctAnswer": ["Data preparation", "Model training", "Model evaluation"]
+  },
+  {
+    "id": 103,
+    "question": "You are building an AI-based app. You need to ensure that the app uses the principles for responsible AI. Which two principles should you follow? (Each correct answer presents part of the solution).",
+    "options": [
+      "Implement an agile software development methodology",
+      "Implement a process of AI model validation as a part of the software review process",
+      "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer",
+      "Prevent the disclosure of use of AI-based algorithms for automated decision making"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 104,
+    "question": "JSON data objects is used to indicate the recording pattern of the data.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 105,
+    "question": "XML data format is accepted by Azure Cognitive Search when you are pushing the data to the index.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 106,
+    "question": "You can query a search index even if you set up a search index without including any AI skill sets.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 107,
+    "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold in the next month?",
+    "options": ["Classification", "Regression", "Clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 108,
+    "question": "Fairness is a Microsoft principle of responsible AI which says that the AI system should not reflect biases from the datasets that are used to train the system.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 109,
+    "question": "Specifying granularity in JSON data object is used to indicate recording pattern of the data.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 110,
+    "question": "What is the correct explanation of indexer and index?",
+    "options": [
+      "Azure's indexer exports incoming document into JSON and pushes the JSON into an index for storage",
+      "Azure's index can be used instead of an index if the files are already in the proper format",
+      "Azure indexer is only used to implement a knowledge store which is stored in the index"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 111,
+    "question": "You have a dataset that contains information about taxi journeys that occurred during a given period. You need to train a model to prepare the fare of a taxi journey. What should you use as a feature?",
+    "options": [
+      "The number of taxi journeys in the dataset",
+      "The trip distance of the individual taxi journey",
+      "The fare of individual taxi journeys",
+      "The trip ID of an individual taxi journey"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 112,
+    "question": "The model evaluation module outputs a confusion matrix showing the number of true positives, false negatives, false positives, and true negatives.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 113,
+    "question": "Feature selection helps in splitting a date into a month, day, and a year field.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 114,
+    "question": "Feature selection helps in picking temperature and pressure to train a weather model.",
+    "options": ["Yes", "No"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 115,
+    "question": "When developing an AI system for self-driving cars, which of the following Microsoft principle for responsible AI should be applied to ensure consistent operation of the system during unexpected circumstances?",
+    "options": [
+      "Inclusiveness",
+      "Fairness",
+      "Validity",
+      "Reliability and safety"
+    ],
+    "correctAnswer": 3
+  }
+]

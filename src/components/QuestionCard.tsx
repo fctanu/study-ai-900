@@ -46,8 +46,8 @@ const getQuestionType = (question: QuizQuestion): QuestionType => {
  */
 const formatLabel = (text: string): string => {
   return text
-    .replace(/([A-Z])/g, ' $1')
-    .replace(/^./, str => str.toUpperCase());
+    .replace(/([A-Z])/g, " $1")
+    .replace(/^./, (str) => str.toUpperCase());
 };
 
 const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -87,7 +87,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
    * Get correct answers as number array for multiple choice questions
    */
   const getCorrectAnswers = (): number[] => {
-    if (Array.isArray(question.correctAnswer) && typeof question.correctAnswer[0] === "number") {
+    if (
+      Array.isArray(question.correctAnswer) &&
+      typeof question.correctAnswer[0] === "number"
+    ) {
       return question.correctAnswer as number[];
     }
     return [question.correctAnswer as number];
@@ -227,7 +230,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
               ))}
             </div>
             <div>
-              <h5 className="text-green-300 font-medium mb-2 text-sm sm:text-base">Definitions:</h5>
+              <h5 className="text-green-300 font-medium mb-2 text-sm sm:text-base">
+                Definitions:
+              </h5>
               {definitions.map((definition, index) => (
                 <div
                   key={index}

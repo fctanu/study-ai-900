@@ -16,17 +16,30 @@ export interface FillInAnswer {
 /**
  * Union type for all possible correct answer formats
  */
-export type CorrectAnswerFormat = number | number[] | MatchingAnswer[] | FillInAnswer;
+export type CorrectAnswerFormat =
+  | number
+  | number[]
+  | MatchingAnswer[]
+  | FillInAnswer;
 
 /**
  * Union type for all possible selected option formats
  */
-export type SelectedOptionFormat = number | number[] | MatchingAnswer[] | FillInAnswer | null;
+export type SelectedOptionFormat =
+  | number
+  | number[]
+  | MatchingAnswer[]
+  | FillInAnswer
+  | null;
 
 /**
  * Union type for answer text formats
  */
-export type AnswerTextFormat = string | string[] | MatchingAnswer[] | FillInAnswer;
+export type AnswerTextFormat =
+  | string
+  | string[]
+  | MatchingAnswer[]
+  | FillInAnswer;
 
 /**
  * Represents a quiz question with support for multiple question types

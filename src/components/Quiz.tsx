@@ -80,7 +80,7 @@ const getAnswerText = (
 ): AnswerTextFormat => {
   if (options && Array.isArray(indices)) {
     return (indices as number[]).map((index: number) => options[index]);
-  } else if (options && typeof indices === 'number') {
+  } else if (options && typeof indices === "number") {
     return options[indices];
   }
   // For non-multiple choice questions, return the indices directly
@@ -160,7 +160,11 @@ const Quiz: React.FC<QuizProps> = ({
       return;
     }
 
-    const isCorrect = checkAnswer(questionType, selectedOption, currentQuestion.correctAnswer);
+    const isCorrect = checkAnswer(
+      questionType,
+      selectedOption,
+      currentQuestion.correctAnswer
+    );
 
     const newAnswer: UserAnswer = {
       questionId: currentQuestion.id,
@@ -169,7 +173,10 @@ const Quiz: React.FC<QuizProps> = ({
       question: currentQuestion.question,
       options: currentQuestion.options,
       correctAnswer: currentQuestion.correctAnswer,
-      selectedAnswerText: getAnswerText(selectedOption, currentQuestion.options),
+      selectedAnswerText: getAnswerText(
+        selectedOption,
+        currentQuestion.options
+      ),
       correctAnswerText: getAnswerText(
         Array.isArray(currentQuestion.correctAnswer) &&
           typeof currentQuestion.correctAnswer[0] === "number"

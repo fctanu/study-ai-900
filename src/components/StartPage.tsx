@@ -65,7 +65,9 @@ const StartPage: React.FC<StartPageProps> = ({
                         <div className="w-full h-full rounded-full bg-blue-400"></div>
                       )}
                     </div>
-                    <span className="font-medium text-sm sm:text-base">{bank.displayName}</span>
+                    <span className="font-medium text-sm sm:text-base">
+                      {bank.displayName}
+                    </span>
                   </div>
                 </button>
               ))}

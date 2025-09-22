@@ -4,6 +4,7 @@ import { QuizQuestion, QuestionBank } from "./types/quiz";
 import isabellaGithubBank from "./data/isabellaGithubBank.json";
 import greatNusaMockUpExam from "./data/GreatNusaMockUpExamAI900.json";
 import ttbPart1to5 from "./data/TTBPart1to5.json";
+import ttbPart6to8 from "./data/TTBPart6to8.json";
 import "./index.css";
 
 // Define available question banks
@@ -19,9 +20,14 @@ const questionBanks: QuestionBank[] = [
     fileName: "GreatNusaMockUpExamAI900.json",
   },
   {
-    name: "ttb",
+    name: "ttb1to5",
     displayName: "TTB Part 1 to 5 Questions",
     fileName: "TTBPart1to5.json",
+  },
+  {
+    name: "ttb6to8",
+    displayName: "TTB Part 6 to 8 Questions",
+    fileName: "TTBPart6to8.json",
   },
 ];
 
@@ -29,7 +35,8 @@ const questionBanks: QuestionBank[] = [
 const questionBankData: { [key: string]: QuizQuestion[] } = {
   isabella: isabellaGithubBank as QuizQuestion[],
   greatnusa: greatNusaMockUpExam as QuizQuestion[],
-  ttb: ttbPart1to5 as QuizQuestion[],
+  ttb1to5: ttbPart1to5 as QuizQuestion[],
+  ttb6to8: ttbPart6to8 as QuizQuestion[],
 };
 
 function App() {

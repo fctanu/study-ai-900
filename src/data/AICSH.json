@@ -1,0 +1,1047 @@
+[
+  {
+    "id": 1,
+    "question": "Imagine you have a photograph displaying the front of a store. Which AI technique would you use to extract the store's name from the image?",
+    "options": [
+      "Image classification",
+      "Natural language processing (NLP)",
+      "Optical character recognition (OCR)",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "question": "Imagine you have a photograph of a person and need to determine their age. Which computer vision technology would you use to analyze and identify the age from the image?",
+    "options": [
+      "Object detection",
+      "Facial detection",
+      "Image classification",
+      "Optical character recognition (OCR)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "Consider that you are using AI vision to categorize images. Which specialized domain modes does the service offer for identifying specific subjects in those images? (Choose all that apply; pick two correct answers)",
+    "options": ["Animals", "Celebrities", "Landmarks", "Cars", "Plants"],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 4,
+    "question": "Imagine you are a farmer who wants to ensure the safety and welfare of your livestock. Which technological process would you use to track the movement and health of your animals?",
+    "options": [
+      "Tracking livestock in a field",
+      "Recognizing individual animals from a facial detection",
+      "Measuring animal growth from an image analysis",
+      "Categorizing animals based on their species"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "Imagine you are using computer vision software and need to associate an image with metadata that summarizes its attributes. Which feature of the software would you use to achieve this?",
+    "options": [
+      "Object detection",
+      "Tagging",
+      "Image classification",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "Imagine you are using Azure AI Vision to develop a computer vision application. Identify which three parts of the machine learning process are entirely handled by Azure AI Vision, thus eliminating the need for your direct involvement. (Choose all that apply; pick three correct answers)",
+    "options": [
+      "Choosing a model",
+      "Evaluating a model",
+      "Training a model",
+      "Preparing data",
+      "Deploying a model"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 7,
+    "question": "Imagine you are using the Azure AI Vision service to describe an image. Which additional piece of information is included with each descriptive phrase returned by the service?",
+    "options": [
+      "Keyword relevance",
+      "Confidence score",
+      "Image category",
+      "Object count"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "Imagine you need to extract information from both international passports and sales account documents using the Azure AI Document Intelligence service. Which two pre-built models would you use to accomplish this task? (Pick two correct answers)",
+    "options": [
+      "Receipt model",
+      "ID document model",
+      "Invoice model",
+      "Business card model",
+      "General document model"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 9,
+    "question": "Consider a scenario where you need to identify models that can extract specific data fields from a document. Which two Azure AI Document Intelligence models would you use for this particular task? (Pick two correct answers)",
+    "options": [
+      "ID document model",
+      "Receipt model",
+      "Business card model",
+      "Invoice model",
+      "General document model"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 10,
+    "question": "Imagine you are developing a facial recognition system and need to identify accessories such as glasses and headwear on detected faces. Which feature of the Azure AI Face service will help you achieve this?",
+    "options": [
+      "Facial recognition",
+      "Emotion detection",
+      "Face attributes",
+      "Pose estimation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "Imagine you need to create a knowledge base for a chatbot using Azure Language Service. Which three types of sources can you use to generate the question and answer pairs? (Select all that apply; pick three correct answers)",
+    "options": [
+      "A web page",
+      "An existing FAQ document",
+      "Manually entered data",
+      "An image file",
+      "An audio file"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 12,
+    "question": "Imagine you are developing an application and want to add a feature that allows users to receive help with common tasks through a generative AI model. Which option would you use to integrate this functionality?",
+    "options": [
+      "Copilots",
+      "Semantic search",
+      "Cognitive search",
+      "Automated machine learning"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "question": "Imagine you are configuring a generative AI service to ensure it operates responsibly. Where would you implement content filters to effectively suppress inappropriate prompts and responses?",
+    "options": [
+      "Prompt engineering",
+      "Orchestration layer",
+      "Safety system",
+      "Model training data"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "Consider the following scenario: You are setting up system messages to define the context and expectations for a generative AI model. This helps the model understand how to respond to prompts. Which method would be used to set these system messages?",
+    "options": [
+      "Content filters",
+      "Response formatting",
+      "System messages",
+      "User input validation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "Imagine you are responsible for developing a generative AI solution that must adhere to ethical guidelines. What is the initial step you should take to ensure the solution is responsibly designed?",
+    "options": [
+      "Develop a user interface",
+      "Choose a generative AI model",
+      "Train the model with diverse data",
+      "Identify potential harms"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 16,
+    "question": "Which two capabilities are examples of a GPT model? (Each correct answer presents a complete solution.)",
+    "options": [
+      "Creating natural language",
+      "Understanding natural language",
+      "Detecting specific dialects of a language",
+      "Synthesizing speech",
+      "Generating closed captions"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 17,
+    "question": "Imagine you are tasked with developing an image processing solution that leverages DALL-E as a generative AI model. Which of the following is NOT a capability provided by DALL-E?",
+    "options": [
+      "Image generation",
+      "Image editing",
+      "Image description",
+      "Image variation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "Imagine a scenario where you want to generate images from descriptive text inputs. Which AI model would you use for this task?",
+    "options": ["GPT-3", "DALL-E", "BERT", "XLNet"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "Imagine you are working with a model that converts text into numerical vectors. This model can be used to search, classify, and compare sources of text for similarities. Select the term that best describes this type of model.",
+    "options": ["Tokens", "Embeddings", "Lexicon", "Ontology"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "Imagine you are developing a chat application and you need to integrate an AI service that can facilitate conversational interactions and generate text-based responses. Which type of service would you choose?",
+    "options": [
+      "Azure AI Bot Service",
+      "Azure AI Language",
+      "Azure AI Speech",
+      "Azure AI Vision"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "Imagine you need to integrate an AI service into chat applications to generate conversational text. Which service would you choose for this particular purpose?",
+    "options": [
+      "Azure AI Bot Service",
+      "Azure AI Language",
+      "Azure OpenAI",
+      "Azure AI Speech"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 22,
+    "question": "Imagine you have a vast amount of data and you need to make it easily searchable. Which AI workload would be best suited for this task?",
+    "options": [
+      "Machine learning",
+      "Natural language processing",
+      "Computer vision",
+      "Knowledge mining"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 23,
+    "question": "Which scenario best demonstrates an artificial intelligence workload that involves natural language processing (NLP)?",
+    "options": [
+      "Identifying objects in an image",
+      "Predicting house prices based on historical data",
+      "Extracting key phrases from a business insights report",
+      "Recognizing faces in a crowd"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "question": "You are working on a project that involves integrating AI-driven features for image and video analysis. Which two tools from Azure AI Vision would be most suitable for tasks such as extracting text from images and analyzing spatial relationships? (Pick two correct answers)",
+    "options": [
+      "Facial recognition",
+      "Optical character recognition (OCR)",
+      "Object detection",
+      "Spatial analysis",
+      "Image tagging"
+    ],
+    "correctAnswer": [1, 3]
+  },
+  {
+    "id": 25,
+    "question": "Consider a scenario where an AI system must guarantee that its solutions provide benefits to all individuals, regardless of their gender or ethnicity. Which principle of responsible artificial intelligence aims to achieve this objective?",
+    "options": ["Accountability", "Fairness", "Inclusiveness", "Transparency"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 26,
+    "question": "Imagine you are developing an AI model for a recruitment system. Which principle of responsible AI focuses on assessing and addressing the bias that may be introduced by the model's features?",
+    "options": ["Accountability", "Fairness", "Inclusiveness", "Transparency"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 27,
+    "question": "Consider a scenario where your organization is developing AI solutions. Which principle of responsible AI establishes a framework for governance and organizational standards to ensure adherence to ethical and legal guidelines?",
+    "options": ["Accountability", "Fairness", "Inclusiveness", "Transparency"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "A financial institution is implementing an AI system to evaluate mortgage applications. In the context of responsible AI fairness, which two factors should be closely examined to prevent biased decision-making? (Pick two correct answers)",
+    "options": [
+      "Ethnicity",
+      "Gender",
+      "Income level",
+      "Credit score",
+      "Employment history"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 29,
+    "question": "A company is in the process of developing autonomous agricultural vehicles intended to assist in crop harvesting. These vehicles will be used alongside human workers in the fields, necessitating thorough safety evaluation. Given this scenario, which principle of responsible AI is most critical to ensure the safe and effective operation of these vehicles?",
+    "options": [
+      "Accountability",
+      "Inclusiveness",
+      "Reliability and safety",
+      "Transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "Imagine you have a dataset of houses with various features such as size, location, and number of rooms. Which type of machine learning algorithm would you use to predict the price of a house based on these features?",
+    "options": [
+      "Classification",
+      "Clustering",
+      "Regression",
+      "Reinforcement learning"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 31,
+    "question": "Imagine you have a dataset of customer transactions and you need to identify distinct groups of customers based on their purchasing behavior without using pre-labeled data. Which type of machine learning algorithm would you use for this particular task?",
+    "options": [
+      "Classification",
+      "Clustering",
+      "Regression",
+      "Reinforcement learning"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "question": "Imagine you need to forecast the amount of rainfall in a particular region using past weather data and seasonal patterns. What type of machine learning is best suited for this task?",
+    "options": [
+      "Classification",
+      "Clustering",
+      "Regression",
+      "Time series forecasting"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 33,
+    "question": "You are developing a machine learning model designed to predict the likelihood of individuals developing diabetes based on their age and body fat percentage. What should the model include?",
+    "options": [
+      "Two features and one label",
+      "One feature and two labels",
+      "Two features and two labels",
+      "One feature and one label"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "In a scenario where a regression machine learning model is being evaluated, how should features in the validation dataset be utilized to predict labels, and what comparison should be made to assess model performance?",
+    "options": [
+      "Features are compared directly to actual label values in the training data set",
+      "Labels are compared directly to actual label values in the training data set",
+      "Features are used to generate predictions for the label, which is compared to the actual label values",
+      "Labels are used to generate predictions for features, which are compared to the actual feature values."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 35,
+    "question": "You are developing a machine learning model designed to predict the likelihood of individuals developing diabetes based on their age and body fat percentage. What should the model include?",
+    "options": [
+      "Features that are dependent on each other",
+      "Features that are independent of each other",
+      "Only one feature",
+      "Only one label"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "question": "Imagine you are working with a regression machine learning algorithm. You have a dataset where both the input variables (which are features) and the output variables (which are labels) are known. How would you utilize this validation set to assess the model's performance?",
+    "options": [
+      "Known feature and label values",
+      "Unknown feature and label values",
+      "Non-feature and label values",
+      "Only feature values"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "question": "A company is utilizing machine learning to forecast various aspects of their e-scooter rental service based on weather data. The predictions include the number of rentals, the average distance traveled, and the effect on e-scooter battery levels. Imagine you are tasked with developing this model. Which attributes would you consider as features for input data? (Pick two answers to get the full mark)",
+    "options": [
+      "Number of rentals",
+      "Weather temperature",
+      "Average distance traveled",
+      "Weekday or weekend",
+      "E-scooter battery levels"
+    ],
+    "correctAnswer": [1, 3]
+  },
+  {
+    "id": 38,
+    "question": "Consider the development of a machine learning model. What is the role of a validation data during this process?",
+    "options": [
+      "Training the model",
+      "Generating predictions",
+      "Evaluating the trained model",
+      "Pre-processing data"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 39,
+    "question": "Imagine you are using the Azure Machine Learning designer to start training a machine learning model. What is the first step you must take?",
+    "options": [
+      "Deploy a service",
+      "Add a dataset",
+      "Create a pipeline",
+      "Add a training module"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 40,
+    "question": "Imagine you are using Azure Machine Learning Designer to deploy a predictive service from a model that has just been trained. What is the first step you should take in the machine learning designer?",
+    "options": [
+      "Create an inference pipeline",
+      "Evaluate the model",
+      "Score the model",
+      "Re-train the model"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "Imagine you are working with Azure Machine Learning Studio and need to train models using automated machine learning. Which three types of supervised machine learning models would be appropriate for this task? (Choose all the options or available correct answers)",
+    "options": [
+      "Clustering",
+      "Classification",
+      "Regression",
+      "Reinforcement learning",
+      "Time series forecasting"
+    ],
+    "correctAnswer": [1, 2, 4]
+  },
+  {
+    "id": 42,
+    "question": "Imagine you are analyzing user reviews for an online product using Azure AI Service for Language. Which feature would you use to determine if the reviews are positive, neutral, or negative?",
+    "options": [
+      "Key phrase extraction",
+      "Named entity recognition",
+      "Sentiment analysis",
+      "Language detection"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 43,
+    "question": "Imagine you are developing a multilingual app that needs to convert spoken language into text and translate text between languages. Which two features of Azure AI Service would you use to achieve this functionality? (Pick two answers to get full mark on this particular question)",
+    "options": [
+      "Speech service",
+      "Translator service",
+      "Language understanding",
+      "Text analytics",
+      "Custom speech"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 44,
+    "question": "Imagine you are using the Azure AI Language service and need to disambiguate terms identified in a text. Which feature would you use if you require links to external websites for clarification?",
+    "options": [
+      "Key phrase extraction",
+      "Named entity recognition",
+      "Sentiment analysis",
+      "Entity linking"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 45,
+    "question": "In which two situations does the speech-to-text API's universal language model perform best? (You need to pick two answers from the list of available options)",
+    "options": [
+      "Conversational",
+      "Dictation",
+      "Specialized terminology",
+      "Background noise",
+      "Multiple speakers"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 46,
+    "question": "Imagine you are using the Azure AI Translator service for a specific project. Which type of translation functionality does the service offer?",
+    "options": [
+      "Text-to-text",
+      "Speech-to-text",
+      "Text-to-speech",
+      "Speech-to-speech"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "question": "Imagine you need to access both Azure AI Translator and Azure AI Speech services using a single endpoint and authentication key. Which Azure resource would you use to achieve this?",
+    "options": [
+      "Azure AI Services",
+      "Azure AI Language",
+      "Azure AI Vision",
+      "Azure AI Speech"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "Imagine you need to identify the elements incorporated in the Azure AI Language Service. Which three features should you consider? (You need to pick three correct answers from this question to get the full mark on this question)",
+    "options": [
+      "Language identification",
+      "Entity linking",
+      "Personally identifiable information (PII) detection",
+      "Sentiment analysis",
+      "Text summarization"
+    ],
+    "correctAnswer": [1, 2, 3]
+  },
+  {
+    "id": 49,
+    "question": "Imagine you are using Azure AI Translator for a project and you don't have enough parallel sentences for full training. Which feature allows you to use model training with a dictionary to meet the requirements and speed up the process?",
+    "options": [
+      "Custom translation",
+      "Model training with a dictionary",
+      "Document translation",
+      "Real-time translation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 50,
+    "question": "Imagine you are tasked with identifying unique voices in a large dataset of audio recordings. Which Azure AI Speech feature would you use to accomplish this?",
+    "options": [
+      "Speech recognition",
+      "Speaker recognition",
+      "Language identification",
+      "Voice synthesis"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 51,
+    "question": "Imagine you are developing advanced image classification software. Which AI technique will be essential for ensuring that software accurately identifies and categorizes individual elements within an image?",
+    "options": [
+      "Rule-based systems",
+      "Decision trees",
+      "Deep learning",
+      "Support vector machines"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 52,
+    "question": "Imagine you are using Computer Vision service and need to identify the locations of objects within an image. Which service would provide you with bounding box coordinates to mark these locations?",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Facial detection",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 53,
+    "question": "Which of the following scenarios can be solved using Optical Character Recognition (OCR) technology?",
+    "options": [
+      "Identifying objects in a photograph",
+      "Digitizing medical records",
+      "Translating spoken language",
+      "Detecting emotions in a video"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 54,
+    "question": "Imagine you are setting up an attendance system that requires scanning handwritten signatures. Which technology would be best suited for this task?",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)",
+      "Facial recognition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 55,
+    "question": "Imagine you are tasked with generating real-time subtitles for a live presentation. Which Natural Language Processing (NLP) technology would you utilize for converting spoken language into written text for closed captioning?",
+    "options": [
+      "Azure AI Text Analytics",
+      "Azure AI Language Understanding",
+      "Azure AI Speech",
+      "Azure AI Translator"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 56,
+    "question": "Imagine you are developing an AI system that needs to identify and mark various vehicles within images. Which AI workload would you use to generate bounding boxes around the vehicles indicating their location?",
+    "options": [
+      "Image classification",
+      "Object detection",
+      "Semantic segmentation",
+      "Facial detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 57,
+    "question": "You are working on a project that involves AI and need to identify which tasks fall under Natural Language Processing (NLP). Which two tasks from the following list would be applicable? (You need to select two answers to get the full mark for this particular question)",
+    "options": [
+      "Performing sentiment analysis on social media data",
+      "Identifying objects in satellite images",
+      "Translating text between different languages from product reviews",
+      "Recognizing speech commands for voice assistants",
+      "Generating summaries of financial reports"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 58,
+    "question": "Imagine you are designing an artificial intelligence system that must adhere to established legal and ethical standards. Which principle of responsible AI would ensure that your system complies with these requirements?",
+    "options": ["Transparency", "Inclusiveness", "Fairness", "Accountability"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 59,
+    "question": "Imagine you are working with an AI model that can generate images from text descriptions, similar to DALL-E. What type of AI technology is being used in this particular scenario?",
+    "options": [
+      "Discriminative AI",
+      "Generative AI",
+      "Rule-based AI",
+      "Symbolic AI"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 60,
+    "question": "Imagine you are working with a generative AI model and need to utilize its image creation capabilities. Which three features would be relevant for generating new images, altering existing ones, or creating animations? (Select all that apply; pick three correct answers)",
+    "options": [
+      "Creating variations of an image",
+      "Image description",
+      "Editing an image",
+      "New image creation",
+      "Facial recognition"
+    ],
+    "correctAnswer": [0, 2, 3]
+  },
+  {
+    "id": 61,
+    "question": "Imagine you want to predict the likelihood of individuals developing diabetes based on age and body fat percentage. What type of machine learning model would be most appropriate for this task?",
+    "options": [
+      "Linear regression",
+      "Logistic regression",
+      "K-means clustering",
+      "Decision tree"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 62,
+    "question": "Imagine a company that has launched a new product and is running a promotional campaign on social media. They aim to use machine learning to gauge the sentiment of Twitter users who post about the campaign. What type of machine learning is being utilized in this scenario?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Anomaly detection"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 63,
+    "question": "Suppose a retailer wants to segment their online shoppers based on similar attributes such as demographic data and shopping behavior. This will enable the marketing team to create targeted campaigns for new product launches. What type of machine learning technique would be used in this situation?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Reinforcement learning"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 64,
+    "question": "After preparing your dataset, you need to take the next crucial step before training your machine learning model. Considering the following options, which one should you choose?",
+    "options": [
+      "Split data into training and validation datasets",
+      "Normalize the data",
+      "Clean missing data",
+      "Engineer new features"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 65,
+    "question": "Imagine you need to train a regression model using Azure Machine Learning Studio. What should you set up in the studio to accomplish this task?",
+    "options": ["A project", "A dataset", "A job", "A compute instance"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 66,
+    "question": "Imagine you are using Azure Machine Learning Designer to develop a new machine learning model. Which module should you use to train your model?",
+    "options": [
+      "Clean Missing Data",
+      "Linear Regression",
+      "Split Data",
+      "Normalize Data"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 67,
+    "question": "Imagine you are working on a natural language processing (NLP) project. Which aspect of speech synthesis involves dividing text into individual words so that each word can then be assigned appropriate phonetic sounds?",
+    "options": [
+      "Tokenization",
+      "Stemming",
+      "Lemmatization",
+      "Part-of-speech tagging"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 68,
+    "question": "Which two features of Azure AI Services would you use to analyze support question data for main topics and to identify entities such as people and products mentioned in the text? (Each correct answer is part of the solution; pick two correct answers)",
+    "options": [
+      "Sentiment analysis",
+      "Key phrase extraction",
+      "Language detection",
+      "Named entity recognition",
+      "Translator"
+    ],
+    "correctAnswer": [1, 3]
+  },
+  {
+    "id": 69,
+    "question": "Imagine you are developing a system to recommend articles by categorizing them based on the entities they mention, such as people and locations. Which feature of Azure Cognitive Services for Language would you use to achieve this?",
+    "options": [
+      "Language detection",
+      "Named entity recognition",
+      "Key phrase extraction",
+      "Sentiment analysis"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 70,
+    "question": "Imagine you need to identify the features of the Azure AI Speech service. Which three elements would you select to complete your solution from the list of available options? (Pick three correct answers)",
+    "options": [
+      "Language identification",
+      "Speaker recognition",
+      "Voice assistance",
+      "Text summarization",
+      "Entity extraction"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 71,
+    "question": "Imagine you are working with Azure AI Service for Language and need to connect entities extracted from a text to their unique identifiers or concepts within a knowledge base. Which feature should you use to achieve this?",
+    "options": [
+      "Entity linking",
+      "Key phrase extraction",
+      "Named entity recognition",
+      "Text summarization"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 72,
+    "question": "Imagine you have a task that requires classifying every pixel in an image based on the object they depict, such as trees, cars, building, or people. Which type of artificial intelligence workload would you use to accomplish this task?",
+    "options": [
+      "Object detection",
+      "Image classification",
+      "Semantic segmentation",
+      "Facial recognition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 73,
+    "question": "Imagine you are evaluating AI solutions for a project and need to choose the principle that highlights the limitations of AI. Which principle would you select?",
+    "options": ["Accountability", "Fairness", "Inclusiveness", "Transparency"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 74,
+    "question": "Consider a scenario where a financial institution is implementing an AI solution to determine eligibility for business loans. Which principle of responsible AI is most important in ensuring that the AI systems operate without unintended biases?",
+    "options": [
+      "Accountability",
+      "Inclusiveness",
+      "Reliability and safety",
+      "Fairness"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 75,
+    "question": "Imagine you are tasked with sorting a collection of emails into predefined categories such as spam and important. Which type of machine learning algorithm would be most suitable for this task?",
+    "options": [
+      "Regression",
+      "Classification",
+      "Clustering",
+      "Anomaly detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 76,
+    "question": "Imagine you are working on a machine learning project where you need to predict future trends using past data. Which approach would you use that involves learning from data where the outcomes are already known?",
+    "options": [
+      "Use of historical data with known label values to train the model",
+      "Use of randomly generated data for training the model",
+      "Use of unsupervised learning",
+      "Use of unlabeled data for training the model"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 77,
+    "question": "Imagine you are working for a company that uses machine learning to forecast house prices given various attributes of houses. Which one would be the target variable that the model aims to predict?",
+    "options": [
+      "The age of the house",
+      "The number of bedrooms",
+      "The price of the house",
+      "The floor space size"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 78,
+    "question": "Imagine you are working on developing an automated machine learning model using Azure Machine Learning Studio. What is the first resource you should create in order to proceed?",
+    "options": ["A model", "A data set", "An endpoint", "A compute cluster"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 79,
+    "question": "Imagine you are tasked with analyzing a collection of X-ray images that show various types of bone fractures. Which technique would you use to accurately identify and categorize these fractures?",
+    "options": [
+      "Image classification",
+      "Optical character recognition (OCR)",
+      "Object detection",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 80,
+    "question": "Imagine you have a set of images, each displaying multiple types of vehicles. Which technique would you use to differentiate between various vehicle categories in the traffic monitoring images?",
+    "options": [
+      "Image classification",
+      "Optical character recognition (OCR)",
+      "Object detection",
+      "Semantic segmentation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 81,
+    "question": "Imagine you are using the Azure AI Vision service and need to identify well-known individuals and famous locations. Which two specialized domain models should you use? (Pick two correct answers)",
+    "options": ["Celebrities", "Landmarks", "Animals", "Cars", "Plants"],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 82,
+    "question": "Imagine you are using the Azure AI Face service to match faces in your database. Which two tools would you use for one-to-many or one-to-one face matching? (Pick two correct answers)",
+    "options": [
+      "Face detection",
+      "Facial verification",
+      "Face identification",
+      "Face recognition",
+      "Face analysis"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 83,
+    "question": "Imagine you are using the Azure AI Language Detection service to process natural language data. What confidence score would the service return if it encounters a language name that it does not recognize?",
+    "options": ["1", "0", "Undefined", "NaN"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 84,
+    "question": "You are tasked with enhancing your company's document search and indexing capabilities for several types of files, including images. You need to identify the appropriate AI workload that will effectively manage this requirement. What type of AI workload should you choose?",
+    "options": [
+      "Data mining",
+      "Natural language processing",
+      "Computer vision",
+      "Speech recognition"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 85,
+    "question": "Imagine you are designing an AI system. Which principle of responsible AI would you apply to ensure that users comprehend the system's limitations and constraints?",
+    "options": ["Transparency", "Inclusiveness", "Fairness", "Accountability"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 86,
+    "question": "Imagine you are working on a natural language processing project where you need to map the words 'plant' and 'flower' close together in a multi-dimensional space while positioning the word 'airplane' farther away. Which NLP technique would you utilize to achieve this?",
+    "options": ["Tokenization", "Stemming", "Lemmatization", "Vectorization"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 87,
+    "question": "Imagine you have a dataset containing various customer reviews and you want to group similar reviews together based on their content. Which type of machine learning algorithm would you use for this purpose?",
+    "options": [
+      "Classification",
+      "Clustering",
+      "Regression",
+      "Reinforcement learning"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 88,
+    "question": "A healthcare organization possesses a dataset of bone fracture scans, each labeled according to specific fracture types. They intend to develop a machine learning model to automatically identify the type of fracture in new, unlabeled scans before they are reviewed by a medical professional. Which type of machine learning should be used for this task?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Anomaly detection"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 89,
+    "question": "An electricity utility company aims to create a mobile application that allows customers to monitor their energy usage and receive a forecast for the next 12 months, utilizing previous energy consumption data. The company seeks to employ machine learning to generate accurate predictions. Which type of machine learning algorithm would be suitable for this task?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Reinforcement learning"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 90,
+    "question": "An electricity utility company wants to develop a mobile app that enables customers to track their energy usage and receive predictions for their upcoming 12 months by leveraging past consumption data. The company plans to use machine learning to generate precise forecasts. Which type of machine learning algorithm should you use?",
+    "options": [
+      "Only unsupervised machine learning",
+      "A machine learning model with known feature and label values",
+      "A model with unknown feature and label values",
+      "Only a rule-based algorithm"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 91,
+    "question": "Imagine you need to create a model that can classify images. Which Azure service should you use to accomplish this task?",
+    "options": [
+      "Azure AI Vision",
+      "Azure AI Language",
+      "Azure AI Custom Vision",
+      "Azure AI Speech"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 92,
+    "question": "You have successfully trained a regression model using automated machine learning (AutoML) in the Azure Machine Learning studio and have reviewed the summary of the best-performing model. To make the model accessible for others to use over the internet, what step should you take next?",
+    "options": [
+      "Export the model",
+      "Deploy the model to an endpoint",
+      "Retrain the model with a new dataset",
+      "Save the model"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 93,
+    "question": "Imagine you are using Azure Machine Learning Designer to pre-process your dataset. Which three modules should you consider for transforming your data? (Pick three correct answers)",
+    "options": [
+      "Clean missing data",
+      "Normalize data",
+      "Select columns in dataset",
+      "Score model",
+      "Evaluate model"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 94,
+    "question": "Which three features demonstrate the capabilities of an image generation model in a real-world scenario? (Choose three correct answers)",
+    "options": [
+      "Creating variations of an image",
+      "Editing an image",
+      "New image creation",
+      "Facial recognition",
+      "Object detection"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 95,
+    "question": "Imagine you are using the Azure AI Language service to detect the language of a given text. Which three specific values will the service return for you? (Pick three correct answers)",
+    "options": [
+      "ISO 639-1 code",
+      "Language name",
+      "Score",
+      "Sentiment",
+      "Keywords"
+    ],
+    "correctAnswer": [0, 1, 2]
+  },
+  {
+    "id": 96,
+    "question": "Imagine you are using the Azure AI Vision service to analyze an image. Which task provides bounding box coordinates for the detected object in the image?",
+    "options": [
+      "Object detection",
+      "Image classification",
+      "Semantic segmentation",
+      "OCR"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 97,
+    "question": "Imagine you are using natural language processing techniques to analyze text data. Which method would you choose to normalize words before counting them?",
+    "options": ["Tokenization", "Stemming", "Lemmatization", "Vectorization"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 98,
+    "question": "What is an unsupervised machine learning algorithm module for training models in the Azure Machine Learning designer?",
+    "options": [
+      "K-means clustering",
+      "Linear regression",
+      "Two-class decision forest",
+      "Boosted decision tree"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 99,
+    "question": "Imagine you are developing an AI system to manage healthcare data. Which two principles of responsible AI would be crucial to ensure ethical and legal standards are met? (Each correct answer contributes to the solution; pick two correct answers)",
+    "options": [
+      "Accountability",
+      "Privacy and security",
+      "Fairness",
+      "Inclusiveness"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 100,
+    "question": "Imagine a company is attempting to forecast water consumption in households. They have data on the number of occupants, the ambient temperature, and the season. Which of these variables is the dependent variable they aim to predict?",
+    "options": [
+      "Number of occupants",
+      "Ambient temperature",
+      "Season",
+      "Water use"
+    ],
+    "correctAnswer": 3
+  }
+]

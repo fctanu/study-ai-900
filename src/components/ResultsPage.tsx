@@ -111,7 +111,9 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
             Quiz Completed!
           </h1>
-          <p className="text-gray-300 text-base sm:text-lg">Here are your results:</p>
+          <p className="text-gray-300 text-base sm:text-lg">
+            Here are your results:
+          </p>
         </div>
 
         <div className="mb-6 sm:mb-8">
