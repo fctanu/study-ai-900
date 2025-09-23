@@ -30,30 +30,45 @@ const getQuestionType = (question: QuizQuestion): QuestionType => {
   if (question.types && question.scenarios && question.correctAnswers) {
     return QuestionType.DRAG_DROP;
   }
-  
+
+  // Check for drag-drop questions with workloads/scenarios arrays
+  if (question.workloads && question.scenarios && question.correctAnswers) {
+    return QuestionType.DRAG_DROP;
+  }
+
   // Check for drag-drop questions with principles/requirements arrays
   if (question.principles && question.requirements && question.correctAnswers) {
     return QuestionType.DRAG_DROP;
   }
-  
+
+  // Check for drag-drop questions with tasks/questions arrays
+  if (question.tasks && question.questions && question.correctAnswers) {
+    return QuestionType.DRAG_DROP;
+  }
+
   // Check for drag-drop questions (have correctAnswers array with matching objects)
-  if (question.correctAnswers && Array.isArray(question.correctAnswers) && 
-      question.correctAnswers.length > 0 && 
-      typeof question.correctAnswers[0] === "object") {
+  if (
+    question.correctAnswers &&
+    Array.isArray(question.correctAnswers) &&
+    question.correctAnswers.length > 0 &&
+    typeof question.correctAnswers[0] === "object"
+  ) {
     const firstAnswer = question.correctAnswers[0];
     // Check for workload/scenario, principle/requirement, or type/scenario pairs
-    if (("workload" in firstAnswer && "scenario" in firstAnswer) ||
-        ("principle" in firstAnswer && "requirement" in firstAnswer) ||
-        ("type" in firstAnswer && "scenario" in firstAnswer)) {
+    if (
+      ("workload" in firstAnswer && "scenario" in firstAnswer) ||
+      ("principle" in firstAnswer && "requirement" in firstAnswer) ||
+      ("type" in firstAnswer && "scenario" in firstAnswer)
+    ) {
       return QuestionType.DRAG_DROP;
     }
   }
-  
+
   // Check for Yes/No questions (have correctAnswers array but no options)
   if (question.correctAnswers && !question.options) {
     return QuestionType.YES_NO;
   }
-  
+
   if (Array.isArray(question.correctAnswer)) {
     if (
       question.correctAnswer.length > 0 &&
@@ -96,7 +111,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const [showAnswers, setShowAnswers] = useState(false);
   const [draggedItem, setDraggedItem] = useState<string | null>(null);
-  const [dropZones, setDropZones] = useState<{[key: string]: string}>({});
+  const [dropZones, setDropZones] = useState<{ [key: string]: string }>({});
   const questionType = getQuestionType(question);
 
   const handleCheckAnswer = () => {
@@ -298,27 +313,32 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   const renderYesNoQuestion = () => {
     // Parse the question string to extract sub-questions
     const questionText = question.question;
-    
+
     // Split by newlines and filter out the instruction part
-    const lines = questionText.split('\n').filter(line => line.trim());
-    
+    const lines = questionText.split("\n").filter((line) => line.trim());
+
     // The first line is usually the instruction, skip it and get the actual statements
-    const statements = lines.slice(1).filter(line => line.trim() && !line.startsWith('For each'));
-    
+    const statements = lines
+      .slice(1)
+      .filter((line) => line.trim() && !line.startsWith("For each"));
+
     // Create Yes/No options for each statement
     const yesNoOptions = ["Yes", "No"];
-    
+
     return (
       <div className="space-y-6 mb-6 sm:mb-8">
         {statements.map((statement, subIndex) => (
-          <div key={subIndex} className="bg-gray-800/30 rounded-lg p-4 border border-gray-600">
+          <div
+            key={subIndex}
+            className="bg-gray-800/30 rounded-lg p-4 border border-gray-600"
+          >
             <h4 className="text-white text-sm sm:text-base mb-4 font-medium">
               {subIndex + 1}. {statement.trim()}
             </h4>
             <div className="grid grid-cols-2 gap-3">
               {yesNoOptions.map((option, optionIndex) => {
                 const fullIndex = subIndex * 2 + optionIndex;
-                
+
                 const getYesNoOptionStyle = () => {
                   if (!showAnswers) {
                     return isOptionSelected(fullIndex)
@@ -327,10 +347,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                   } else {
                     // Show correct answers
                     const correctAnswers = question.correctAnswers as string[];
-                    const isCorrect = (optionIndex === 0 && correctAnswers?.[subIndex] === "Yes") || 
-                                    (optionIndex === 1 && correctAnswers?.[subIndex] === "No");
+                    const isCorrect =
+                      (optionIndex === 0 &&
+                        correctAnswers?.[subIndex] === "Yes") ||
+                      (optionIndex === 1 &&
+                        correctAnswers?.[subIndex] === "No");
                     const isSelected = isOptionSelected(fullIndex);
-                    
+
                     if (isCorrect) {
                       return "bg-green-600/80 border-green-400";
                     } else if (isSelected && !isCorrect) {
@@ -358,20 +381,27 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                     );
                   } else {
                     const correctAnswers = question.correctAnswers as string[];
-                    const isCorrect = (optionIndex === 0 && correctAnswers?.[subIndex] === "Yes") || 
-                                    (optionIndex === 1 && correctAnswers?.[subIndex] === "No");
+                    const isCorrect =
+                      (optionIndex === 0 &&
+                        correctAnswers?.[subIndex] === "Yes") ||
+                      (optionIndex === 1 &&
+                        correctAnswers?.[subIndex] === "No");
                     const isSelected = isOptionSelected(fullIndex);
-                    
+
                     if (isCorrect) {
                       return (
                         <div className="w-4 h-4 rounded-full bg-green-500 mr-3 flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">✓</span>
+                          <span className="text-white text-xs font-bold">
+                            ✓
+                          </span>
                         </div>
                       );
                     } else if (isSelected && !isCorrect) {
                       return (
                         <div className="w-4 h-4 rounded-full bg-red-500 mr-3 flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">✗</span>
+                          <span className="text-white text-xs font-bold">
+                            ✗
+                          </span>
                         </div>
                       );
                     } else {
@@ -447,107 +477,142 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     let itemLabel = "Items";
     let targetLabel = "Targets";
     let questionFormat = "default";
-    
+
     // Variables for different question formats
     let workloadStartIndex = -1;
     let principleStartIndex = -1;
     let typeStartIndex = -1;
-    
+
     if (question.types && question.scenarios) {
       // Direct arrays format for types/scenarios
       draggableItems = question.types;
       dropTargets = question.scenarios;
       itemLabel = "Learning Types";
       targetLabel = "Definitions";
-      questionFormat = "arrays";
+      questionFormat = "type-scenario";
+    } else if (question.workloads && question.scenarios) {
+      // Direct arrays format for workloads/scenarios
+      draggableItems = question.workloads;
+      dropTargets = question.scenarios;
+      itemLabel = "AI Workloads";
+      targetLabel = "Scenarios";
+      questionFormat = "workload-scenario";
     } else if (question.principles && question.requirements) {
       // Direct arrays format for principles/requirements
       draggableItems = question.principles;
       dropTargets = question.requirements;
       itemLabel = "Principles";
       targetLabel = "Requirements";
-      questionFormat = "arrays";
+      questionFormat = "principle-requirement";
+    } else if (question.tasks && question.questions) {
+      // Direct arrays format for tasks/questions
+      draggableItems = question.tasks;
+      dropTargets = question.questions;
+      itemLabel = "Tasks";
+      targetLabel = "Questions";
+      questionFormat = "task-question";
     } else {
       // Parse the question to extract items and targets from text
       const questionText = question.question;
-      const lines = questionText.split('\n');
-      
+      const lines = questionText.split("\n");
+
       // Check if it's a workload/scenario question
-      workloadStartIndex = lines.findIndex(line => line.includes('Workloads:'));
-      const scenarioStartIndex = lines.findIndex(line => line.includes('Scenarios:'));
-      
-      // Check if it's a principle/requirement question  
-      principleStartIndex = lines.findIndex(line => line.includes('Principles:'));
-      const requirementStartIndex = lines.findIndex(line => line.includes('Requirements:'));
-      
+      workloadStartIndex = lines.findIndex((line) =>
+        line.includes("Workloads:")
+      );
+      const scenarioStartIndex = lines.findIndex((line) =>
+        line.includes("Scenarios:")
+      );
+
+      // Check if it's a principle/requirement question
+      principleStartIndex = lines.findIndex((line) =>
+        line.includes("Principles:")
+      );
+      const requirementStartIndex = lines.findIndex((line) =>
+        line.includes("Requirements:")
+      );
+
       // Check if it's a type/scenario question
-      typeStartIndex = lines.findIndex(line => line.includes('Types:'));
-      const typeScenarioStartIndex = lines.findIndex(line => line.includes('Scenarios:'));
-      
+      typeStartIndex = lines.findIndex((line) => line.includes("Types:"));
+      const typeScenarioStartIndex = lines.findIndex((line) =>
+        line.includes("Scenarios:")
+      );
+
       if (workloadStartIndex !== -1 && scenarioStartIndex !== -1) {
         // Workload/Scenario type
-        draggableItems = lines.slice(workloadStartIndex + 1, scenarioStartIndex)
-          .filter(line => line.trim() && !line.includes('Workloads:'));
-        dropTargets = lines.slice(scenarioStartIndex + 1)
-          .filter(line => line.trim() && !line.includes('Scenarios:'));
+        draggableItems = lines
+          .slice(workloadStartIndex + 1, scenarioStartIndex)
+          .filter((line) => line.trim() && !line.includes("Workloads:"));
+        dropTargets = lines
+          .slice(scenarioStartIndex + 1)
+          .filter((line) => line.trim() && !line.includes("Scenarios:"));
         itemLabel = "AI Workloads";
         targetLabel = "Scenarios";
-        questionFormat = "workload";
+        questionFormat = "workload-scenario";
       } else if (principleStartIndex !== -1 && requirementStartIndex !== -1) {
         // Principle/Requirement type
-        draggableItems = lines.slice(principleStartIndex + 1, requirementStartIndex)
-          .filter(line => line.trim() && !line.includes('Principles:'));
-        dropTargets = lines.slice(requirementStartIndex + 1)
-          .filter(line => line.trim() && !line.includes('Requirements:'));
+        draggableItems = lines
+          .slice(principleStartIndex + 1, requirementStartIndex)
+          .filter((line) => line.trim() && !line.includes("Principles:"));
+        dropTargets = lines
+          .slice(requirementStartIndex + 1)
+          .filter((line) => line.trim() && !line.includes("Requirements:"));
         itemLabel = "Principles";
         targetLabel = "Requirements";
-        questionFormat = "principle";
+        questionFormat = "principle-requirement";
       } else if (typeStartIndex !== -1 && typeScenarioStartIndex !== -1) {
         // Type/Scenario type
-        draggableItems = lines.slice(typeStartIndex + 1, typeScenarioStartIndex)
-          .filter(line => line.trim() && !line.includes('Types:'));
-        dropTargets = lines.slice(typeScenarioStartIndex + 1)
-          .filter(line => line.trim() && !line.includes('Scenarios:'));
+        draggableItems = lines
+          .slice(typeStartIndex + 1, typeScenarioStartIndex)
+          .filter((line) => line.trim() && !line.includes("Types:"));
+        dropTargets = lines
+          .slice(typeScenarioStartIndex + 1)
+          .filter((line) => line.trim() && !line.includes("Scenarios:"));
         itemLabel = "ML Types";
         targetLabel = "Scenarios";
-        questionFormat = "type";
+        questionFormat = "type-scenario";
       }
     }
 
     const handleDragStart = (e: React.DragEvent, item: string) => {
       setDraggedItem(item);
-      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.effectAllowed = "move";
     };
 
     const handleDragOver = (e: React.DragEvent) => {
       e.preventDefault();
-      e.dataTransfer.dropEffect = 'move';
+      e.dataTransfer.dropEffect = "move";
     };
 
     const handleDrop = (e: React.DragEvent, target: string) => {
       e.preventDefault();
       if (draggedItem) {
         const newDropZones = { ...dropZones };
-        
+
         // Remove the item from any existing target
-        Object.keys(newDropZones).forEach(key => {
+        Object.keys(newDropZones).forEach((key) => {
           if (newDropZones[key] === draggedItem) {
             delete newDropZones[key];
           }
         });
-        
+
         // Add to new target
         newDropZones[target] = draggedItem;
         setDropZones(newDropZones);
-        
+
         // Update selected option for validation
         const matches = Object.entries(newDropZones).map(([target, item]) => {
           // Create appropriate format based on question type
-          if (questionFormat === "workload") {
+          if (questionFormat === "workload-scenario") {
             return { workload: item, scenario: target };
-          } else if (questionFormat === "principle") {
+          } else if (questionFormat === "principle-requirement") {
             return { principle: item, requirement: target };
+          } else if (questionFormat === "type-scenario") {
+            return { type: item, scenario: target };
+          } else if (questionFormat === "task-question") {
+            return { task: item, question: target };
           } else {
+            // Fallback for older format
             return { type: item, scenario: target };
           }
         });
@@ -556,17 +621,23 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       setDraggedItem(null);
     };
 
-    const isItemUsed = (item: string) => {
-      return Object.values(dropZones).includes(item);
-    };
-
     const getCorrectMatch = (target: string) => {
-      if (questionFormat === "workload") {
-        return correctAnswers.find(answer => answer.scenario === target)?.workload;
-      } else if (questionFormat === "principle") {
-        return correctAnswers.find(answer => answer.requirement === target)?.principle;
+      if (questionFormat === "workload-scenario") {
+        return correctAnswers.find((answer) => answer.scenario === target)
+          ?.workload;
+      } else if (questionFormat === "principle-requirement") {
+        return correctAnswers.find((answer) => answer.requirement === target)
+          ?.principle;
+      } else if (questionFormat === "type-scenario") {
+        return correctAnswers.find((answer) => answer.scenario === target)
+          ?.type;
+      } else if (questionFormat === "task-question") {
+        return correctAnswers.find((answer) => answer.question === target)
+          ?.task;
       } else {
-        return correctAnswers.find(answer => answer.scenario === target)?.type;
+        // Fallback for older format
+        return correctAnswers.find((answer) => answer.scenario === target)
+          ?.type;
       }
     };
 
@@ -578,9 +649,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       <div className="space-y-6 mb-6 sm:mb-8">
         <div className="bg-gray-800/30 rounded-lg p-4 border border-gray-600">
           <h4 className="text-white text-base sm:text-lg font-medium mb-4">
-            Drag each {itemLabel.toLowerCase()} to match it with the appropriate {targetLabel.toLowerCase()}:
+            Drag each {itemLabel.toLowerCase()} to match it with the appropriate{" "}
+            {targetLabel.toLowerCase()}:
           </h4>
-          
+
           {/* Draggable Items */}
           <div className="mb-6">
             <h5 className="text-blue-300 font-medium mb-3 text-sm sm:text-base">
@@ -590,13 +662,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
               {draggableItems.map((item, index) => (
                 <div
                   key={index}
-                  draggable={!showAnswers && !isItemUsed(item)}
+                  draggable={!showAnswers}
                   onDragStart={(e) => handleDragStart(e, item)}
                   className={`px-4 py-2 rounded-lg border cursor-move transition-all duration-200 text-sm sm:text-base ${
-                    !showAnswers && !isItemUsed(item)
+                    !showAnswers
                       ? "bg-blue-900/20 border-blue-600/50 text-blue-200 hover:bg-blue-800/30"
-                      : isItemUsed(item)
-                      ? "bg-gray-600/50 border-gray-500 text-gray-400 cursor-not-allowed opacity-50"
                       : "bg-blue-900/20 border-blue-600/50 text-blue-200"
                   }`}
                 >
@@ -620,9 +690,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                   className={`min-h-[60px] p-4 rounded-lg border-2 border-dashed transition-all duration-200 ${
                     !showAnswers
                       ? "border-gray-500 bg-gray-700/30 hover:border-gray-400 hover:bg-gray-600/30"
-                      : dropZones[target] && isCorrectMatch(target, dropZones[target])
+                      : dropZones[target] &&
+                        isCorrectMatch(target, dropZones[target])
                       ? "border-green-500 bg-green-900/20"
-                      : dropZones[target] && !isCorrectMatch(target, dropZones[target])
+                      : dropZones[target] &&
+                        !isCorrectMatch(target, dropZones[target])
                       ? "border-red-500 bg-red-900/20"
                       : "border-gray-500 bg-gray-700/30"
                   }`}
@@ -631,14 +703,26 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                     {target}
                   </div>
                   {dropZones[target] && (
-                    <div className={`inline-block px-3 py-1 rounded text-sm ${
-                      showAnswers && isCorrectMatch(target, dropZones[target])
-                        ? "bg-green-600 text-white"
-                        : showAnswers && !isCorrectMatch(target, dropZones[target])
-                        ? "bg-red-600 text-white"
-                        : "bg-blue-600 text-white"
-                    }`}>
-                      {dropZones[target]}
+                    <div>
+                      <div
+                        className={`inline-block px-3 py-1 rounded text-sm mb-1 ${
+                          showAnswers &&
+                          isCorrectMatch(target, dropZones[target])
+                            ? "bg-green-600 text-white"
+                            : showAnswers &&
+                              !isCorrectMatch(target, dropZones[target])
+                            ? "bg-red-600 text-white"
+                            : "bg-blue-600 text-white"
+                        }`}
+                      >
+                        {dropZones[target]}
+                      </div>
+                      {showAnswers &&
+                        !isCorrectMatch(target, dropZones[target]) && (
+                          <div className="inline-block px-3 py-1 rounded text-sm bg-green-600 text-white ml-2">
+                            Correct: {getCorrectMatch(target)}
+                          </div>
+                        )}
                     </div>
                   )}
                   {showAnswers && !dropZones[target] && (
@@ -655,6 +739,17 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     );
   };
 
+  const getDropTargets = (): string[] => {
+    if (question.scenarios) {
+      return question.scenarios;
+    } else if (question.requirements) {
+      return question.requirements;
+    } else if (question.questions) {
+      return question.questions;
+    }
+    return [];
+  };
+
   const isAnswered = () => {
     switch (questionType) {
       case QuestionType.MULTIPLE_CHOICE:
@@ -663,7 +758,12 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       case QuestionType.YES_NO:
         return selectedOption !== null;
       case QuestionType.DRAG_DROP:
-        return Object.keys(dropZones).length > 0;
+        // Check if all required drop zones are filled
+        const targets = getDropTargets();
+        return targets.every((target: string) => {
+          const hasValue = dropZones[target] && dropZones[target].trim() !== "";
+          return hasValue;
+        });
       case QuestionType.MATCHING:
         return true; // For now, always allow checking matching questions
       case QuestionType.FILL_IN_BLANK:
@@ -694,12 +794,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
       <div className="mb-8 sm:mb-12">
         <h1 className="text-white text-lg sm:text-xl lg:text-2xl font-normal leading-relaxed">
-          {questionType === QuestionType.YES_NO 
-            ? question.question.split('\n')[0] // Only show the first line (instruction) for Yes/No questions
+          {questionType === QuestionType.YES_NO
+            ? question.question.split("\n")[0] // Only show the first line (instruction) for Yes/No questions
             : questionType === QuestionType.DRAG_DROP
-            ? question.question.split('\n')[0] // Only show the first line (instruction) for Drag/Drop questions
-            : question.question
-          }
+            ? question.question.split("\n")[0] // Only show the first line (instruction) for Drag/Drop questions
+            : question.question}
         </h1>
         {questionType === QuestionType.MULTI_SELECT && (
           <p className="text-blue-300 text-xs sm:text-sm mt-3 sm:mt-4 italic">
@@ -741,7 +840,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
       {/* Notes Section */}
       <div className="mt-6 p-4 bg-gray-800/30 border border-gray-600 rounded-lg">
-        <label htmlFor="notes" className="block text-sm font-medium text-gray-300 mb-2">
+        <label
+          htmlFor="notes"
+          className="block text-sm font-medium text-gray-300 mb-2"
+        >
           Personal Notes (optional):
         </label>
         <textarea

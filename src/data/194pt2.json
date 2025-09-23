@@ -1,0 +1,483 @@
+[
+  {
+    "id": 51,
+    "question": "A medical research project uses a large anonymized dataset of brain scan images that are categorized into predefined brain haemorrhage types. You need to use machine learning to support early detection of the different brain haemorrhage types in the images before the images are reviewed by a person. This is an example of which type of machine learning?",
+    "options": ["clustering", "regression", "classification"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 52,
+    "question": "When training a model, why should you randomly split the rows into separate subsets?",
+    "options": [
+      "to train the model twice to attain better accuracy",
+      "to train multiple models simultaneously to attain better performance",
+      "to test the model by using data that was not used to train the model"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 53,
+    "question": "You are evaluating whether to use a basic workspace or an enterprise workspace in Azure Machine Learning. What are two tasks that require an enterprise workspace? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Use a graphical user interface (GUI) to run automated machine learning experiments.",
+      "Create a compute instance to use as a workstation.",
+      "Use a graphical user interface (GUI) to define and run machine learning experiments from Azure Machine Learning designer.",
+      "Create a dataset from a comma-separated value (CSV) file."
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 54,
+    "question": "You need to predict the income range of a given customer by using the following dataset. Which two fields should you use as features? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Education Level",
+      "Last Name",
+      "Age",
+      "Income Range",
+      "First Name"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 55,
+    "question": "You are building a tool that will process images from retail stores and identify the products of competitors. The solution will use a custom model. Which Azure Cognitive Services service should you use?",
+    "options": ["Custom Vision", "Form Recognizer", "Face", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 56,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nOrganizing documents into groups based on similarities of the text contained in the documents is an example of clustering.\nGrouping similar patients based on symptoms and diagnostic test results is an example of clustering.\nPredicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 57,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA validation set includes the set of input examples that will be used to train a model.\nA validation set can be used to determine how well a model predicts labels.\nA validation set can be used to verify that all the training data was used to train the model.",
+    "correctAnswers": ["No", "Yes", "No"]
+  },
+  {
+    "id": 58,
+    "question": "What are two metrics that you can use to evaluate a regression model? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "coefficient of determination (R2)",
+      "F1 score",
+      "root mean squared error (RMSE)",
+      "area under curve (AUC)",
+      "balanced accuracy"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 59,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Predicting how many vehicles will travel across a bridge on a given day is an example of [answer choice].",
+    "options": ["classification.", "clustering.", "regression."],
+    "correctAnswer": 2
+  },
+  {
+    "id": 60,
+    "question": "You need to use Azure Machine Learning designer to build a model that will predict automobile prices. Which three modules should you use to complete the model pipeline in the correct order after the automobile price data and before the Train Model step?",
+    "options": [
+      "Convert to CSV, K-Means Clustering, Linear Regression",
+      "Select Columns in Dataset, Split Data, Linear Regression",
+      "K-Means Clustering, Summarize Data, Convert to CSV",
+      "Summarize Data, Select Columns in Dataset, Split Data"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 61,
+    "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+    "options": ["classification", "regression", "clustering"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 62,
+    "question": "To complete the sentence, select the appropriate option in the answer area. [answer choice] models can be used to predict the sale price of auctioned items.",
+    "options": ["Classification", "Clustering", "Regression"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 63,
+    "question": "Which metric can you use to evaluate a classification model?",
+    "options": [
+      "true positive rate",
+      "mean absolute error (MAE)",
+      "coefficient of determination (R2)",
+      "root mean squared error (RMSE)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 64,
+    "question": "Which two components can you drag onto a canvas in Azure Machine Learning designer? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": ["dataset", "compute", "pipeline", "module"],
+    "correctAnswer": [0, 3]
+  },
+  {
+    "id": 65,
+    "question": "You need to create a training dataset and validation dataset from an existing dataset. Which module in the Azure Machine Learning designer should you use?",
+    "options": [
+      "Select Columns in Dataset",
+      "Add Rows",
+      "Split Data",
+      "Join Data"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 66,
+    "question": "Match the types of machine learning to the appropriate scenarios.",
+    "types": ["Classification", "Clustering", "Regression"],
+    "scenarios": [
+      "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport",
+      "Segment customers into different groups to support a marketing department",
+      "Predict whether a student will complete a university course"
+    ],
+    "correctAnswers": [
+      {
+        "type": "Regression",
+        "scenario": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport"
+      },
+      {
+        "type": "Clustering",
+        "scenario": "Segment customers into different groups to support a marketing department"
+      },
+      {
+        "type": "Classification",
+        "scenario": "Predict whether a student will complete a university course"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "question": "To complete the sentence, select the appropriate option in the answer area. [answer choice] is the calculated probability of a correct image classification.",
+    "options": [
+      "Accuracy",
+      "Confidence",
+      "Root Mean Square Error",
+      "Sentiment"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 68,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Ensuring an AI system does not provide a prediction when important fields contain unusual or missing values is a [answer choice] principle for responsible AI.",
+    "options": [
+      "inclusiveness",
+      "privacy and security",
+      "reliability and safety",
+      "transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 69,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Ensuring that the numeric variables in training data are on a similar scale is an example of [answer choice].",
+    "options": [
+      "data ingestion.",
+      "feature engineering.",
+      "feature selection.",
+      "model training."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 70,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Assigning classes to images before training a classification model is an example of [answer choice].",
+    "options": [
+      "evaluation.",
+      "feature engineering.",
+      "hyperparameter tuning.",
+      "labeling."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 71,
+    "question": "You have an Azure Machine Learning model that predicts product quality. The model has a training dataset that contains 50,000 records. A sample of the data is shown in the table. For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nMass (kg) is a feature.\nQuality Test is a label.\nTemperature (C) is a label.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 72,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nYou train a regression model by using unlabeled data.\nThe classification technique is used to predict sequential numerical data over time.\nGrouping items by their common characteristics is an example of clustering.",
+    "correctAnswers": ["No", "No", "Yes"]
+  },
+  {
+    "id": 73,
+    "question": "Which two actions are performed during the data ingestion and data preparation stage of an Azure Machine Learning process? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Calculate the accuracy of the model.",
+      "Score test data by using the model.",
+      "Combine multiple datasets.",
+      "Use the model for real-time predictions.",
+      "Remove records that have missing values."
+    ],
+    "correctAnswer": [2, 4]
+  },
+  {
+    "id": 74,
+    "question": "You need to predict the animal population of an area. Which Azure Machine Learning type should you use?",
+    "options": ["regression", "clustering", "classification"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 75,
+    "question": "Which two languages can you use to write custom code for Azure Machine Learning designer? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": ["Python", "R", "C#", "Scala"],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 76,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nFor a regression model, labels must be numeric.\nFor a clustering model, labels must be used.\nFor a classification model, labels must be numeric.",
+    "correctAnswers": ["Yes", "No", "No"]
+  },
+  {
+    "id": 77,
+    "question": "You have a dataset. You need to build an Azure Machine Learning classification model that will identify defective products. What should you do first?",
+    "options": [
+      "Load the dataset.",
+      "Create a clustering model.",
+      "Split the data into training and testing datasets.",
+      "Create a classification model."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 78,
+    "question": "You use Azure Machine Learning designer to build a model pipeline. What should you create before you can run the pipeline?",
+    "options": [
+      "a registered model",
+      "a compute resource",
+      "a Jupyter notebook"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 79,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Data values that used to make a prediction are called [answer choice].",
+    "options": ["dependant variables.", "features.", "identifiers.", "labels."],
+    "correctAnswer": 1
+  },
+  {
+    "id": 80,
+    "question": "Match the tool to the Azure Machine Learning task.",
+    "types": [
+      "Automated machine learning (automated ML)",
+      "The Azure portal",
+      "Machine Learning designer"
+    ],
+    "scenarios": [
+      "Create a Machine Learning workspace",
+      "Use a drag-and-drop interface used to train and deploy models",
+      "Use a wizard to select configurations for a machine learning run"
+    ],
+    "correctAnswers": [
+      {
+        "type": "The Azure portal",
+        "scenario": "Create a Machine Learning workspace"
+      },
+      {
+        "type": "Machine Learning designer",
+        "scenario": "Use a drag-and-drop interface used to train and deploy models"
+      },
+      {
+        "type": "Automated machine learning (automated ML)",
+        "scenario": "Use a wizard to select configurations for a machine learning run"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "question": "You need to create a customer support solution to help customers access information. The solution must support email, phone, and live chat channels. Which type of AI solution should you use?",
+    "options": [
+      "machine learning",
+      "computer vision",
+      "chatbot",
+      "natural language processing (NLP)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 82,
+    "question": "Match the types of AI workloads to the appropriate scenarios.",
+    "workloads": [
+      "Anomaly detection",
+      "Computer vision",
+      "Machine Learning (Clustering)",
+      "Natural language processing"
+    ],
+    "scenarios": [
+      "Identify handwritten letters",
+      "Predict the sentiment of a social media post",
+      "Identify an unusual credit card payment",
+      "Group animals based on multiple measurements"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Computer vision",
+        "scenario": "Identify handwritten letters"
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Predict the sentiment of a social media post"
+      },
+      {
+        "workload": "Anomaly detection",
+        "scenario": "Identify an unusual credit card payment"
+      },
+      {
+        "workload": "Machine Learning (Clustering)",
+        "scenario": "Group animals based on multiple measurements"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Predicting how many vehicles will travel across a bridge on a give day is an example of [answer choice]. Select the answer that correctly completes the sentence.",
+    "options": ["regression", "translation", "classification", "clustering"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 84,
+    "question": "In a machine learning model, the data that is used as inputs are called [answer choice]. Select the answer that correctly completes the sentence.",
+    "options": ["dataset", "labels", "variables"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 85,
+    "question": "Select the answer that correctly completes the sentence. Using Recency, Frequency, and Monetary (RFM) values to identify segments of a customer base is an example of [answer choice].",
+    "options": [
+      "clustering.",
+      "regression.",
+      "classification.",
+      "regularization."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 86,
+    "question": "You plan to deploy an Azure Machine Learning model by using the Machine Learning designer. Which four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+    "options": [
+      "Train the model",
+      "Split the data randomly into training data and validation data",
+      "Evaluate the model against the original dataset",
+      "Evaluate the model against the validation dataset",
+      "Ingest and prepare a dataset"
+    ],
+    "correctAnswer": [
+      "Ingest and prepare a dataset",
+      "Split the data randomly into training data and validation data",
+      "Train the model",
+      "Evaluate the model against the validation dataset"
+    ]
+  },
+  {
+    "id": 87,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nOrganizing documents into groups based on different usage statistics is an example of clustering.\nGrouping similar patients based on symptoms and diagnostic test results is an example of clustering.\nPredicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 88,
+    "question": "Select the answer that correctly completes the sentence. When building a regression model, labels must have a data type of [answer choice].",
+    "options": ["boolean.", "datetime.", "numeric.", "text."],
+    "correctAnswer": 2
+  },
+  {
+    "id": 89,
+    "question": "You need to create a clustering model and evaluate the model by using Azure Machine Learning designer. What should you do?",
+    "options": [
+      "A. Split the original dataset into a dataset for training and a dataset for testing. Use the testing dataset for evaluation.",
+      "B. Use the original dataset for training and evaluation.",
+      "C. Split the original dataset into a dataset for features and a dataset for labels. Use the features dataset for evaluation.",
+      "D. Split the original dataset into a dataset for training and a dataset for testing. Use the training dataset for evaluation."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 90,
+    "question": "You have a dataset that contains the columns shown in the table. You have a machine learning model that predicts the value of ColumnE based on the other numeric columns. Which type of model is this?",
+    "options": ["analysis", "clustering", "regression"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 91,
+    "question": "You need to track multiple versions of a model that was trained by using Azure Machine Learning. What should you do?",
+    "options": [
+      "Explain the model.",
+      "Register the model.",
+      "Register the training data.",
+      "Provision an inference cluster."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 92,
+    "question": "You need to identify groups of rows with similar numeric values in a dataset. Which type of machine learning should you use?",
+    "options": ["clustering", "regression", "classification"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 93,
+    "question": "Select the answer that correctly completes the sentence. A banking system that predicts whether a loan will be repaid is an example of the [answer choice] type of machine learning.",
+    "options": ["clustering", "regression", "classification"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 94,
+    "question": "Your company wants to build a recycling machine for bottles. The recycling machine must automatically identify bottles of the correct shape and reject all other items. Which type of AI workload should the company use?",
+    "options": [
+      "anomaly detection",
+      "conversational AI",
+      "computer vision",
+      "natural language processing"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 95,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nWhen creating an object detection model in the Custom Vision service, you must choose a classification type of either Multilabel or Multiclass.\nYou can create an object detection model in the Custom Vision service to find the location of content within an image.\nWhen creating an object detection model in the Custom Vision service, you can select from a set of predefined domains.",
+    "correctAnswers": ["No", "Yes", "Yes"]
+  },
+  {
+    "id": 96,
+    "question": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Extract the invoice number from an invoice.",
+      "Translate a form from French to English.",
+      "Find image of product in a catalog.",
+      "Identify the retailer from a receipt."
+    ],
+    "correctAnswer": [0, 3]
+  },
+  {
+    "id": 97,
+    "question": "Select the answer that correctly completes the sentence. Counting the number of animals in an area based on a video feed is an example of [answer choice].",
+    "options": [
+      "forecasting.",
+      "computer vision.",
+      "conversational AI.",
+      "anomaly detection."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 98,
+    "question": "You have a database that contains a list of employees and their photos. You are tagging new photos of the employees. For each of the following statements select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nThe Face service can be used to perform facial recognition for employees.\nThe Face service will be more accurate if you provide more sample photos of each employee from different angles.\nIf an employee is wearing sunglasses, the Face service will always fail to recognize the employee.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 99,
+    "question": "You need to develop a mobile app for employees to scan and store their expenses while travelling. Which type of computer vision should you use?",
+    "options": [
+      "semantic segmentation",
+      "image classification",
+      "object detection",
+      "optical character recognition (OCR)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 100,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nThe Custom Vision service can be used to detect objects in an image.\nThe Custom Vision service requires that you provide your own data to train the model.\nThe Custom Vision service can be used to analyze video files.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  }
+]

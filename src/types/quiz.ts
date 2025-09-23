@@ -22,6 +22,8 @@ export interface DragDropAnswer {
   principle?: string;
   requirement?: string;
   type?: string;
+  task?: string;
+  question?: string;
   [key: string]: string | undefined; // Allow other key-value pairs
 }
 
@@ -31,7 +33,7 @@ export interface DragDropAnswer {
 export type CorrectAnswerFormat =
   | number
   | number[]
-  | string[]  // For Yes/No questions
+  | string[] // For Yes/No questions
   | MatchingAnswer[]
   | DragDropAnswer[]
   | FillInAnswer;
@@ -42,7 +44,7 @@ export type CorrectAnswerFormat =
 export type SelectedOptionFormat =
   | number
   | number[]
-  | string[]  // For Yes/No questions
+  | string[] // For Yes/No questions
   | MatchingAnswer[]
   | DragDropAnswer[]
   | FillInAnswer
@@ -65,9 +67,12 @@ export interface QuizQuestion {
   question: string;
   options?: string[]; // Optional for matching and fill-in-the-blank questions
   types?: string[]; // For drag-drop questions with types and scenarios
+  workloads?: string[]; // For drag-drop questions with workloads and scenarios
   scenarios?: string[]; // For drag-drop questions with types and scenarios
   principles?: string[]; // For drag-drop questions with principles and requirements
   requirements?: string[]; // For drag-drop questions with principles and requirements
+  tasks?: string[]; // For drag-drop questions with tasks and questions
+  questions?: string[]; // For drag-drop questions with tasks and questions
   correctAnswer?: CorrectAnswerFormat;
   correctAnswers?: CorrectAnswerFormat; // Alternative format for some question banks
 }

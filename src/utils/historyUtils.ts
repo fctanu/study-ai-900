@@ -167,17 +167,21 @@ export const formatTimeSpent = (minutes?: number): string => {
 /**
  * Gets existing notes for questions from previous quiz attempts
  */
-export const getQuestionNotes = (bankName: string): { [questionId: number]: string } => {
+export const getQuestionNotes = (
+  bankName: string
+): { [questionId: number]: string } => {
   try {
     const history = getQuizHistory();
     const questionNotes: { [questionId: number]: string } = {};
-    
+
     // Find all attempts for this bank and collect notes
-    const bankAttempts = history.attempts.filter(attempt => attempt.bankName === bankName);
-    
+    const bankAttempts = history.attempts.filter(
+      (attempt) => attempt.bankName === bankName
+    );
+
     // Get the most recent notes for each question
-    bankAttempts.reverse().forEach(attempt => {
-      attempt.answerHistory.forEach(answer => {
+    bankAttempts.reverse().forEach((attempt) => {
+      attempt.answerHistory.forEach((answer) => {
         if (answer.notes && answer.notes.trim()) {
           // Only overwrite if we don't have notes for this question yet (most recent wins)
           if (!questionNotes[answer.questionId]) {
@@ -186,10 +190,10 @@ export const getQuestionNotes = (bankName: string): { [questionId: number]: stri
         }
       });
     });
-    
+
     return questionNotes;
   } catch (error) {
-    console.error('Error loading question notes:', error);
+    console.error("Error loading question notes:", error);
     return {};
   }
 };

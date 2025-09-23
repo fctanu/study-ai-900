@@ -23,6 +23,7 @@ interface QuizProps {
   onQuizComplete: () => void;
   onBackToStart: () => void;
   onViewHistory: () => void;
+  onRetryWrongAnswers: () => void;
   selectedBank: string | null;
   appState: AppState;
 }
@@ -39,37 +40,54 @@ const getCorrectAnswer = (question: QuizQuestion): CorrectAnswerFormat => {
  */
 const getQuestionType = (question: QuizQuestion): string => {
   const correctAnswer = getCorrectAnswer(question);
-  
+
   // Check for drag-drop questions with types/scenarios arrays
   if (question.types && question.scenarios && question.correctAnswers) {
     return "drag-drop";
   }
-  
+
+  // Check for drag-drop questions with workloads/scenarios arrays
+  if (question.workloads && question.scenarios && question.correctAnswers) {
+    return "drag-drop";
+  }
+
   // Check for drag-drop questions with principles/requirements arrays
   if (question.principles && question.requirements && question.correctAnswers) {
     return "drag-drop";
   }
-  
+
+  // Check for drag-drop questions with tasks/questions arrays
+  if (question.tasks && question.questions && question.correctAnswers) {
+    return "drag-drop";
+  }
+
   // Check for drag-drop questions (workload/scenario, principle/requirement, or type/scenario matching)
-  if (question.correctAnswers && Array.isArray(question.correctAnswers) && 
-      question.correctAnswers.length > 0 && 
-      typeof question.correctAnswers[0] === "object") {
+  if (
+    question.correctAnswers &&
+    Array.isArray(question.correctAnswers) &&
+    question.correctAnswers.length > 0 &&
+    typeof question.correctAnswers[0] === "object"
+  ) {
     const firstAnswer = question.correctAnswers[0];
-    if (("workload" in firstAnswer && "scenario" in firstAnswer) ||
-        ("principle" in firstAnswer && "requirement" in firstAnswer) ||
-        ("type" in firstAnswer && "scenario" in firstAnswer)) {
+    if (
+      ("workload" in firstAnswer && "scenario" in firstAnswer) ||
+      ("principle" in firstAnswer && "requirement" in firstAnswer) ||
+      ("type" in firstAnswer && "scenario" in firstAnswer)
+    ) {
       return "drag-drop";
     }
   }
-  
+
   // Check for Yes/No questions (multiple sub-questions)
-  if (Array.isArray(correctAnswer) && 
-      correctAnswer.length > 0 && 
-      typeof correctAnswer[0] === "string" &&
-      (correctAnswer[0] === "Yes" || correctAnswer[0] === "No")) {
+  if (
+    Array.isArray(correctAnswer) &&
+    correctAnswer.length > 0 &&
+    typeof correctAnswer[0] === "string" &&
+    (correctAnswer[0] === "Yes" || correctAnswer[0] === "No")
+  ) {
     return "yes-no";
   }
-  
+
   if (Array.isArray(correctAnswer)) {
     if (
       correctAnswer.length > 0 &&
@@ -79,10 +97,7 @@ const getQuestionType = (question: QuizQuestion): string => {
       return "matching";
     }
     return "multi-select";
-  } else if (
-    typeof correctAnswer === "object" &&
-    correctAnswer !== null
-  ) {
+  } else if (typeof correctAnswer === "object" && correctAnswer !== null) {
     return "fill-in-blank";
   }
   return "multiple-choice";
@@ -142,6 +157,7 @@ const Quiz: React.FC<QuizProps> = ({
   onQuizComplete,
   onBackToStart,
   onViewHistory,
+  onRetryWrongAnswers,
   selectedBank,
   appState,
 }) => {
@@ -154,19 +170,21 @@ const Quiz: React.FC<QuizProps> = ({
   const [retryMode, setRetryMode] = useState(false);
   const [retryQuestions, setRetryQuestions] = useState<QuizQuestion[]>([]);
   const [currentNotes, setCurrentNotes] = useState<string>("");
-  const [questionNotes, setQuestionNotes] = useState<{ [key: number]: string }>({});
+  const [questionNotes, setQuestionNotes] = useState<{ [key: number]: string }>(
+    {}
+  );
 
   const handleStart = (bankName: string) => {
     onBankSelect(bankName);
-    
+
     // Load existing notes for this question bank
     const existingNotes = getQuestionNotes(bankName);
     setQuestionNotes(existingNotes);
-    
+
     // Set initial notes for the first question if any exist
     const firstQuestion = questions[0];
     const firstQuestionNotes = existingNotes[firstQuestion?.id] || "";
-    
+
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
     setUserAnswers([]);
@@ -181,12 +199,22 @@ const Quiz: React.FC<QuizProps> = ({
   // Load notes when starting quiz or when questions are available
   useEffect(() => {
     if (appState === "playing" && questions.length > 0 && selectedBank) {
-      const currentQuestion = (retryMode ? retryQuestions : questions)[currentQuestionIndex];
+      const currentQuestion = (retryMode ? retryQuestions : questions)[
+        currentQuestionIndex
+      ];
       if (currentQuestion && questionNotes[currentQuestion.id]) {
         setCurrentNotes(questionNotes[currentQuestion.id] || "");
       }
     }
-  }, [appState, questions, selectedBank, currentQuestionIndex, questionNotes, retryMode, retryQuestions]);
+  }, [
+    appState,
+    questions,
+    selectedBank,
+    currentQuestionIndex,
+    questionNotes,
+    retryMode,
+    retryQuestions,
+  ]);
 
   const handleOptionSelect = (optionIndex: number) => {
     const currentQuestion = questions[currentQuestionIndex];
@@ -228,17 +256,15 @@ const Quiz: React.FC<QuizProps> = ({
 
     // For multiple choice and multi-select, require selection
     if (
-      (questionType === "multiple-choice" || questionType === "multi-select" || questionType === "yes-no") &&
+      (questionType === "multiple-choice" ||
+        questionType === "multi-select" ||
+        questionType === "yes-no") &&
       selectedOption === null
     ) {
       return;
     }
 
-    const isCorrect = checkAnswer(
-      questionType,
-      selectedOption,
-      correctAnswer
-    );
+    const isCorrect = checkAnswer(questionType, selectedOption, correctAnswer);
 
     const newAnswer: UserAnswer = {
       questionId: currentQuestion.id,
@@ -252,8 +278,7 @@ const Quiz: React.FC<QuizProps> = ({
         currentQuestion.options
       ),
       correctAnswerText: getAnswerText(
-        Array.isArray(correctAnswer) &&
-          typeof correctAnswer[0] === "number"
+        Array.isArray(correctAnswer) && typeof correctAnswer[0] === "number"
           ? correctAnswer
           : typeof correctAnswer === "number"
           ? correctAnswer
@@ -265,9 +290,9 @@ const Quiz: React.FC<QuizProps> = ({
 
     // Save notes for this question
     if (currentNotes.trim()) {
-      setQuestionNotes(prev => ({
+      setQuestionNotes((prev) => ({
         ...prev,
-        [currentQuestion.id]: currentNotes.trim()
+        [currentQuestion.id]: currentNotes.trim(),
       }));
     }
 
@@ -310,10 +335,10 @@ const Quiz: React.FC<QuizProps> = ({
       // Next question
       const nextQuestionIndex = currentQuestionIndex + 1;
       const nextQuestion = currentQuestions[nextQuestionIndex];
-      
+
       setCurrentQuestionIndex(nextQuestionIndex);
       setSelectedOption(null);
-      
+
       // Load existing notes for the next question if any
       setCurrentNotes(questionNotes[nextQuestion?.id] || "");
     }
@@ -350,11 +375,14 @@ const Quiz: React.FC<QuizProps> = ({
     setSelectedOption(null);
     setUserAnswers([]);
     setQuizResult(null);
-    
+
     // Load notes for the first retry question if any exist
     const firstRetryQuestion = questionsToRetry[0];
     const firstRetryQuestionNotes = questionNotes[firstRetryQuestion?.id] || "";
     setCurrentNotes(firstRetryQuestionNotes);
+
+    // Call the callback to change app state back to playing
+    onRetryWrongAnswers();
   };
 
   return (
@@ -387,6 +415,7 @@ const Quiz: React.FC<QuizProps> = ({
               </div>
             ) : (
               <QuestionCard
+                key={`question-${currentQuestionIndex}`}
                 question={
                   (retryMode ? retryQuestions : questions)[currentQuestionIndex]
                 }

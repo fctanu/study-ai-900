@@ -259,7 +259,9 @@ const HistoryDetailPage: React.FC<HistoryDetailPageProps> = ({
                   {/* Show personal notes if available */}
                   {answer.notes && (
                     <div className="mt-4 p-3 bg-blue-900/20 border border-blue-600/50 rounded-lg">
-                      <span className="font-medium text-blue-300 text-sm">Your Notes:</span>
+                      <span className="font-medium text-blue-300 text-sm">
+                        Your Notes:
+                      </span>
                       <p className="mt-1 text-blue-200 text-sm whitespace-pre-wrap">
                         {answer.notes}
                       </p>

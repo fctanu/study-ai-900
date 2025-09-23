@@ -1,0 +1,611 @@
+[
+  {
+    "id": 1,
+    "question": "A company employs a team of customer service agents to provide telephone and email support to customers. The company develops a webchat bot to provide automated answers to common customer queries. Which business benefit should the company expect as a result of creating the webchat bot solution?",
+    "options": [
+      "increased sales",
+      "a reduced workload for the customer service agents",
+      "improved product reliability"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "For a machine learning progress, how should you split data for training and evaluation?",
+    "options": [
+      "Use features for training and labels for evaluation.",
+      "Randomly split the data into rows for training and rows for evaluation.",
+      "Use labels for training and features for evaluation.",
+      "Randomly split the data into columns for training and columns for evaluation."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "You are developing a model to predict events by using classification. You have a confusion matrix for the model scored on test data as shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic. NOTE: Each correct selection is worth one point.\nThere are [answer choice] correctly predicted positives.\nThere are [answer choice] false negatives.",
+    "correctAnswer": {
+      "correctly predicted positives": 11,
+      "false negatives": 1033
+    }
+  },
+  {
+    "id": 4,
+    "question": "You build a machine learning model by using the automated machine learning user interface (UI). You need to ensure that the model meets the Microsoft transparency principle for responsible AI. What should you do?",
+    "options": [
+      "Set Validation type to Auto.",
+      "Enable Explain best model.",
+      "Set Primary metric to accuracy.",
+      "Set Max concurrent iterations to 0."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nForecasting housing prices based on historical data is an example of anomaly detection.\nIdentifying suspicious sign-ins by looking for deviations from usual patterns is an example of anomaly detection.\nPredicting whether a patient will develop diabetes based on the patient's medical history is an example of anomaly detection.",
+    "correctAnswers": ["No", "Yes", "No"]
+  },
+  {
+    "id": 6,
+    "question": "To complete the sentence, select the appropriate option in the answer area. The handling of unusual or missing values provided to an AI system is a consideration for the Microsoft [answer choice] principle for responsible AI.",
+    "options": [
+      "inclusiveness",
+      "privacy and security",
+      "reliability and safety",
+      "transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "Match the types of AI workloads to the appropriate scenarios.",
+    "workloads": [
+      "Anomaly detection",
+      "Computer vision",
+      "Conversational AI",
+      "Knowledge mining",
+      "Natural language processing"
+    ],
+    "scenarios": [
+      "An automated chat to answer about refunds and exchanges",
+      "Determining whether a photo contains a person",
+      "Determining whether a review is positive or negative"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Conversational AI",
+        "scenario": "An automated chat to answer about refunds and exchanges"
+      },
+      {
+        "workload": "Computer vision",
+        "scenario": "Determining whether a photo contains a person"
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Determining whether a review is positive or negative"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "fairness",
+      "inclusiveness",
+      "reliability and safety",
+      "accountability"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "Match the Microsoft guiding principles for responsible AI to the appropriate descriptions.",
+    "principles": [
+      "Accountability",
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "requirements": [
+      "Ensure that AI systems operate as they were originally designed, respond to unanticipated conditions, and resist harmful manipulation",
+      "Implementing processes to ensure that decisions made by AI systems can be overridden by humans",
+      "Provide consumers with information and controls over the collection, use, and storage of their data"
+    ],
+    "correctAnswers": [
+      {
+        "principle": "Reliability and safety",
+        "requirement": "Ensure that AI systems operate as they were originally designed, respond to unanticipated conditions, and resist harmful manipulation"
+      },
+      {
+        "principle": "Accountability",
+        "requirement": "Implementing processes to ensure that decisions made by AI systems can be overridden by humans"
+      },
+      {
+        "principle": "Privacy and security",
+        "requirement": "Provide consumers with information and controls over the collection, use, and storage of their data"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "To complete the sentence, select the appropriate option in the answer area. When developing an AI system for self-driving cars, the Microsoft [answer choice] principle for responsible AI should be applied to ensure consistent operation of the system during unexpected circumstances.",
+    "options": [
+      "inclusiveness",
+      "accountability",
+      "reliability and safety",
+      "fairness"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "You are building an AI system. Which task should you include to ensure that the service meets the Microsoft transparency principle for responsible AI?",
+    "options": [
+      "Ensure that all visuals have an associated text that can be read by a screen reader.",
+      "Enable autoscaling to ensure that a service scales based on demand.",
+      "Provide documentation to help developers debug code.",
+      "Ensure that a training dataset is representative of the population."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "question": "Match the types of AI workloads to the appropriate scenarios.",
+    "workloads": [
+      "Anomaly detection",
+      "Computer vision",
+      "Machine Learning (Regression)",
+      "Natural language processing"
+    ],
+    "scenarios": [
+      "Identify handwritten letters",
+      "Predict the sentiment of a social media post",
+      "Identify a fraudulent credit card payment",
+      "Predict next month's toy sales"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Computer vision",
+        "scenario": "Identify handwritten letters"
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Predict the sentiment of a social media post"
+      },
+      {
+        "workload": "Anomaly detection",
+        "scenario": "Identify a fraudulent credit card payment"
+      },
+      {
+        "workload": "Machine Learning (Regression)",
+        "scenario": "Predict next month's toy sales"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Your company is exploring the use of voice recognition technologies in its smart home devices. The company wants to identify any barriers that might unintentionally leave out specific user groups. This an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "accountability",
+      "fairness",
+      "inclusiveness",
+      "privacy and security"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "What are three Microsoft guiding principles for responsible AI? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "knowledgeability",
+      "decisiveness",
+      "inclusiveness",
+      "fairness",
+      "opinionatedness",
+      "reliability and safety"
+    ],
+    "correctAnswer": [2, 3, 5]
+  },
+  {
+    "id": 15,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Returning a bounding box that indicates the location of a vehicle in an image is an example of [answer choice].",
+    "options": [
+      "image classification.",
+      "object detection.",
+      "optical character recognizer (OCR).",
+      "semantic segmentation."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "question": "To complete the sentence, select the appropriate option in the answer area. [answer choice] is used to generate additional features.",
+    "options": [
+      "Feature engineering",
+      "Feature selection",
+      "Model evaluation",
+      "Model training"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter. You need to ensure that you only retweet photos that meet the following requirements: Include one or more faces. Contain at least one person wearing sunglasses. What should you use to analyze the images?",
+    "options": [
+      "the Verify operation in the Face service",
+      "the Detect operation in the Face service",
+      "the Describe Image operation in the Computer Vision service",
+      "the Analyze Image operation in the Computer Vision service"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be explainable. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      "transparency",
+      "inclusiveness",
+      "fairness",
+      "privacy and security"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nProviding an explanation of the outcome of a credit loan application is an example of the Microsoft transparency principle for responsible AI.\nA triage bot that prioritizes insurance claims based on injuries is an example of the Microsoft reliability and safety principle for responsible AI.\nAn AI solution that is offered at different prices for different sales territories is an example of the Microsoft inclusiveness principle for responsible AI.",
+    "correctAnswers": ["Yes", "No", "No"]
+  },
+  {
+    "id": 20,
+    "question": "Match the principles of responsible AI to the appropriate requirements.",
+    "principles": [
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety",
+      "Transparency"
+    ],
+    "requirements": [
+      "The system must not discriminate based on gender, race",
+      "Personal data must be visible only to approved users",
+      "Automated decision-making processes must be recorded so that approved users can identify why a decision was made"
+    ],
+    "correctAnswers": [
+      {
+        "principle": "Fairness",
+        "requirement": "The system must not discriminate based on gender, race"
+      },
+      {
+        "principle": "Privacy and security",
+        "requirement": "Personal data must be visible only to approved users"
+      },
+      {
+        "principle": "Transparency",
+        "requirement": "Automated decision-making processes must be recorded so that approved users can identify why a decision was made"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "You plan to deploy an Azure Machine Learning model as a service that will be used by client applications. Which three processes should you perform in sequence before you deploy the model? To answer, move the appropriate processes from the list of processes to the answer area and arrange them in the correct order.",
+    "workloads": ["data preparation", "model training", "model evaluation"],
+    "scenarios": ["First process", "Second process", "Third process"],
+    "correctAnswers": [
+      {
+        "workload": "data preparation",
+        "scenario": "First process"
+      },
+      {
+        "workload": "model training",
+        "scenario": "Second process"
+      },
+      {
+        "workload": "model evaluation",
+        "scenario": "Third process"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "You are building an AI-based app. You need to ensure that the app uses the principles for responsible AI. Which two principles should you follow? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Implement an Agile software development methodology",
+      "Implement a process of AI model validation as part of the software review process",
+      "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer",
+      "Prevent the disclosure of the use of AI-based algorithms for automated decision making"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 23,
+    "question": "To complete the sentence, select the appropriate option in the answer area. According to Microsoft's [answer choice] principle of responsible AI, AI systems should NOT reflect biases from the data sets that are used to train the systems.",
+    "options": ["accountability", "fairness", "inclusiveness", "transparency"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "question": "Match the types of AI workloads to the appropriate scenarios.",
+    "workloads": [
+      "Anomaly detection",
+      "Computer vision",
+      "Knowledge mining",
+      "Natural language processing"
+    ],
+    "scenarios": [
+      "An automated chatbot to answer questions about refunds and exchanges",
+      "Determining whether a photo contains a person",
+      "Determining whether a review is positive or negative"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Natural language processing",
+        "scenario": "An automated chatbot to answer questions about refunds and exchanges"
+      },
+      {
+        "workload": "Computer vision",
+        "scenario": "Determining whether a photo contains a person"
+      },
+      {
+        "workload": "Natural language processing",
+        "scenario": "Determining whether a review is positive or negative"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Match the principles of responsible AI to the appropriate descriptions.",
+    "principles": [
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "requirements": [
+      "AI systems should treat all people fairly and avoid discrimination",
+      "AI systems should empower everyone and engage people with different abilities",
+      "AI systems must protect and secure personal and businesses information",
+      "AI systems must consistently operate as intended, even under unexpected conditions"
+    ],
+    "correctAnswers": [
+      {
+        "principle": "Fairness",
+        "requirement": "AI systems should treat all people fairly and avoid discrimination"
+      },
+      {
+        "principle": "Inclusiveness",
+        "requirement": "AI systems should empower everyone and engage people with different abilities"
+      },
+      {
+        "principle": "Privacy and security",
+        "requirement": "AI systems must protect and secure personal and businesses information"
+      },
+      {
+        "principle": "Reliability and safety",
+        "requirement": "AI systems must consistently operate as intended, even under unexpected conditions"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "During the process of Machine Learning, when should you review evaluation metrics.",
+    "options": [
+      "Before you train a model.",
+      "After you clean the data.",
+      "Before you choose the type of model.",
+      "After you test a model on the validation data."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 28,
+    "question": "You have a natural language processing (NLP) model that was created by using data obtained without permission. Which Microsoft principle for responsible AI does this breach?",
+    "options": [
+      "reliability and safety",
+      "privacy and security",
+      "inclusiveness",
+      "transparency"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 29,
+    "question": "Select the answer that correctly completes the sentence. Ensuring an AI system does not provide a prediction when important fields contain unusual or missing values is a [answer choice] principle for responsible AI.",
+    "options": [
+      "inclusiveness",
+      "privacy and security",
+      "reliability and safety",
+      "transparency"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "Match the services to the appropriate descriptions. To answer, drag the appropriate service from the column on the left to its description on the right. Each service may be used once, more than once, or not at all. NOTE: Each correct selection is worth one point.\nServices: Azure Storage, Azure Bot Service, Language Service, Speech\nDescriptions: Enables the use of natural language to query a knowledge base. Enables the real-time transcription of speech-to-text.",
+    "correctAnswer": {
+      "Enables the use of natural language to query a knowledge base": "Azure Bot Service",
+      "Enables the real-time transcription of speech-to-text": "Speech"
+    }
+  },
+  {
+    "id": 31,
+    "question": "Which machine learning technique can be used for anomaly detection?",
+    "options": [
+      "A machine learning technique that classifies objects based on user supplied images.",
+      "A machine learning technique that understands written and spoken language.",
+      "A machine learning technique that classifies images based on their contents.",
+      "A machine learning technique that analyzes data over time and identifies unusual changes."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 32,
+    "question": "You have an AI-based loan approval system. During testing, you discover that the system has a gender bias. Which responsible AI principle does this violate?",
+    "options": [
+      "accountability",
+      "reliability and safety",
+      "transparency",
+      "fairness"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 33,
+    "question": "Match the machine learning tasks to the appropriate scenarios.",
+    "workloads": [
+      "Feature engineering",
+      "Feature selection",
+      "Model deployment",
+      "Model evaluation",
+      "Model training"
+    ],
+    "scenarios": [
+      "Examining the values of a confusion matrix",
+      "Splitting a date into month, day, and year fields",
+      "Picking temperature and pressure to train a weather model"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Model evaluation",
+        "scenario": "Examining the values of a confusion matrix"
+      },
+      {
+        "workload": "Feature engineering",
+        "scenario": "Splitting a date into month, day, and year fields"
+      },
+      {
+        "workload": "Feature selection",
+        "scenario": "Picking temperature and pressure to train a weather model"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Data values that influence the prediction of a model are called [answer choice].",
+    "options": ["dependant variables.", "features.", "identifiers.", "labels."],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "question": "You have the Predicted vs. True chart shown in the following exhibit. Which type of model is the chart used to evaluate?",
+    "options": ["classification", "regression", "clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month?",
+    "options": ["classification", "regression", "clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "question": "You have a dataset that contains information about taxi journeys that occurred during a given period. You need to train a model to predict the fare of a taxi journey. What should you use as a feature?",
+    "options": [
+      "the number of taxi journeys in the dataset",
+      "the trip distance of individual taxi journeys",
+      "the fare of individual taxi journeys",
+      "the trip ID of individual taxi journeys"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "question": "You need to predict the sea level in meters for the next 10 years. Which type of machine learning should you use?",
+    "options": ["classification", "regression", "clustering"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nAutomated machine learning is the process of automating the time-consuming, iterative tasks of machine learning model development.\nAutomated machine learning can automatically infer the training data from the use case provided.\nAutomated machine learning works by running multiple training iterations that are scored and ranked by the metrics you specify.\nAutomated machine learning enables you to specify a dataset and will automatically understand which label to predict.",
+    "correctAnswers": ["Yes", "No", "Yes", "No"]
+  },
+  {
+    "id": 40,
+    "question": "To complete the sentence, select the appropriate option in the answer area. A banking system that predicts whether a loan will be repaid is an example of the [answer choice] type of machine learning.",
+    "options": ["classification", "regression", "clustering"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nLabelling is the process of tagging training data with known values.\nYou should evaluate a model by using the same data used to train the model.\nAccuracy is always the primary metric used to measure a model's performance.",
+    "correctAnswers": ["Yes", "No", "No"]
+  },
+  {
+    "id": 42,
+    "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+    "options": [
+      "Form Recognizer",
+      "Text Analytics",
+      "Language Understanding",
+      "Custom Vision"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "To complete the sentence, select the appropriate option in the answer area. The ability to extract subtotals and totals from a receipt is a capability of the [answer choice] service.",
+    "options": [
+      "Custom Vision",
+      "Form Recognizer",
+      "Ink Recognizer",
+      "Text Analytics"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "question": "You use Azure Machine Learning designer to publish an inference pipeline. Which two parameters should you use to access the web service? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "the model name",
+      "the training endpoint",
+      "the authentication key",
+      "the REST endpoint"
+    ],
+    "correctAnswer": [2, 3]
+  },
+  {
+    "id": 45,
+    "question": "To complete the sentence, select the appropriate option in the answer area. From Azure Machine Learning designer, to deploy a real-time inference pipeline as a service for others to consume, you must deploy the model to [answer choice].",
+    "options": [
+      "a local web service.",
+      "Azure Container Instances.",
+      "Azure Kubernetes Service (AKS).",
+      "Azure Machine Learning compute."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 46,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Predicting how many hours of overtime a delivery person will work based on the number of order received is an example of [answer choice].",
+    "options": ["classification.", "clustering.", "regression."],
+    "correctAnswer": 2
+  },
+  {
+    "id": 46,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nAzure Machine Learning designer provides a drag-and-drop visual canvas to build, test, and deploy machine learning models.\nAzure Machine Learning designer enables you to save your progress as a pipeline draft.\nAzure Machine Learning designer enables you to include custom JavaScript functions.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 48,
+    "question": "You have the dataset shown in the table. You plan to use the dataset to train a model that will predict the house price categories of houses. What are Household Income and House Price Category? To answer, select the appropriate option in the answer area. NOTE: Each correct selection is worth one point.",
+    "options": ["A feature", "A label"],
+    "correctAnswer": {
+      "Household Income": "A feature",
+      "House Price Category": "A label"
+    }
+  },
+  {
+    "id": 49,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Azure Machine Learning designer lets you create machine learning models by [answer choice].",
+    "options": [
+      "adding and connecting modules on a visual canvas.",
+      "automatically performing common data preparation tasks.",
+      "automatically selecting an algorithm to build the most accurate model.",
+      "using a code-first notebook experience."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nAutomated machine learning provides you with the ability to include custom Python scripts in a training pipeline.\nAutomated machine learning implements machine learning solutions without the need for programming experience.\nAutomated machine learning provides you with the ability to visually connect datasets and modules on an interactive canvas.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  }
+]

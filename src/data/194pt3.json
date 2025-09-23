@@ -1,0 +1,606 @@
+[
+  {
+    "id": 101,
+    "question": "You are processing photos of runners in a race. You need to read the numbers on the runners' shirts to identity the runners in the photos. Which type of computer vision should you use?",
+    "options": [
+      "facial recognition",
+      "optical character recognition (OCR)",
+      "image classification",
+      "object detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 102,
+    "question": "Match the types of machine learning to the appropriate scenarios.",
+    "types": [
+      "Facial detection",
+      "Facial recognition",
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)",
+      "Semantic segmentation"
+    ],
+    "scenarios": [
+      "Separate images of polar bears and brown bears",
+      "Determine the location of a bear in a photo",
+      "Determine which pixels in an image are part of a bear"
+    ],
+    "correctAnswers": [
+      {
+        "type": "Image classification",
+        "scenario": "Separate images of polar bears and brown bears"
+      },
+      {
+        "type": "Object detection",
+        "scenario": "Determine the location of a bear in a photo"
+      },
+      {
+        "type": "Semantic segmentation",
+        "scenario": "Determine which pixels in an image are part of a bear"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "question": "You use drones to identify where weeds grow between rows of crops to send an instruction for the removal of the weeds. This is an example of which type of computer vision?",
+    "options": [
+      "object detection",
+      "optical character recognition (OCR)",
+      "scene segmentation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 104,
+    "question": "Match the facial recognition tasks to the appropriate questions.",
+    "tasks": ["grouping", "identification", "similarity", "verification"],
+    "questions": [
+      "Do two images of a face belong to the same person?",
+      "Does this person look like other people?",
+      "Do all the faces belong together?",
+      "Who is this person in this group of people?"
+    ],
+    "correctAnswers": [
+      {
+        "task": "verification",
+        "question": "Do two images of a face belong to the same person?"
+      },
+      {
+        "task": "similarity",
+        "question": "Does this person look like other people?"
+      },
+      {
+        "task": "grouping",
+        "question": "Do all the faces belong together?"
+      },
+      {
+        "task": "identification",
+        "question": "Who is this person in this group of people?"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "question": "Match the types of computer vision workloads to the appropriate scenarios.",
+    "workloads": [
+      "Facial recognition",
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)"
+    ],
+    "scenarios": [
+      "Identify celebrities in images",
+      "Extract movie title names from movie poster images",
+      "Locate vehicles in images"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Facial recognition",
+        "scenario": "Identify celebrities in images"
+      },
+      {
+        "workload": "Optical character recognition (OCR)",
+        "scenario": "Extract movie title names from movie poster images"
+      },
+      {
+        "workload": "Object detection",
+        "scenario": "Locate vehicles in images"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "question": "You need to determine the location of cars in an image so that you can estimate the distance between the cars. Which type of computer vision should you use?",
+    "options": [
+      "optical character recognition (OCR)",
+      "object detection",
+      "image classification",
+      "face detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 107,
+    "question": "To complete the sentence, select the appropriate option in the answer area. You can use the [answer choice] service to train an object detection model by using your own images.",
+    "options": [
+      "Computer Vision",
+      "Custom Vision",
+      "Form Recognizer",
+      "Video Indexer"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 108,
+    "question": "You send an image to a Computer Vision API and receive back the annotated image shown in the exhibit. Each fruit has a bounding box around it with a label and a confidence percentage.] Which type of computer vision was used?",
+    "options": [
+      "object detection",
+      "face detection",
+      "optical character recognition (OCR)",
+      "image classification"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 109,
+    "question": "What are two tasks that can be performed by using the Computer Vision service? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Train a custom image classification model.",
+      "Detect faces in an image.",
+      "Recognize handwritten text.",
+      "Translate the text in an image between languages."
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 110,
+    "question": "What is a use case for classification?",
+    "options": [
+      "predicting how many cups of coffee a person will drink based on how many hours the person slept the previous night.",
+      "analyzing the contents of images and grouping images that have similar colors.",
+      "predicting whether someone uses a bicycle to travel to work based on the distance from home to work.",
+      "predicting how many minutes it will take someone to run a race based on past race times."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 111,
+    "question": "What are two tasks that can be performed by using computer vision? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Predict stock prices.",
+      "Detect brands in an image.",
+      "Detect the color scheme in an image.",
+      "Translate text between languages.",
+      "Extract key phrases."
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 112,
+    "question": "You need to build an image tagging solution for social media that tags images of your friends automatically. Which Azure Cognitive Services service should you use?",
+    "options": ["Face", "Form Recognizer", "Text Analytics", "Computer Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 113,
+    "question": "A historian can use [answer choice] to digitize newspaper articles. Select the answer that correctly completes the sentence.",
+    "options": [
+      "Object detection",
+      "Facial recognition",
+      "Image classification",
+      "Optical character recognition (OCR)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 115,
+    "question": "Which Computer Vision feature can you use to generate automatic captions for digital photographs?",
+    "options": [
+      "Recognize text.",
+      "Identify the areas of interest.",
+      "Detect objects.",
+      "Describe the images."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 116,
+    "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+    "options": ["Custom Vision", "Face", "Form Recognizer", "Language"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 117,
+    "question": "Select the answer that correctly completes the sentence. [answer choice] extracts text from handwritten documents.",
+    "options": [
+      "Object detection",
+      "Facial recognition",
+      "Image classification",
+      "Optical character recognition (OCR)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 118,
+    "question": "For each of the following statements about object detection, select Yes if the statement is true. Otherwise, select No.\nObject detection can identify the location of a damaged product in an image.\nObject detection can identify multiple instances of a damaged product in an image.\nObject detection can identify multiple types of damaged products in an image.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 119,
+    "question": "You need to create a model that labels a collection of your personal digital photographs. Which Azure Cognitive Services service should you use?",
+    "options": [
+      "Form Recognizer",
+      "Custom Vision",
+      "Language",
+      "Computer Vision"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 120,
+    "question": "Select the answer that correctly completes the sentence. [answer choice] is used to identify multiple types of items in one image.",
+    "options": [
+      "Object detection",
+      "Image description",
+      "Image classification",
+      "Optical character recognition (OCR)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 121,
+    "question": "Select the answer that correctly completes the sentence. Identifying whether a kiosk user is annoyed by monitoring a video feed from the kiosk is an example of facial [answer choice].",
+    "options": ["analysis.", "detection.", "recognition."],
+    "correctAnswer": 0
+  },
+  {
+    "id": 122,
+    "question": "Match the Azure Cognitive Services to the appropriate actions.",
+    "types": ["Custom Vision", "Face", "Form Recognizer"],
+    "scenarios": [
+      "Identify objects in an image",
+      "Automatically import data from an invoice to a database",
+      "Identify people in an image"
+    ],
+    "correctAnswers": [
+      {
+        "type": "Custom Vision",
+        "scenario": "Identify objects in an image"
+      },
+      {
+        "type": "Form Recognizer",
+        "scenario": "Automatically import data from an invoice to a database"
+      },
+      {
+        "type": "Face",
+        "scenario": "Identify people in an image"
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "question": "Select the answer that correctly completes the sentence. An AI solution that helps photographers take better portrait photographs by providing feedback on exposure, noise, and occlusion is an example of facial [answer choice].",
+    "options": ["analysis.", "detection.", "recognition."],
+    "correctAnswer": 1
+  },
+  {
+    "id": 124,
+    "question": "Your company manufactures widgets. You have 1,000 digital photos of the widgets. You need to identify the location of the widgets within the photos. What should you use?",
+    "options": [
+      "Computer Vision Spatial Analysis",
+      "Custom Vision object detection",
+      "Computer Vision Image Analysis",
+      "Custom Vision classification"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 125,
+    "question": "Natural language processing can be used to [answer choice]. Select the answer that correctly completes the sentence.",
+    "options": [
+      "Analyze video content",
+      "Generate speech",
+      "Classify email messages as work-related or personal.",
+      "Classify images"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 126,
+    "question": "You are developing a solution that uses the Text Analytics service. You need to identify the main talking points in a collection of documents. Which type of natural language processing should you use?",
+    "options": [
+      "entity recognition",
+      "key phrase extraction",
+      "sentiment analysis",
+      "language detection"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 127,
+    "question": "In which two scenarios can you use speech recognition? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an in-car system that reads text messages aloud",
+      "providing closed captions for recorded or live videos",
+      "creating an automated public address system for a train station",
+      "creating a transcript of a telephone call or meeting"
+    ],
+    "correctAnswer": [1, 3]
+  },
+  {
+    "id": 128,
+    "question": "To complete the sentence, select the appropriate option in the answer area. While presenting at a conference, your session is transcribed into subtitles for the audience. This is an example of [answer choice].",
+    "options": [
+      "sentiment analysis",
+      "speech recognition",
+      "speech synthesis",
+      "translation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 129,
+    "question": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision. Which version service should you use?",
+    "options": [
+      "Text Analytics",
+      "Translator",
+      "Speech",
+      "Language Understanding (LUIS)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 130,
+    "question": "For each of the following statements about the Speech service, select Yes if the statement is true. Otherwise, select No.\nYou can use the Speech service to transcribe a call to text.\nYou can use the Text Analytics service to extract key entities from a call transcript.\nYou can use the Speech service to translate the audio of a call to a different language.",
+    "correctAnswers": ["Yes", "Yes", "Yes"]
+  },
+  {
+    "id": 131,
+    "question": "Your website has a chatbot to assist customers. You need to detect when a customer is upset based on what the customer types in the chatbot. Which type of AI workload should you use?",
+    "options": [
+      "anomaly detection",
+      "computer vision",
+      "regression",
+      "natural language processing"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 132,
+    "question": "You plan to develop a bot that will enable users to query a knowledge base by using natural language processing. Which two services should you include in the solution? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "QnA Maker",
+      "Azure Bot Service",
+      "Form Recognizer",
+      "Anomaly Detector"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 133,
+    "question": "In which two scenarios can you use a speech synthesis solution? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an automated voice that reads back a credit card number entered into a telephone by using a numeric keypad",
+      "generating live captions for a news broadcast",
+      "extracting key phrases from the audio recording of a meeting",
+      "an AI character in a computer game that speaks audibly to a player"
+    ],
+    "correctAnswer": [0, 3]
+  },
+  {
+    "id": 134,
+    "question": "For each of the following statements about the Translator service, select Yes if the statement is true. Otherwise, select No.\n\nYou can use the Translator service to translate text between languages.\nYou can use the Translator service to detect the language of a given text.\nYou can use the Translator service to transcribe audio speech into text.",
+    "type": "yes-no",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 135,
+    "question": "You need to scan the news for articles about your customers and alert employees when there is a negative article. Positive articles must be added to a press book. Which natural language processing tasks should you use to complete the process?",
+    "type": "drag-drop",
+    "tasks": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Speech synthesis",
+      "Translation"
+    ],
+    "questions": [
+      "Filter news articles to find mentions of clients",
+      "Assess articles for negative or positive coverage"
+    ],
+    "correctAnswers": [
+      {
+        "task": "Entity recognition",
+        "question": "Filter news articles to find mentions of clients"
+      },
+      {
+        "task": "Sentiment analysis",
+        "question": "Assess articles for negative or positive coverage"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "question": "You are building a knowledge base by using QnA Maker. Which file format can you use to populate the knowledge base?",
+    "options": ["PPTX", "XML", "ZIP", "PDF"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 137,
+    "question": "In which scenario should you use key phrase extraction?",
+    "options": [
+      "identifying whether reviews of a restaurant are positive or negative",
+      "generating captions for a video based on the audio track",
+      "identifying which documents provide information about the same topics",
+      "translating a set of documents from English to German"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 138,
+    "question": "You have insurance claim reports that are stored as text. You need to extract key terms from the reports to generate summaries. Which type of AI workload should you use?",
+    "options": [
+      "natural language processing",
+      "conversational AI",
+      "anomaly detection",
+      "computer vision"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 139,
+    "question": "To complete the sentence, select the appropriate option in the answer area. Natural language processing can be used to [answer choice].",
+    "options": [
+      "classify email messages as work-related or personal",
+      "predict the number of future car rentals",
+      "predict which website visitors will make a transaction",
+      "stop a process in a factory when extremely high temperatures are registered"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 140,
+    "question": "Which AI service can you use to interpret the meaning of a user input such as “Call me back later?”",
+    "options": [
+      "Translator",
+      "Text Analytics",
+      "Speech",
+      "Language Understanding (LUIS)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 141,
+    "question": "You are developing a chatbot solution in Azure. Which service should you use to determine a user’s intent?",
+    "options": [
+      "Translator",
+      "QnA Maker",
+      "Speech",
+      "Language Understanding (LUIS)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 142,
+    "question": "You need to make the written press releases of your company available in a range of languages. Which service should you use?",
+    "options": [
+      "Translator",
+      "Text Analytics",
+      "Speech",
+      "Language Understanding (LUIS)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 143,
+    "question": "For each of the following statements about the Text Analytics service, select Yes if the statement is true. Otherwise, select No.\n\nThe Text Analytics service can identify in which language text is written.\nThe Text Analytics service can detect handwritten signatures in a document.\nThe Text Analytics service can identify companies and organizations mentioned in a document.",
+    "type": "yes-no",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 144,
+    "question": "Match the types of natural language processing workloads to the appropriate scenarios.",
+    "workloads": [
+      "Entity recognition",
+      "Key phrase extraction",
+      "Language modeling",
+      "Sentiment analysis",
+      "Translation",
+      "Speech recognition and speech synthesis"
+    ],
+    "scenarios": [
+      "Extracts persons, locations, and organizations from the text",
+      "Evaluates text along a positive-negative scale",
+      "Converts text to a different language"
+    ],
+    "correctAnswers": [
+      {
+        "workload": "Entity recognition",
+        "scenario": "Extracts persons, locations, and organizations from the text"
+      },
+      {
+        "workload": "Sentiment analysis",
+        "scenario": "Evaluates text along a positive-negative scale"
+      },
+      {
+        "workload": "Translation",
+        "scenario": "Converts text to a different language"
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "question": "For each of the following statements about natural language processing, select Yes if the statement is true. Otherwise, select No.\n\nMonitoring online service reviews for profanities is an example of natural language processing.\nIdentifying brand logos in an image is an example of natural language processing.\nMonitoring public news sites for negative mentions of a product is an example of natural language processing.",
+    "type": "yes-no",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 146,
+    "question": "You are developing a natural language processing solution in Azure. The solution will analyze customer reviews and determine how positive or negative each review is. This is an example of which type of natural language processing workload?",
+    "options": [
+      "language detection",
+      "sentiment analysis",
+      "key phrase extraction",
+      "entity recognition"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 147,
+    "question": "You use natural language processing to process text from a Microsoft news story. You receive the output shown in the following exhibit. Which type of natural languages processing was performed?",
+    "options": [
+      "entity recognition",
+      "key phrase extraction",
+      "sentiment analysis",
+      "translation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 148,
+    "question": "You plan to apply Text Analytics API features to a technical support ticketing system. Match the Text Analytics API features to the appropriate natural language processing scenarios.",
+    "type": "drag-drop",
+    "types": [
+      "Entity recognition",
+      "Key phrase extraction",
+      "Language detection",
+      "Sentiment analysis"
+    ],
+    "scenarios": [
+      "Understand how upset a customer is based on the text contained in the support ticket",
+      "Summarize important information from the support ticket",
+      "Extract key dates from the support ticket"
+    ],
+    "correctAnswers": [
+      {
+        "type": "Sentiment analysis",
+        "scenario": "Understand how upset a customer is based on the text contained in the support ticket"
+      },
+      {
+        "type": "Key phrase extraction",
+        "scenario": "Summarize important information from the support ticket"
+      },
+      {
+        "type": "Entity recognition",
+        "scenario": "Extract key dates from the support ticket"
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "question": "You are authoring a Language Understanding (LUIS) application to support a music festival. You want users to be able to ask questions about scheduled shows, such as: “Which act is playing on the main stage?” The question “Which act is playing on the main stage?” is an example of which type of element?",
+    "options": ["an intent", "an utterance", "a domain", "an entity"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 150,
+    "question": "You build a QnA Maker bot by using a frequently asked questions (FAQ) page. You need to add professional greetings and other responses to make the bot more user friendly. What should you do?",
+    "options": [
+      "Increase the confidence threshold of responses",
+      "Enable active learning",
+      "Create multi-turn questions",
+      "Add chit-chat"
+    ],
+    "correctAnswer": 3
+  }
+]

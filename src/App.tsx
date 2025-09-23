@@ -12,6 +12,10 @@ import msl1 from "./data/MSL1.json";
 import aicsh from "./data/AICSH.json";
 import deanCyber20 from "./data/DeanCyber20.json";
 import deanCyber50 from "./data/DeanCyber50.json";
+import pt1 from "./data/194pt1.json";
+import pt2 from "./data/194pt2.json";
+import pt3 from "./data/194pt3.json";
+import pt4 from "./data/194pt4.json";
 import "./index.css";
 
 // Define available question banks
@@ -56,6 +60,26 @@ const questionBanks: QuestionBank[] = [
     displayName: "Dean Cyber 50 Questions",
     fileName: "DeanCyber50.json",
   },
+  {
+    name: "194pt1",
+    displayName: "AI-900 Part 1 (Questions 1-50)",
+    fileName: "194pt1.json",
+  },
+  {
+    name: "194pt2",
+    displayName: "AI-900 Part 2 (Questions 51-100)",
+    fileName: "194pt2.json",
+  },
+  {
+    name: "194pt3",
+    displayName: "AI-900 Part 3 (Questions 101-150)",
+    fileName: "194pt3.json",
+  },
+  {
+    name: "194pt4",
+    displayName: "AI-900 Part 4 (Questions 151-196)",
+    fileName: "194pt4.json",
+  },
 ];
 
 // Question bank data mapping
@@ -68,6 +92,10 @@ const questionBankData: { [key: string]: QuizQuestion[] } = {
   aicsh: aicsh as QuizQuestion[],
   deancyber20: deanCyber20 as QuizQuestion[],
   deancyber50: deanCyber50 as QuizQuestion[],
+  "194pt1": pt1 as QuizQuestion[],
+  "194pt2": pt2 as QuizQuestion[],
+  "194pt3": pt3 as QuizQuestion[],
+  "194pt4": pt4 as QuizQuestion[],
 };
 
 function App() {
@@ -94,6 +122,10 @@ function App() {
 
   const handleViewHistory = () => {
     setAppState("history");
+  };
+
+  const handleRetryWrongAnswers = () => {
+    setAppState("playing");
   };
 
   const handleViewAttempt = (attemptId: string) => {
@@ -139,6 +171,7 @@ function App() {
         onQuizComplete={handleQuizComplete}
         onBackToStart={handleBackToStart}
         onViewHistory={handleViewHistory}
+        onRetryWrongAnswers={handleRetryWrongAnswers}
         selectedBank={selectedBank}
         appState={appState}
       />

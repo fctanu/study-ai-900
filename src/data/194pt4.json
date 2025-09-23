@@ -1,0 +1,405 @@
+[
+  {
+    "id": 151,
+    "question": "You need to develop a chatbot for a website. The chatbot must answer users’ questions based on the information in the following documents: A product troubleshooting guide in a Microsoft Word document, A frequently asked questions (FAQ) list on a webpage. Which service should you use to process the documents?",
+    "options": [
+      "Azure Bot Service",
+      "Language Understanding",
+      "Text Analytics",
+      "QnA Maker"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 152,
+    "question": "You are building a Language Understanding model for an e-commerce business. You need to ensure that the model detects when utterances are outside the intended scope of the model. What should you do?",
+    "options": [
+      "Test the model by using new utterances",
+      "Add utterances to the None intent",
+      "Create a prebuilt task entity",
+      "Create a new model"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 153,
+    "question": "Which two scenarios are examples of a natural language processing workload? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold",
+      "a smart device in the home that responds to questions such as, \"What will the weather be like today?\"",
+      "a website that uses a knowledge base to interactively respond to users' questions",
+      "assembly line machinery that autonomously inserts headlamps into cars"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 154,
+    "question": "You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "text-to-speech",
+      "key phrase extraction",
+      "speech-to-text",
+      "language modeling",
+      "translation"
+    ],
+    "correctAnswer": [0, 2]
+  },
+  {
+    "id": 155,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nThe Language service can identify in which language text is written.\nThe Language service can detect handwritten signatures in a document.\nThe Language service can identify companies and organizations mentioned in a document.",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 156,
+    "question": "You plan to use Azure Cognitive Services to develop a voice controlled personal assistant app. Match the Azure Cognitive Services to the appropriate tasks. To answer, drag the appropriate service from the column on the left to its description on the right. Each service may be used once, more than once, or not at all. NOTE: Each correct selection is worth one point.\nServices: Speech, Language service, Translator Text\nTasks: Convert a user’s speech to text. Identify a user’s intent. Provide a spoken response to the user.",
+    "correctAnswer": {
+      "Convert a user’s speech to text": "Speech",
+      "Identify a user’s intent": "Language service",
+      "Provide a spoken response to the user": "Speech"
+    }
+  },
+  {
+    "id": 157,
+    "question": "You need to make the written press releases of your company available in a range of languages. Which service should you use?",
+    "options": ["Speech", "Language", "Translator", "Personalizer"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 158,
+    "question": "You have insurance claim reports that are stored as text. You need to extract key terms from the reports to generate summaries. Which type of AI workload should you use?",
+    "options": [
+      "anomaly detection",
+      "natural language processing",
+      "computer vision",
+      "knowledge mining"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 159,
+    "question": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision. Which version service should you use?",
+    "options": ["Language service", "Translator", "Speech", "Personalizer"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 160,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nThe following service call will accept English text as input and output Italian and French text: from=en-US&to=it&to=fr\nThe following service call will accept English text as input and output Italian and French text: from=en&to=it&to=fr\nThe Translator service can be used to translate documents from English to French.",
+    "correctAnswers": ["No", "Yes", "Yes"]
+  },
+  {
+    "id": 161,
+    "question": "An app that analyzes social media posts to identify their tone is an example of which type of natural language processing (NLP) workload?",
+    "options": [
+      "sentiment analysis",
+      "speech recognition",
+      "key phrase extraction",
+      "entity recognition"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 162,
+    "question": "You are building a chatbot that will use natural language processing (NLP) to perform the following actions based on the text input of a user. Accept customer orders. Retrieve support documents. Retrieve order status updates. Which type of NLP should you use?",
+    "options": [
+      "sentiment analysis",
+      "named entity recognition",
+      "translation",
+      "language modeling"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 163,
+    "question": "Match the Azure Cognitive Services service to the appropriate actions. To answer, drag the appropriate service from the column on the left to its action on the right. Each service may be used once, more than once, or not at all. NOTE: Each correct selection is worth one point.\nServices: Language service, Speech, Translator\nActions: Convert spoken request into text. Identify the intent of a user’s requests. Apply intent to entities and utterances.",
+    "correctAnswer": {
+      "Convert spoken request into text": "Speech",
+      "Identify the intent of a user’s requests": "Language service",
+      "Apply intent to entities and utterances": "Language service"
+    }
+  },
+  {
+    "id": 164,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA webchat bot can interact with users visiting a website.\nAutomatically generating captions for pre-recorded videos is an example of natural language processing.\nA smart device in the home that responds to questions such as “What will the weather be like today?” is an example of natural language processing.",
+    "correctAnswers": ["Yes", "Yes", "Yes"]
+  },
+  {
+    "id": 165,
+    "question": "You have a website that includes customer reviews. You need to store the reviews in English and present the reviews to users in their respective language by recognizing each user's geographical location. Which type of natural language processing workload should you use?",
+    "options": [
+      "key phrase extraction",
+      "speech recognition",
+      "language modeling",
+      "translation"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 166,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nChatbots can support voice input.\nA separate chatbot is required for each communication channel.\nChatbots manage conversation flows by using a combination of natural language and constrained option responses.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 167,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA bot that responds to queries by internal users is an example of a natural language processing workload.\nA mobile application that displays images relating to an entered search term is an example of a natural language processing workload.\nA web form used to submit a request to reset a password is an example of a natural language processing workload.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 168,
+    "question": "You have a custom question answering solution. You create a bot that uses the knowledge base to respond to customer requests. You need to identify what the bot can perform without adding additional skills. What should you identify?",
+    "options": [
+      "Register customer purchases.",
+      "Register customer complaints.",
+      "Answer questions from multiple users simultaneously.",
+      "Provide customers with return materials authorization (RMA) numbers."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 169,
+    "question": "You have a solution that analyzes social media posts to extract the mentions of city names and the city names discussed most frequently. Which type of natural language processing (NLP) workload does the solution use?",
+    "options": [
+      "speech recognition",
+      "sentiment analysis",
+      "key phrase extraction",
+      "entity recognition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 170,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nYou can use Language Service’s question answering to query an Azure SQL database.\nYou should use Language Service’s question answering when you want a knowledge base to provide the same answer to different users who submit similar questions.\nLanguage Service’s question answering can determine the intent of a user utterance.",
+    "correctAnswers": ["No", "Yes", "No"]
+  },
+  {
+    "id": 171,
+    "question": "You have a webchat bot that provides responses from a QnA Maker knowledge base. You need to ensure that the bot uses user feedback to improve the relevance of the responses over time. What should you use?",
+    "options": [
+      "key phrase extraction",
+      "sentiment analysis",
+      "business logic",
+      "active learning"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 172,
+    "question": "You are developing a conversational AI solution that will communicate with users through multiple channels including email, Microsoft Teams, and webchat. Which service should you use?",
+    "options": [
+      "Text Analytics",
+      "Azure Bot Service",
+      "Translator",
+      "Form Recognizer"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 173,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA bot that responds to queries by internal users is an example of a conversational AI workload.\nAn application that displays images relating to an entered search term is an example of a conversational AI workload.\nA web form used to submit a request to reset a password is an example of a conversational AI workload.",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 174,
+    "question": "You need to provide content for a business chatbot that will help answer simple user queries. What are three ways to create question and answer text by using QnA Maker? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Generate the questions and answers from an existing webpage.",
+      "Use automated machine learning to train a model based on a file that contains the questions.",
+      "Manually enter the questions and answers.",
+      "Connect the bot to the Cortana channel and ask questions by using Cortana.",
+      "Import chit-chat content from a predefined data source."
+    ],
+    "correctAnswer": [0, 2, 4]
+  },
+  {
+    "id": 175,
+    "question": "You have a frequently asked questions (FAQ) PDF file. You need to create a conversational support system based on the FAQ. Which service should you use?",
+    "options": [
+      "QnA Maker",
+      "Text Analytics",
+      "Computer Vision",
+      "Language Understanding (LUIS)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 176,
+    "question": "You need to reduce the load on telephone operators by implementing a chatbot to answer simple questions with predefined answers. Which two AI service should you use to achieve the goal? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Azure Machine Learning",
+      "Azure Bot Service",
+      "Language Service",
+      "Translator"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 177,
+    "question": "Which two scenarios are examples of a conversational AI workload? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "a smart device in the home that responds to questions such as “What will the weather be like today?”",
+      "a website that uses a knowledge base to interactively respond to users’ questions",
+      "assembly line machinery that autonomously inserts headlamps into cars",
+      "monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold"
+    ],
+    "correctAnswer": [0, 1]
+  },
+  {
+    "id": 178,
+    "question": "You have the process shown in the following exhibit. Which type of AI solution is shown in the diagram?",
+    "options": [
+      "a sentiment analysis solution",
+      "a chatbot",
+      "a machine learning model",
+      "a computer vision application"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 179,
+    "question": "You need to develop a web-based AI solution for a customer support system. Users must be able to interact with a web app that will guide them to the best resource or answer. Which service should you use?",
+    "options": ["Custom Vision", "QnA Maker", "Translator Text", "Face"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 180,
+    "question": "Which AI service should you use to create a bot from a frequently asked questions (FAQ) document?",
+    "options": [
+      "QnA Maker",
+      "Language Understanding (LUIS)",
+      "Text Analytics",
+      "Speech"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 181,
+    "question": "To complete the sentence, select the appropriate option in the answer area. The interactive answering of questions entered by a user as part of an application is an example of [answer choice].",
+    "options": [
+      "anomaly detection",
+      "computer vision",
+      "conversational AI",
+      "forecasting"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 182,
+    "question": "Which scenario is an example of a webchat bot?",
+    "options": [
+      "Determine whether reviews entered on a website for a concert are positive or negative, and then add a thumbs up or thumbs down emoji to the reviews.",
+      "Translate into English questions entered by customers at a kiosk so that the appropriate person can call the customers back.",
+      "Accept questions through email, and then route the email messages to the correct person based on the content of the message.",
+      "From a website interface, answer common questions about scheduled events and ticket purchases for a music festival."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 183,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA bot that responds to queries by internal users is an example of a conversational AI workload.\nAn application that displays images relating to an entered search term is an example of a conversational AI workload.\nA web form used to submit a request to reset a password is an example of a conversational AI workload.",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 184,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA chatbot can communicate with users through a variety of channels, including email.\nAzure Bot Service can be integrated with Azure Cognitive Services.\nA chatbot can support voice input.",
+    "correctAnswers": ["Yes", "Yes", "Yes"]
+  },
+  {
+    "id": 185,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA bot must be deployed to a different environment for each communication channel.\nAzure Bot Service and QnA Maker can be used together to create a chatbot.\nA single chatbot can be configured to interact with multiple users at the same time.",
+    "correctAnswers": ["No", "Yes", "Yes"]
+  },
+  {
+    "id": 186,
+    "question": "Which two scenarios are examples of a conversational AI workload? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "a telephone answering service that has a pre-recorder message",
+      "a chatbot that provides users with the ability to find answers on a website by themselves",
+      "telephone voice menus to reduce the load on human resources",
+      "a service that creates frequently asked questions (FAQ) documents by crawling public websites"
+    ],
+    "correctAnswer": [1, 2]
+  },
+  {
+    "id": 187,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nAzure Bot Service can be integrated with Azure Cognitive Services.\nA conversational AI solution can be used to handle customer interactions.\nThe QnA Maker service can be used to create question and answers sets.",
+    "correctAnswers": ["Yes", "Yes", "No"]
+  },
+  {
+    "id": 188,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nA conversational bot is designed to handle multi-turn conversations with users.\nAn AI solution that responds to a user's question with a single answer is not a conversational AI solution.\nA conversational bot can be delivered by using a webchat control on a website.",
+    "correctAnswers": ["Yes", "No", "Yes"]
+  },
+  {
+    "id": 189,
+    "question": "You have a knowledge base of frequently asked questions (FAQ). You create a bot that uses the knowledge base to respond to customer requests. You need to identify what the bot can perform without adding additional skills. What should you identify?",
+    "options": [
+      "Register customer purchases.",
+      "Register customer complaints.",
+      "Answer questions from multiple users simultaneously.",
+      "Provide customers with return materials authorization (RMA) numbers."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 190,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nYou can create a Cortana bot by using the Microsoft Bot Framework.\nQnA Maker enables you to create and train a conversational bot that can answer questions based on a FAQ document.\nA conversational bot can be configured to communicate with people via Microsoft Teams.",
+    "correctAnswers": ["Yes", "Yes", "Yes"]
+  },
+  {
+    "id": 191,
+    "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.\nMicrosoft Azure Bot Service supports a low-code platform for creating conversational AI bots.\nYou can integrate a bot into a website by using an iframe.\nA bot can be configured to communicate with users via Microsoft Teams.",
+    "correctAnswers": ["No", "Yes", "Yes"]
+  },
+  {
+    "id": 192,
+    "question": "Select the answer that correctly completes the sentence. You need to create a customer support solution to help customers access information. The solution must support email, phone, and live chat channels. Which type of AI solution should you use?",
+    "options": [
+      "machine learning",
+      "computer vision",
+      "chatbot",
+      "natural language processing (NLP)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 193,
+    "question": "You have an Azure Machine Learning pipeline that contains a Split Data module. The Split Data module outputs to a Train Model module and a Score Model module. What is the function of the Split Data module?",
+    "options": [
+      "scaling numeric variables so that they are within a consistent numeric range",
+      "creating training and validation datasets",
+      "diverting records that have missing data",
+      "selecting columns that must be included in the model"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 194,
+    "question": "Which statement is an example of a Microsoft responsible AI principle?",
+    "options": [
+      "AI systems must use only publicly available data",
+      "AI systems must be transparent and inclusive",
+      "AI systems must keep personal details public",
+      "AI systems must protect the interests of the company"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 195,
+    "question": "Match the types of natural language processing workloads to the appropriate scenarios. To answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may be used once, more than once, or not at all. NOTE: Each correct match is worth one point.\nWorkloads Types: Key phrase extraction, Language modeling, Language detection, Sentiment analysis, Speech recognition, Translation\nScenarios: A bot in an app that reads text messages to a driver. A system that summarizes the most important content of a document. An application that reads a text message and generates a reply in another language.",
+    "correctAnswer": {
+      "A bot in an app that reads text messages to a driver": "Speech recognition",
+      "A system that summarizes the most important content of a document": "Key phrase extraction",
+      "An application that reads a text message and generates a reply in another language": "Translation"
+    }
+  },
+  {
+    "id": 196,
+    "question": "You need to reduce the load on telephone operators by implementing a chatbot to answer simple questions with predefined answers. Which two AI service should you use to achieve the goal? Each correct answers presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Azure Machine Learning",
+      "Azure Bot Service",
+      "Language Service",
+      "Translator"
+    ],
+    "correctAnswer": [1, 2]
+  }
+]

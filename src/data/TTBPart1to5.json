@@ -131,11 +131,7 @@
   {
     "id": 13,
     "question": "Match the learning types with their definitions:",
-    "types": [
-      "Regression",
-      "Clustering", 
-      "Classification"
-    ],
+    "types": ["Regression", "Clustering", "Classification"],
     "scenarios": [
       "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.",
       "Segment customers into different groups to support a marketing department.",
